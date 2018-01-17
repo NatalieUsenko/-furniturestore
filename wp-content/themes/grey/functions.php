@@ -1,7 +1,6 @@
 <?php
 
 if ( ! function_exists( 'grey_setup' ) ) :
-
 function grey_setup(){
     load_theme_textdomain('grey');
     add_theme_support('title-tag');
@@ -12,16 +11,6 @@ function grey_setup(){
     register_nav_menus(array(
         'primary' => __('Primary Menu', 'grey'),
         'social' => __('Social Links Menu', 'grey'),
-    ));
-
-    add_theme_support('html5', array(
-        'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
-    ));
-
-    add_theme_support('custom-logo', array(
-        'height' => 248,
-        'width' => 248,
-        'flex-height' => true,
     ));
 }
 add_action( 'after_setup_theme', 'grey_setup' );
