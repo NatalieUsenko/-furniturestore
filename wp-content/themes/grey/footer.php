@@ -2,12 +2,16 @@
 
 		</div><!-- #content -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="wrap">
-
-			</div><!-- .wrap -->
-		</footer><!-- #colophon -->
-	</div><!-- .site-content-contain -->
+		<footer class="site-footer">
+			<div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        (c) Copiright 2018
+                    </div>
+                </div>
+			</div>
+		</footer>
+	</div>
 </div><!-- #page -->
 <?php wp_footer(); ?>
 

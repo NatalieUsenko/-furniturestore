@@ -117,7 +117,7 @@ input,
 select,
 textarea {
 	color: #333;
-	font-family: "Noto Serif", serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
@@ -175,7 +175,7 @@ blockquote small {
 	color: #333;
 	font-size: 15px;
 	font-size: 1.5rem;
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.6;
 }
 
@@ -258,4 +258,12 @@ small {
 
 big {
 	font-size: 125%;
+}
+
+footer{
+	background-color: #3b3b3b;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
 }
