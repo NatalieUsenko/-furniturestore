@@ -6,7 +6,7 @@
 			<div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        (c) Copiright 2018
+                        (c) Copiright <?php echo date(Y); ?>
                     </div>
                 </div>
 			</div>
