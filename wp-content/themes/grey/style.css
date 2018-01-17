@@ -119,9 +119,9 @@ select,
 textarea {
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.4;
 }
 
 h1,
@@ -135,7 +135,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.6em;
+	margin-bottom: 1.4em;
 }
 
 b,
