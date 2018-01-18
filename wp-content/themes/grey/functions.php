@@ -34,6 +34,18 @@ function grey_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'grey_scripts' );
 
+function themename_custom_logo_setup() {
+    $defaults = array(
+        'height'      => 83,
+        'width'       => 272,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
+}
+add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
 function my_acf_google_map_api( $api ){
     $api['key'] = 'AIzaSyAe_0rVt1WvsSNi8WGYeBWbUYqp3oiiubg';
     return $api;
