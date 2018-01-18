@@ -24,12 +24,6 @@ function grey_setup(){
 add_action( 'after_setup_theme', 'grey_setup' );
 endif;
 
-function my_dequeue() {
-    wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAe_0rVt1WvsSNi8WGYeBWbUYqp3oiiubg',null,null,true);
-    wp_enqueue_script('googlemaps');
-}
-add_action( 'admin_enqueue_scripts', 'my_dequeue' );
-
 function grey_scripts() {
 	wp_enqueue_style( 'grey-style', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
