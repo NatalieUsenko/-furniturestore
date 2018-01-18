@@ -24,13 +24,9 @@ function grey_setup(){
 add_action( 'after_setup_theme', 'grey_setup' );
 endif;
 
-function my_dequeue($hook) {
-    if ( 'edit.php' != $hook ) {
-        return;
-    }
-
-    wp_dequeue_script( 'mr-geocomplete' );
-    wp_dequeue_script( 'mr-google-maps' );
+function my_dequeue() {
+    wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAe_0rVt1WvsSNi8WGYeBWbUYqp3oiiubg',null,null,true);
+    wp_enqueue_script('googlemaps');
 }
 add_action( 'admin_enqueue_scripts', 'my_dequeue' );
 
