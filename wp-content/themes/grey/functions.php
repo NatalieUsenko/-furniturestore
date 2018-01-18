@@ -12,6 +12,7 @@ if ( ! function_exists( 'grey_setup' ) ) :
 function grey_setup(){
     load_theme_textdomain('grey');
     add_theme_support('title-tag');
+    add_theme_support( 'custom-logo' );
 
     add_theme_support('post-thumbnails');
     set_post_thumbnail_size(825, 510, true);
