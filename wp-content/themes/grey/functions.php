@@ -24,6 +24,16 @@ function grey_setup(){
 add_action( 'after_setup_theme', 'grey_setup' );
 endif;
 
+function my_dequeue($hook) {
+    if ( 'edit.php' != $hook ) {
+        return;
+    }
+
+    wp_dequeue_script( 'mr-geocomplete' );
+    wp_dequeue_script( 'mr-google-maps' );
+}
+add_action( 'admin_enqueue_scripts', 'my_dequeue' );
+
 function grey_scripts() {
 	wp_enqueue_style( 'grey-style', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
