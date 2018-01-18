@@ -261,6 +261,27 @@ big {
 	font-size: 125%;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+#page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.site-content {
+	flex: 1 0 auto;
+}
+.site-footer {
+	flex: 0 0 auto;
+}
+
+
 footer,
 footer.site-footer{
 	background-color: #3b3b3b;
