@@ -37,17 +37,17 @@
                         </div>
                         <div class="center-block-el">
                             <?php
-                            $phone = get_field('contacts_email', 7);
-                            if ($phone) {
-                                echo '<img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$phone;
+                            $email = get_field('contacts_email', 7);
+                            if ($email) {
+                                echo '<a href="mailto:'.$email.'"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a>';
                             }
                             ?>
                         </div>
                         <div class="center-block-el">
                             <?php
-                            $phone = get_field('contacts_adress', 7);
-                            if ($phone) {
-                                echo '<img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$phone;
+                            $adress = get_field('contacts_adress', 7);
+                            if ($adress) {
+                                echo '<img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$adress;
                             }
                             ?>
                         </div>
