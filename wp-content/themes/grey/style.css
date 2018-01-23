@@ -298,9 +298,8 @@ header{
 }
 
 @media (min-width: 1200px){
-	header .logo>img{
-		width: 80%;
-		height: auto;
+	header .logo{
+		max-width: 200px;
 	}
 }
 
@@ -316,6 +315,16 @@ header .center-block-el{
 }
 header .center-block-el>img{
 	margin-right: 15px;
+}
+@media (min-width: 1200px){
+	header .center-block-el{
+		font-size: 0.875em;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	header .center-block-el>img{
+		margin-right: 5px;
+	}
 }
 
 
