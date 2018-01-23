@@ -39,7 +39,7 @@
                         </div>
                         <div class="center-block-el">
                             <?php
-                            $phone = get_field('contacts_mail', 7);
+                            $phone = get_field('contacts_email', 7);
                             if ($phone) {
                                 echo '<img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$phone;
                             }
