@@ -33,7 +33,7 @@
                         <?php
                         $phone = get_field('contacts_phone', 7);
                         if ($phone) {
-                            echo '<img src="'.get_template_directory_uri().'/img/fb-phone.png" /> '.$phone;
+                            echo '<img src="'.get_template_directory_uri().'/img/icon-phone.png" /> '.$phone;
                         }
                         ?>
                         </div>
@@ -41,7 +41,7 @@
                             <?php
                             $phone = get_field('contacts_mail', 7);
                             if ($phone) {
-                                echo '<img src="'.get_template_directory_uri().'/img/fb-mail.png" /> '.$phone;
+                                echo '<img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$phone;
                             }
                             ?>
                         </div>
@@ -49,7 +49,7 @@
                             <?php
                             $phone = get_field('contacts_adress', 7);
                             if ($phone) {
-                                echo '<img src="'.get_template_directory_uri().'/img/fb-pin.png" /> '.$phone;
+                                echo '<img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$phone;
                             }
                             ?>
                         </div>

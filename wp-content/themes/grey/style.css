@@ -293,6 +293,15 @@ header .menu{
 	display: inline-block;
 	margin-left: 25px;
 }
+header .center-block-el{
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+	display: inline-block;
+}
+header .center-block-el>img{
+	margin-right: 25px;
+}
 
 
 footer,
