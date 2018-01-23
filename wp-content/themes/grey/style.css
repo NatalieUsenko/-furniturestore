@@ -307,6 +307,13 @@ header{
 	}
 }
 
+.as-table-row{
+	display: table;
+}
+.as-table-cell{
+	display: table-cell;
+}
+
 header .menu{
 	display: inline-block;
 	margin-left: 25px;

@@ -16,19 +16,17 @@
 
         <header id="masthead" class="site-header" role="banner">
             <div class="container container-fluid">
-                <div class="row">
-                    <div class="logo left-block">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <div class="row as-table-row">
+                    <div class="logo as-table-cell">
                             <?php
                             if ( function_exists( 'the_custom_logo' ) ) {
                                 the_custom_logo();
                             } else {
-                                echo '<img src="'.get_template_directory_uri().'/img/top-logo.png" />';
+                                echo '<a href="'.esc_url( home_url() ).'" rel="home"><img src="'.get_template_directory_uri().'/img/top-logo.png" />';
                             }
                             ?>
-                        </a>
                     </div>
-                    <div class="center-block">
+                    <div class="as-table-cell">
                         <div class="center-block-el">
                         <?php
                         $phone = get_field('contacts_phone', 7);
@@ -54,7 +52,7 @@
                             ?>
                         </div>
                     </div>
-                    <div class="right-block">
+                    <div class="as-table-cell">
                         <?php
                         $url = get_field('contacts_fb', 7);
                         if (@file_get_contents($url)){
