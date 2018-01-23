@@ -26,8 +26,9 @@ add_action( 'after_setup_theme', 'grey_setup' );
 endif;
 
 function grey_scripts() {
-	wp_enqueue_style( 'grey-style', get_stylesheet_uri() );
+
     wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
+    wp_enqueue_style( 'grey-style', get_stylesheet_uri() );
     wp_enqueue_style( 'font-style', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' );
 
 	wp_enqueue_script( 'grey-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20180118', true );
