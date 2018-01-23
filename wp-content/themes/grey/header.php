@@ -16,7 +16,7 @@
 
         <header id="masthead" class="site-header" role="banner">
             <div class="container container-fluid">
-                <div class="row" style="border: 1px solid blueviolet;">
+                <div class="row">
                     <div class="logo left-block">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                             <?php
