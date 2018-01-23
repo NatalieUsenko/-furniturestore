@@ -309,6 +309,7 @@ header{
 
 .as-table-row{
 	display: table;
+	width: 100%;
 }
 .as-table-cell{
 	display: table-cell;
