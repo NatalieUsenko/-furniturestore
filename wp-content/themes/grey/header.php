@@ -17,6 +17,9 @@
         <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
                 <?php
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                echo $image[0];
                     if ( is_front_page() && is_home() ) : ?>
                         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                     <?php else : ?>
