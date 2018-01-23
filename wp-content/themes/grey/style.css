@@ -298,7 +298,7 @@ header{
 }
 
 @media (min-width: 1200px){
-	header .logo{
+	header .logo>img{
 		width: 80%;
 		height: auto;
 	}
