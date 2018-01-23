@@ -289,6 +289,11 @@ body {
 	float: left;
 }
 
+header .menu{
+	display: inline-block;
+	margin-left: 25px;
+}
+
 
 footer,
 footer.site-footer{

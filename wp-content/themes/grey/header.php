@@ -28,6 +28,32 @@
                             ?>
                         </a>
                     </div>
+                    <div class="center-block">
+                        <div class="center-block-el">
+                        <?php
+                        $phone = get_field('contacts_phone', 7);
+                        if ($phone) {
+                            echo '<img src="'.get_template_directory_uri().'/img/fb-phone.png" /> '.$phone;
+                        }
+                        ?>
+                        </div>
+                        <div class="center-block-el">
+                            <?php
+                            $phone = get_field('contacts_mail', 7);
+                            if ($phone) {
+                                echo '<img src="'.get_template_directory_uri().'/img/fb-mail.png" /> '.$phone;
+                            }
+                            ?>
+                        </div>
+                        <div class="center-block-el">
+                            <?php
+                            $phone = get_field('contacts_adress', 7);
+                            if ($phone) {
+                                echo '<img src="'.get_template_directory_uri().'/img/fb-pin.png" /> '.$phone;
+                            }
+                            ?>
+                        </div>
+                    </div>
                     <div class="right-block">
                         <?php
                         $url = get_field('contacts_fb', 7);
