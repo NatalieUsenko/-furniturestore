@@ -292,3 +292,9 @@ footer.site-footer{
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
+
+@media (min-width: 1960px){
+	.container {
+		width: 1776px;
+	}
+}

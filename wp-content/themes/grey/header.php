@@ -15,7 +15,7 @@
     <div id="content" class="site-content">
 
         <header id="masthead" class="site-header" role="banner">
-            <div class="container-fluid">
+            <div class="container container-fluid">
                 <div class="row" style="border: 1px solid blueviolet;">
                     <div class="logo">
                     <?php
