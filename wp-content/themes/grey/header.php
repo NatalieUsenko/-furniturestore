@@ -31,6 +31,7 @@
                     <div class="right-block">
                         <?php
                         $url = get_field('contacts_fb');
+                        echo $url;
                         if (@file_get_contents($url)){
                            echo '<a href="'.$url.'" target="_blank" rel=""><img src="'.get_template_directory_uri().'/img/fb-logo.png" /></a>';
                         }
