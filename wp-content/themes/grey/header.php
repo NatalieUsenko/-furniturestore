@@ -17,15 +17,29 @@
         <header id="masthead" class="site-header" role="banner">
             <div class="container container-fluid">
                 <div class="row" style="border: 1px solid blueviolet;">
-                    <div class="logo">
-                    <?php
-                    if ( function_exists( 'the_custom_logo' ) ) {
-                        the_custom_logo();
-                    } else {
-                        echo '<img src="'.get_template_directory_uri().'/img/top-logo.png" />';
-                    }
-                    ?>
+                    <div class="logo left-block">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                            <?php
+                            if ( function_exists( 'the_custom_logo' ) ) {
+                                the_custom_logo();
+                            } else {
+                                echo '<img src="'.get_template_directory_uri().'/img/top-logo.png" />';
+                            }
+                            ?>
+                        </a>
                     </div>
+                    <div class="right-block">
+                        <?php
+                        $url = get_field('contacts_fb');
+                        if (@file_get_contents($url)){
+                           echo '<a href="'.$url.'" target="_blank" rel=""><img src="'.get_template_directory_uri().'/img/fb-logo.png" /></a>';
+                        }
+                        ?>
+                        <div class="menu">
+                            <img src="<?php echo get_template_directory_uri();?>/img/menu-burger.png" />
+                        </div>
+                    </div>
+
                 </div>
             </div><!-- .site-branding -->
         </header><!-- .site-header -->

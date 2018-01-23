@@ -281,6 +281,14 @@ body {
 	flex: 0 0 auto;
 }
 
+.right-block{
+	float: right;
+}
+
+.left-block{
+	float: left;
+}
+
 
 footer,
 footer.site-footer{
@@ -293,7 +301,7 @@ footer.site-footer{
 	padding-top: 15px;
 }
 
-@media (min-width: 1960px){
+@media (min-width: 1920px){
 	.container {
 		width: 1776px;
 	}
