@@ -17,7 +17,7 @@
         <header id="masthead" class="site-header" role="banner">
             <div class="container container-fluid">
                 <div class="row as-table-row">
-                    <div class="logo as-table-cell">
+                    <div class="logo as-table-cell text-left">
                             <?php
                             if ( function_exists( 'the_custom_logo' ) ) {
                                 the_custom_logo();
@@ -26,7 +26,7 @@
                             }
                             ?>
                     </div>
-                    <div class="as-table-cell">
+                    <div class="as-table-cell text-center">
                         <div class="center-block-el">
                         <?php
                         $phone = get_field('contacts_phone', 7);
@@ -52,7 +52,7 @@
                             ?>
                         </div>
                     </div>
-                    <div class="as-table-cell">
+                    <div class="as-table-cell text-right">
                         <?php
                         $url = get_field('contacts_fb', 7);
                         if (@file_get_contents($url)){
