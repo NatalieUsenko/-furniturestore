@@ -51,7 +51,11 @@ get_header(); ?>
                             var_dump($map);
                             echo '</pre>';
                         }
-                        ?>
+                        if( !empty($map) ):?>
+                        <div class="acf-map">
+                            <div class="marker" data-lat="<?php echo $map['lat']; ?>" data-lng="<?php echo $map['lng']; ?>"></div>
+                        </div>
+                        <?php endif; ?>
 
                     </div>
                     <?php
