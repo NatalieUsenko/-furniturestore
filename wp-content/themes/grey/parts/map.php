@@ -173,7 +173,7 @@
         var map = null;
 
         $(document).ready(function(){
-            mapHeight = $('#main').height();
+            mapHeight = $('footer').position().top-$('#main').position().top;
             mapWidth = $('#main').width();
 
             $('.acf-map').each(function(){

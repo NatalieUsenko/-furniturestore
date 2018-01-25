@@ -367,8 +367,8 @@ footer.site-footer{
 }
 
 .site-main{
-	/*padding-top: 50px;*/
-	/*padding-bottom: 50px;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
 	overflow-x: hidden;
 }
 
