@@ -193,8 +193,9 @@
         });
 
         $(window).resize(function() {
-            mapHeight = $('footer').position().top-$('#main').position().top;
-            mapWidth = $('#main').width();
+            var mapHeight = $('footer').position().top-$('#main').position().top;
+            var mapWidth = $('#main').width();
+            var mapLeft = $('.acf-map').parent('div').position().left;
             $('.acf-map').css('height', mapHeight+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
             google.maps.event.trigger(map, 'resize');
         });
