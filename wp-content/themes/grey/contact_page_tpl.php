@@ -47,7 +47,9 @@ get_header(); ?>
                         <?php
                         $map = get_field('contacts_map');
                         if ($map) {
-                            echo '<pre>'.$map.'</pre>';
+                            echo '<pre>';
+                            var_dump($map);
+                            echo '</pre>';
                         }
                         ?>
 
