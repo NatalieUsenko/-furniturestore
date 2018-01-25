@@ -15,7 +15,7 @@
     }
 
 </style>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe_0rVt1WvsSNi8WGYeBWbUYqp3oiiubg"></script>
 <script type="text/javascript">
     (function($) {
 
