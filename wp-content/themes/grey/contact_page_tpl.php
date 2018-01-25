@@ -69,4 +69,6 @@ get_header(); ?>
         </main><!-- .site-main -->
     </div><!-- .content-area -->
 
-<?php get_footer();
+<?php
+include "parts/map.php";
+get_footer();
