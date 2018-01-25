@@ -379,6 +379,7 @@ footer.site-footer{
 .page-title{
 	text-transform: uppercase;
 	font-size: 2em;
+	font-weight: normal;
 }
 
 .page_phone{

@@ -14,7 +14,7 @@
 
     .acf-map-title.page-title{
         position: absolute;
-        top: 50px;
+        top: 0px;
         left: 50px;
         z-index: 100;
     }
