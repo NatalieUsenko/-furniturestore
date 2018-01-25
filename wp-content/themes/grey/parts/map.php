@@ -4,7 +4,7 @@
     .acf-map {
         width: 100%;
         height: 400px;
-        margin: -50px 0;
+        margin-left: -15px;
     }
 
     /* fixes potential theme css conflict */
