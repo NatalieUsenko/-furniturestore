@@ -190,7 +190,15 @@
                 map = new_map( $(this) );
 
             });
+        });
 
+        $(window).resize(function() {
+            mapHeight = $('footer').position().top-$('#main').position().top;
+            mapWidth = $('#main').width();
+            $('.acf-map').each(function(){
+                $(this).css('height', mapHeight+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
+            });
+            google.maps.event.trigger(map, 'resize');
         });
 
     })(jQuery);
