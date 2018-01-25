@@ -4,7 +4,7 @@
     .acf-map {
         width: 100%;
         height: 400px;
-        margin: -50px -15px -50px 0;
+        margin-left: -15px;
     }
 
     /* fixes potential theme css conflict */
@@ -178,7 +178,7 @@
 
             $('.acf-map').each(function(){
                 var mapLeft = $(this).parent('div').position().left;
-                $(this).css('height',Math.ceil(mapHeight+100)+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
+                $(this).css('height', mapHeight+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
                 // create map
                 map = new_map( $(this) );
 
