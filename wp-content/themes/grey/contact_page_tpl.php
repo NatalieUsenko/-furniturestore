@@ -38,6 +38,10 @@ get_header(); ?>
                                 echo '<div class="page_address">'.$adress.'</div>';
                             }
                             ?>
+                            <?php
+                            the_content();
+                            ?>
+                            ?>
                         </div>
                     </div>
                     <div class="col-md-7">
