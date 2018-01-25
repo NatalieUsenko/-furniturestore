@@ -379,3 +379,19 @@ footer.site-footer{
 	text-transform: uppercase;
 	font-size: 2em;
 }
+
+.page_phone{
+	padding-left: 40px;
+	padding-bottom: 20px;
+	background: url("img/icon-phone.png") top left no-repeat;
+}
+.page_mail{
+	padding-left: 40px;
+	padding-bottom: 20px;
+	background: url("img/icon-mail.png") top left no-repeat;
+}
+.page_address{
+	padding-left: 40px;
+	padding-bottom: 20px;
+	background: url("img/icon-pin.png") top left no-repeat;
+}
