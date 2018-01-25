@@ -173,12 +173,12 @@
         var map = null;
 
         $(document).ready(function(){
-            mapHeight = $('#main').outerHeight();
+            mapHeight = $('#main').height();
             mapWidth = $('#main').width();
 
             $('.acf-map').each(function(){
                 var mapLeft = $(this).parent('div').position().left;
-                $(this).css('height',mapHeight+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
+                $(this).css('height',Math.ceil(mapHeight+100)+'px').css('width', Math.ceil(mapWidth-mapLeft-15)+'px');
                 // create map
                 map = new_map( $(this) );
 
