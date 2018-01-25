@@ -46,9 +46,11 @@ get_header(); ?>
                     <div class="col-md-7">
                         <?php
                         $map = get_field('contacts_map');
-                        $map_marker = get_field("contacts_pin");
+                        $map_marker = get_field('contacts_pin');
+                        $map_title = get_field('contacts_map_title');
                         if( !empty($map) ):?>
                         <div class="acf-map">
+                            <div class="page-title"><?php echo $map_title; ?></div>
                             <div class="marker" data-lat="<?php echo $map['lat']; ?>" data-lng="<?php echo $map['lng']; ?>" data-pin="<?php echo $map_marker['url']; ?>">></div>
                         </div>
                         <?php endif; ?>

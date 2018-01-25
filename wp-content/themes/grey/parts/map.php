@@ -11,6 +11,13 @@
     .acf-map img {
         max-width: inherit !important;
     }
+
+    .acf-map .page-title{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 100;
+    }
 </style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe_0rVt1WvsSNi8WGYeBWbUYqp3oiiubg"></script>
 <script type="text/javascript">
