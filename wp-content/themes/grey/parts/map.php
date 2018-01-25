@@ -12,7 +12,7 @@
         max-width: inherit !important;
     }
 
-    .acf-map .page-title{
+    .acf-map-title.page-title{
         position: absolute;
         top: 50px;
         left: 50px;
