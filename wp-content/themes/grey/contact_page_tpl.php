@@ -28,7 +28,7 @@ get_header(); ?>
                             <?php
                             $email = get_field('contacts_email');
                             if ($email) {
-                                echo '<div class="page_mail">'.$email.'</div>';
+                                echo '<div class="page_mail"><a href="mailto:'.$email.'" class="emaillink">'.$email.'</a></div>';
                             }
                             ?>
 
