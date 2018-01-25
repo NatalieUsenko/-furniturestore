@@ -56,6 +56,6 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 add_shortcode('contact_form', 'contact_form' );
 function contact_form(){
-    $content = file_get_contents('./parts/form.php');
+    $content = file_get_contents(get_template_directory().'/parts/form.php');
     return $content;
 }
