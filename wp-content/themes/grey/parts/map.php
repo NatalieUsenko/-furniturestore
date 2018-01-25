@@ -90,7 +90,8 @@
             // create marker
             var marker = new google.maps.Marker({
                 position	: latlng,
-                map			: map
+                map			: map,
+                icon        : $marker.attr('data-pin'),
             });
 
             // add to array
