@@ -46,11 +46,8 @@ get_header(); ?>
                     <div class="col-md-7">
                         <?php
                         $map = get_field('contacts_map');
-                        if ($map) {
-                            echo '<pre>';
-                            var_dump($map);
-                            echo '</pre>';
-                        }
+                        $map_marker = get_field("contacts_pin");
+                        var_dump($map_marker);
                         if( !empty($map) ):?>
                         <div class="acf-map">
                             <div class="marker" data-lat="<?php echo $map['lat']; ?>" data-lng="<?php echo $map['lng']; ?>"></div>
