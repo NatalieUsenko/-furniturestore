@@ -369,6 +369,7 @@ footer.site-footer{
 .site-main{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	overflow-x: hidden;
 }
 
 .mt-50{

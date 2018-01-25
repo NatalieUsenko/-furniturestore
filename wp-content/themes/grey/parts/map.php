@@ -178,7 +178,7 @@
 
             $('.acf-map').each(function(){
                 var mapLeft = $(this).parent('div').position().left;
-                $(this).css('height',Math.ceil(mapHeight+100)+'px').css('width', Math.ceil(mapWidth-mapLeft-15)+'px');
+                $(this).css('height',Math.ceil(mapHeight+100)+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
                 // create map
                 map = new_map( $(this) );
 
