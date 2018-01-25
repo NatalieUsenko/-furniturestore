@@ -14,6 +14,31 @@ get_header(); ?>
                     ?>
                     <div class="col-md-5">
                         <h1 class="page-title"><?php echo esc_html( get_the_title() ); ?></h1>
+                        <div class="mt-50">
+                            <?php
+                            $phone = get_field('contacts_phone');
+                            $addphone = get_field('contacts_addphones');
+                            if ($phone | $addphone) {echo '<div class="page_phone">';}
+                            if ($phone){ echo $phone;}
+                            if ($phone & $addphone) {echo '<br />';}
+                            if ($addphone){echo $addphone;}
+                            if ($phone | $addphone) {echo '</div>';}
+                            ?>
+
+                            <?php
+                            $email = get_field('contacts_email');
+                            if ($email) {
+                                echo '<div class="page_mail">'.$email.'</div>';
+                            }
+                            ?>
+
+                            <?php
+                            $adress = get_field('contacts_adress');
+                            if ($adress) {
+                                echo '<div class="page_address">'.$adress.'</div>';
+                            }
+                            ?>
+                        </div>
                     </div>
                     <div class="col-md-7">
 

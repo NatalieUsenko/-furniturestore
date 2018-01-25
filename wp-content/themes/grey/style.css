@@ -365,3 +365,17 @@ footer.site-footer{
 		width: 1776px;
 	}
 }
+
+.site-main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.mt-50{
+	margin-top: 50px;
+}
+
+.page-title{
+	text-transform: uppercase;
+	font-size: 2em;
+}
