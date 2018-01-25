@@ -315,6 +315,16 @@ header{
 	display: table-cell;
 }
 
+a.emaillink{
+	color: #000;
+	text-decoration: none;
+}
+a.emaillink:hover,
+a.emaillink:focus{
+	color:#000;
+	text-decoration: underline;
+}
+
 header .menu{
 	display: inline-block;
 	margin-left: 25px;

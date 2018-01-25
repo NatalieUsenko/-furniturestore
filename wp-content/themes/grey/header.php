@@ -16,7 +16,7 @@
 
         <header id="masthead" class="site-header" role="banner">
             <div class="container container-fluid">
-                <div class="row as-table-row">
+                <div class="as-table-row">
                     <div class="logo as-table-cell text-left">
                             <?php
                             if ( function_exists( 'the_custom_logo' ) ) {
@@ -39,7 +39,7 @@
                             <?php
                             $email = get_field('contacts_email', 7);
                             if ($email) {
-                                echo '<a href="mailto:'.$email.'"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a>';
+                                echo '<a href="mailto:'.$email.'" class="emaillink"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a>';
                             }
                             ?>
                         </div>
