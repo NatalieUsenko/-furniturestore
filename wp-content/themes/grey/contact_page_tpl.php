@@ -44,6 +44,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="col-md-7">
+                        <?php
+                        $map = get_field('contacts_map');
+                        if ($map) {
+                            echo '<pre>'.map.'</pre>';
+                        }
+                        ?>
 
                     </div>
                     <?php
