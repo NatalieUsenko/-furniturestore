@@ -303,6 +303,7 @@ button[type='submit']:focus,
 button[type='submit']:active{
 	background-color: transparent;
 	color: #3b3b3b;
+	outline: none;
 }
 #page {
 	display: flex;
