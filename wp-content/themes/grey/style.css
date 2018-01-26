@@ -286,7 +286,17 @@ form{
 	border: 1px solid #c4c4c4;
 	background: #e8e8e8;
 	margin-bottom: 35px;
-
+}
+.form-control:focus,
+.form-control:active{
+	background: transparent;
+}
+button[type='submit']{
+	color: #fff;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	background-color: #3b3b3b;
 }
 #page {
 	display: flex;

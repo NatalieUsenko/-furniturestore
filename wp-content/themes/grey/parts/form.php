@@ -14,7 +14,7 @@
     </div>
     <div class="col-md-12">
         <div class="form-group">
-            <textarea class="form-control" id="form_message" name="form_message">Сообщение</textarea>
+            <textarea class="form-control" id="form_message" name="form_message" placeholder="Сообщение"></textarea>
         </div>
     </div>
     <div class="col-md-6">
