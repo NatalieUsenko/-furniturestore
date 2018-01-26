@@ -278,6 +278,15 @@ html,
 body {
 	height: 100%;
 }
+form{
+	padding: 35px 0;
+}
+.form-control{
+	border-radius: 0;
+	border: 1px solid #c4c4c4;
+	background: #e8e8e8;
+	margin-bottom: 35px;
+}
 #page {
 	display: flex;
 	flex-direction: column;
