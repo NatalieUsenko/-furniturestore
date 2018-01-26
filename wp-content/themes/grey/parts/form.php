@@ -1,6 +1,7 @@
 <?php
 ?>
 <form>
+    <div class="row">
     <div class="col-md-6">
         <div class="form-group">
             <input id="form_name" name="form_name" type="text" placeholder="Имя" class="form-control">
@@ -21,6 +22,7 @@
     </div>
     <div class="col-md-6 text-right">
         <button type="submit">Отправить</button>
+    </div>
     </div>
 </form>
 
