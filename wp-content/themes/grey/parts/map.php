@@ -211,8 +211,8 @@
                 var mapWidth = $('#main').width();
                 var mapLeft = $('.acf-map').parent('div').position().left;
             } else {
-                var mapHeight = $('#main').width();
-                var mapWidth = $('#main').width();
+                var mapHeight = $('.acf-map').parent('div').width();
+                var mapWidth = $('.acf-map').parent('div').width();
                 var mapLeft = 0;
             }
 
