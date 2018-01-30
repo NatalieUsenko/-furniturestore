@@ -6,6 +6,11 @@
         height: 400px;
         margin: -50px -15px -50px 0;
     }
+    @media (min-width: 992px){
+        .acf-map {
+            margin: 35px 0 0;
+        }
+    }
 
     /* fixes potential theme css conflict */
     .acf-map img {
@@ -16,7 +21,14 @@
         position: absolute;
         top: 0px;
         left: 50px;
-        z-index: 100;
+        z-index: 9;
+    }
+    @media (min-width: 992px){
+        .acf-map-title.page-title{
+            position: relative;
+            top: auto;
+            left: auto;
+        }
     }
 </style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe_0rVt1WvsSNi8WGYeBWbUYqp3oiiubg"></script>
@@ -193,9 +205,17 @@
         });
 
         $(window).resize(function() {
-            var mapHeight = $('footer').position().top-$('#main').position().top;
-            var mapWidth = $('#main').width();
-            var mapLeft = $('.acf-map').parent('div').position().left;
+            var windowWidth = $(window).width();
+            if ( windowWidth > 992 ) {
+                var mapHeight = $('footer').position().top-$('#main').position().top;
+                var mapWidth = $('#main').width();
+                var mapLeft = $('.acf-map').parent('div').position().left;
+            } else {
+                var mapHeight = $('#main').width();
+                var mapWidth = $('#main').width();
+                var mapLeft = 0;
+            }
+
             $('.acf-map').css('height', mapHeight+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
             google.maps.event.trigger(map, 'resize');
         });
