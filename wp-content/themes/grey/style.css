@@ -336,6 +336,13 @@ button[type='submit']:active{
 	float: left;
 }
 
+header.not-fixed{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
 header.fixed{
 	padding-top: 15px;
 	padding-bottom: 15px;
