@@ -6,7 +6,7 @@
         height: 400px;
         margin: -50px -15px -50px 0;
     }
-    @media (min-width: 992px){
+    @media (max-width: 992px){
         .acf-map {
             margin: 35px 0 0;
         }
@@ -23,7 +23,7 @@
         left: 50px;
         z-index: 9;
     }
-    @media (min-width: 992px){
+    @media (max-width: 992px){
         .acf-map-title.page-title{
             position: relative;
             top: auto;
