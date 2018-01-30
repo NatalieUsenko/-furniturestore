@@ -361,9 +361,13 @@ header.fixed{
 	display: table;
 	width: 100%;
 }
-.as-table-cell,
-header.not-fixed .as-table-cell.show-always{
+.as-table-cell{
 	display: table-cell;
+}
+header.not-fixed .as-table-cell.show-always {
+	display: table-cell;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 header.not-fixed .as-table-cell{
