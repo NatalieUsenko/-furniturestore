@@ -336,7 +336,7 @@ button[type='submit']:active{
 	float: left;
 }
 
-header{
+header.fixed{
 	padding-top: 15px;
 	padding-bottom: 15px;
 	-webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.17);
@@ -345,7 +345,7 @@ header{
 }
 
 @media (min-width: 1200px){
-	header .logo{
+	header.fixed .logo{
 		max-width: 200px;
 	}
 }

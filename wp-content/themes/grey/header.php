@@ -14,7 +14,7 @@
 
     <div id="content" class="site-content">
 
-        <header id="masthead" class="site-header" role="banner">
+        <header id="masthead" class="site-header fixed" role="banner">
             <div class="container container-fluid">
                 <div class="as-table-row">
                     <div class="logo as-table-cell text-left">
