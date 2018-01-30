@@ -354,8 +354,13 @@ header.fixed{
 	display: table;
 	width: 100%;
 }
-.as-table-cell{
+.as-table-cell,
+header.not-fixed .as-table-cell.show-always{
 	display: table-cell;
+}
+
+header.not-fixed .as-table-cell{
+	display: none;
 }
 
 a.emaillink{

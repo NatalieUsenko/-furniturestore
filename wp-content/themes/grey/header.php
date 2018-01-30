@@ -14,7 +14,7 @@
 
     <div id="content" class="site-content">
 
-        <header id="masthead" class="site-header fixed" role="banner">
+        <header id="masthead" class="site-header not-fixed" role="banner">
             <div class="container container-fluid">
                 <div class="as-table-row">
                     <div class="logo as-table-cell text-left">
@@ -52,7 +52,7 @@
                             ?>
                         </div>
                     </div>
-                    <div class="as-table-cell text-right">
+                    <div class="as-table-cell text-right show-always">
                         <?php
                         $url = get_field('contacts_fb', 7);
                         if (@file_get_contents($url)){
