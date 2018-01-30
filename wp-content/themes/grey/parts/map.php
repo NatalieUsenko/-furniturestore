@@ -192,11 +192,18 @@
         var map = null;
 
         $(document).ready(function(){
-            mapHeight = $('footer').position().top-$('#main').position().top;
-            mapWidth = $('#main').width();
+            var windowWidth = $(window).width();
+            if ( windowWidth > 992 ) {
+                var mapHeight = $('footer').position().top-$('#main').position().top;
+                var mapWidth = $('#main').width();
+                var mapLeft = $('.acf-map').parent('div').position().left;
+            } else {
+                var mapHeight = $('.acf-map').parent('div').width();
+                var mapWidth = $('.acf-map').parent('div').width();
+                var mapLeft = 0;
+            }
 
             $('.acf-map').each(function(){
-                var mapLeft = $(this).parent('div').position().left;
                 $(this).css('height', mapHeight+'px').css('width', Math.ceil(mapWidth-mapLeft)+'px');
                 // create map
                 map = new_map( $(this) );
