@@ -302,7 +302,8 @@ form{
 .form-control:active{
 	background: transparent;
 }
-button[type='submit']{
+button[type='submit'],
+input[type='submit']{
 	color: #fff;
 	font-size: 1.125em;
 	text-transform: uppercase;
@@ -311,7 +312,9 @@ button[type='submit']{
 	border: 1px solid #3b3b3b;
 }
 button[type='submit']:focus,
-button[type='submit']:active{
+button[type='submit']:active,
+input[type='submit']:focus,
+input[type='submit']:active{
 	background-color: transparent;
 	color: #3b3b3b;
 	outline: none;

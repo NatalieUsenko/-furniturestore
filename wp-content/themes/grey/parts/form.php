@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-6">
         <div class="form-group">
-            <input id="form_name" name="form_email" type="text" placeholder="E-mail" class="form-control" required="required">
+            <input id="form_email" name="form_email" type="text" placeholder="E-mail" class="form-control" required="required">
         </div>
     </div>
     <div class="col-md-12">
