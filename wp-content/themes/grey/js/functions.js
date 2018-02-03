@@ -1,5 +1,6 @@
 ( function( $ ) {
     $(document).ready(function() {
+        console.log('ready');
         $('#masthead').mouseenter(function () {
             console.log('mouseenter');
             $(this).addClass('fixed').removeClass('not-fixed');
