@@ -1,10 +1,9 @@
 ( function( $ ) {
     $(document).ready(function() {
-        $('.not-fixed').on('mouseenter', function () {
+        $('#masthead').mouseenter(function () {
             console.log('mouseenter');
             $(this).addClass('fixed').removeClass('not-fixed');
-        });
-        $('.fixed').on('mouseleave', function () {
+        }).mouseleave(function () {
             console.log('mouseleave');
             $(this).addClass('not-fixed').removeClass('fixed');
         });
