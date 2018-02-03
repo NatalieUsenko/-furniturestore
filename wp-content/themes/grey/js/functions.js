@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
     console.log('ready');
     $('#masthead').mouseenter(function () {
         console.log('mouseenter');
