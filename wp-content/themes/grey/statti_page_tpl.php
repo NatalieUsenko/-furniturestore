@@ -11,7 +11,8 @@ $top_args = array(
     'meta_query' => array(
         'book_color' => array(
             'key'     => 'is_top',
-            'compare' => 'EXISTS',
+            'value' => 'true',
+            'compare' => 'LIKE',
         ),
     ),
 );
