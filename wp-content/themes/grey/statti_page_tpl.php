@@ -24,9 +24,9 @@ while ( $top_news->have_posts() ) {
 }
 
 ?>
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area <?php echo $big_img?'top-news_img':'';?>" <?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>>
         <main id="main" class="site-main" role="main">
-                <div class="container-fluid container" <?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>>
+                <div class="container-fluid container" >
                     <h1 class="page-title"><?php echo esc_html( get_the_title() ); ?></h1>
                     <?php if ( have_posts() ) : ?>
 
