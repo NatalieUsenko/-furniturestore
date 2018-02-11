@@ -34,11 +34,11 @@ $top_news = new WP_Query($top_args);
                         <?php
                         the_date('d.m.Y');
                         the_title(); // выведем заголовок поста
-                        echo cutString( the_content(), 250);
+                        echo cutString( the_content(), 50);
                     }
                     ?>
                     </div>
-                    <div class="col-md-7 top-news_img" style="background-image: url("<?php echo $big_img;?>");"> </div>
+                    <div class="col-md-7 top-news_img" style="background-image: url(<?php echo $big_img;?>);"> </div>
                 <?php
                 endif;
                 ?>
