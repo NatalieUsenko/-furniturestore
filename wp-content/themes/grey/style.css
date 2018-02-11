@@ -533,7 +533,7 @@ footer.site-footer{
 	font-size: 0.75em;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 15px;
 }
 .post-list_link-more a{
 	text-decoration: underline;
