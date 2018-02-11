@@ -26,9 +26,8 @@ while ( $top_news->have_posts() ) {
     $big_img = get_field('big_img', get_the_ID());
     $top_news_content = get_the_content();
 }
-var_dump($exclude_ids);
 $news_args = array(
-    'posts_per_page' => 4,
+   // 'posts_per_page' => 4,
     'post_status' => 'publish',
     'order' => 'DESC',
     'post__not_in' => $exclude_ids
@@ -55,7 +54,7 @@ $list_news = new WP_Query($news_args);
                      <div class="container-fluid container">
                     <?php while ( $list_news->have_posts() ) {
                         $list_news->the_post();?>
-                        <div class="col-md-6">
+                        <div class="col-md-6 post-list">
                             <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
                             <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
                             <div class="post-list_title"><?php echo get_the_title();?></div>
