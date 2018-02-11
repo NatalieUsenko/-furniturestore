@@ -22,7 +22,7 @@ $top_news = new WP_Query($top_args);
 while ( $top_news->have_posts() ) {
     $top_news->the_post();
     $top_news_id = get_the_ID();
-    $exclude_ids = array_push($top_news_id);
+    array_push($exclude_ids, $top_news_id);
     $big_img = get_field('big_img', get_the_ID());
     $top_news_content = get_the_content();
 }
