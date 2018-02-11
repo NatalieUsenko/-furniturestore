@@ -35,7 +35,7 @@ $top_news = new WP_Query($top_args);
                         echo '<pre>';
                         var_dump($big_img);
                         echo '</pre>';
-                        echo cutString($top_news_content, 250);
+                        echo $top_news_content; //cutString($top_news_content, 250);
                     }
                     ?>
                     </div>
