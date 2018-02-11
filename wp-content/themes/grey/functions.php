@@ -61,3 +61,9 @@ function contact_form(){
     $content = file_get_contents(get_template_directory().'/parts/form.php');
     return $content;
 }
+
+function cutString($string, $maxlen) {
+    $len = (mb_strlen($string) > $maxlen)? mb_strripos(mb_substr($string, 0, $maxlen), ' ') : $maxlen;
+    $cutStr = mb_substr($string, 0, $len);
+    return (mb_strlen($string) > $maxlen)? $cutStr.' ...' : $cutStr;
+}
