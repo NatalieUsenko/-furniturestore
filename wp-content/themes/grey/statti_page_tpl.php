@@ -11,7 +11,7 @@ $top_args = array(
     'meta_query' => array(
         'book_color' => array(
             'key'     => 'is_top',
-            'value' => 'true',
+            'value' => '1',
             'compare' => 'LIKE',
         ),
     ),
