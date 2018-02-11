@@ -517,7 +517,7 @@ footer.site-footer{
 .post-list{
 	margin: 15px 0;
 	padding-left: 115px;
-	padding-bottom: 35px;
+	padding-bottom: 25px;
 	position: relative;
 }
 .post-list_img{
@@ -547,7 +547,7 @@ footer.site-footer{
 .post-list_date{
 	color: #fff;
 	background: #888888;
-	padding: 5px 15px;
+	padding: 3px 15px;
 	margin-bottom: 15px;
 	display: inline-block;
 }
