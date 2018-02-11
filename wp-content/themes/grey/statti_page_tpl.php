@@ -26,13 +26,15 @@ while ( $top_news->have_posts() ) {
     $big_img = get_field('big_img', get_the_ID());
     $top_news_content = get_the_content();
 }
+$paged = (get_query_var('page')) ? get_query_var('page') : 1;
 $news_args = array(
-   // 'posts_per_page' => 4,
+    'posts_per_page' => 2,
     'post_status' => 'publish',
     'order' => 'DESC',
+    'paged' => $paged,
     'post__not_in' => $exclude_ids
 );
-$list_news = new WP_Query($news_args);
+$wp_query = new WP_Query($news_args);
 
 ?>
     <div id="primary" class="content-area <?php echo $big_img?'top-news_img':'';?>" <?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>>
@@ -53,8 +55,8 @@ $list_news = new WP_Query($news_args);
                     <?php }?>
                     <div class="clearfix"></div>
                      <div class="container-fluid container mt-50">
-                    <?php while ( $list_news->have_posts() ) {
-                        $list_news->the_post();?>
+                    <?php while ( $wp_query->have_posts() ) {
+                        $wp_query->the_post();?>
                         <div class="col-md-6 post-list">
                             <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
                             <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
@@ -62,10 +64,16 @@ $list_news = new WP_Query($news_args);
                             <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
                             <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
                         </div>
-
-
-
                     <?php }?>
+                         <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+                             <script>
+                                 var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+                                 var true_posts = '<?php echo serialize($wp_query->query_vars); ?>';
+                                 var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                                 var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+                             </script>
+                             <div id="true_loadmore">Загрузить ещё</div>
+                         <?php endif; ?>
                     </div>
                 <?php endif;?>
 

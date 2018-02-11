@@ -67,3 +67,35 @@ function cutString($string, $maxlen) {
     $cutStr = mb_substr($string, 0, $len);
     return (mb_strlen($string) > $maxlen)? $cutStr.' ...' : $cutStr;
 }
+
+function true_load_posts(){
+
+    $args = unserialize( stripslashes( $_POST['query'] ) );
+    $args['paged'] = $_POST['page'] + 1; // следующая страница
+    $args['post_status'] = 'publish';
+
+    // обычно лучше использовать WP_Query, но не здесь
+    query_posts( $args );
+    // если посты есть
+    if( have_posts() ) :
+
+        // запускаем цикл
+        while( have_posts() ): the_post();?>
+
+            <div class="col-md-6 post-list">
+                <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
+                <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
+                <div class="post-list_title"><?php echo get_the_title();?></div>
+                <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
+                <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
+            </div>
+<?php
+        endwhile;
+
+    endif;
+    die();
+}
+
+
+add_action('wp_ajax_loadmore', 'true_load_posts');
+add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
