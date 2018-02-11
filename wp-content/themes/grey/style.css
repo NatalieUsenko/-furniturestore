@@ -521,6 +521,7 @@ footer.site-footer{
 	position: relative;
 }
 .post-list_img{
+	float: left;
 	margin-left: -165px;
 }
 .post-list_link-more{
@@ -547,4 +548,5 @@ footer.site-footer{
 	background: #888888;
 	padding: 5px 15px;
 	margin-bottom: 15px;
+	display: inline-block;
 }
