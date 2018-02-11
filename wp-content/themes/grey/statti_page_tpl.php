@@ -30,19 +30,20 @@ while ( $top_news->have_posts() ) {
         <main id="main" class="site-main" role="main">
             <div class="container-fluid container" >
                 <h1 class="page-title"><?php echo esc_html( get_the_title($current_page_id) ); ?></h1>
+            </div>
                 <?php if ( have_posts() ) : ?>
                     <?php if ( $top_news->have_posts() ) { ?>
-                    <div class="col-md-5">
-                        <div class="top-news_dark">
-                            <div class="post-top_date"><?php echo get_the_date('d.m.Y', $top_news_id);?></div>
-                            <div class="post-top_title"><?php echo get_the_title($top_news_id);?></div>
-                            <div class="post-top_expert"><?php echo cutString( $top_news_content, 250);?></div>
-                            <div class="post-top_more-link"><a href="<?php echo get_the_permalink($top_news_id);?>">Детальнее</a></div>
-                        </div>
+
+                    <div class="top-news_dark">
+                        <div class="post-top_date"><?php echo get_the_date('d.m.Y', $top_news_id);?></div>
+                        <div class="post-top_title"><?php echo get_the_title($top_news_id);?></div>
+                        <div class="post-top_expert"><?php echo cutString( $top_news_content, 150);?></div>
+                        <div class="post-top_more-link"><a href="<?php echo get_the_permalink($top_news_id);?>">Детальнее</a></div>
                     </div>
+
                     <?php }?>
                 <?php endif;?>
-            </div>
+
 
         </main><!-- .site-main -->
     </div><!-- .content-area -->
