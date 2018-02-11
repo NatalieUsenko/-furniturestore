@@ -29,7 +29,7 @@ $news_args = array(
     'posts_per_page' => 4,
     'post_status' => 'publish',
     'order' => 'DESC',
-    //'post__not_in' => '"'.$top_news_id.'"'
+    'post__not_in' => 'array('.$top_news_id.')'
 );
 $list_news = new WP_Query($news_args);
 
