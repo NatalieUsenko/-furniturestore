@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/AJAX_in_Plugins
  */
-die('TEST2');
+
 /**
  * Executing Ajax process.
  *

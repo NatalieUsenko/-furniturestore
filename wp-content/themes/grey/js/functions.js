@@ -25,6 +25,10 @@ jQuery(function($){
                 } else {
                     $('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
                 }
+            },
+            error: function (error) {
+                $('#true_loadmore').text('Загрузить ещё');
+                console.error(error);
             }
         });
     });
