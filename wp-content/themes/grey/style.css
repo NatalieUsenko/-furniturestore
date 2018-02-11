@@ -470,7 +470,7 @@ footer.site-footer{
 }
 @media (max-width: 768px){
 	.top-news_img{
-		background-image: none;!important;
+		background-image: none!important;
 	}
 }
 .top-news_dark{
@@ -494,7 +494,7 @@ footer.site-footer{
 @media (max-width: 768px){
 	.top-news_dark{
 		width: 100%;
-		padding-left: 25px;
+		padding-left: 0;
 	}
 }
 .post-top_title{
@@ -525,6 +525,9 @@ footer.site-footer{
 		bottom: auto;
 		top: auto;
 		text-align: center;
+	}
+	.post-top_more-link>a{
+		width: auto;
 	}
 }
 .post-top_more-link>a:hover{
