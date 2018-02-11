@@ -465,5 +465,5 @@ footer.site-footer{
 /*********************************** Top Block ************************************************/
 .top-news_img{
 	padding-top: 46%;
-	background-size: 100% auto;
+	background-size: auto 100%;
 }
