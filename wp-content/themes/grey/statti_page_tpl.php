@@ -32,9 +32,9 @@ $top_news = new WP_Query($top_args);
                         ?>
                     <div class="col-md-5">
                         <?php
-                        the_date();
+                        the_date('d.m.Y');
                         the_title(); // выведем заголовок поста
-                        echo cutString( the_title(), 250);
+                        echo cutString( the_content(), 250);
                     }
                     ?>
                     </div>
