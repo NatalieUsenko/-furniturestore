@@ -38,7 +38,7 @@ $top_news = new WP_Query($top_args);
                     }
                     ?>
                     </div>
-                    <div class="col-md-7 top-news_img" style="<?php echo $big_img;?>"> </div>
+                    <div class="col-md-7 top-news_img" style="background-image: url("<?php echo $big_img;?>");"> </div>
 
                 </div>
             <?php
