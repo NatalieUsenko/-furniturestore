@@ -5,7 +5,7 @@ Template Post Type: page
 */
 get_header();
 $current_page_id = get_the_ID();
-$top_news_id = 0;
+$exclude_ids = array();
 $top_args = array(
     'posts_per_page' => 1,
     'post_status' => 'publish',
@@ -22,6 +22,7 @@ $top_news = new WP_Query($top_args);
 while ( $top_news->have_posts() ) {
     $top_news->the_post();
     $top_news_id = get_the_ID();
+    $exclude_ids = array_push($top_news_id);
     $big_img = get_field('big_img', get_the_ID());
     $top_news_content = get_the_content();
 }
@@ -29,7 +30,7 @@ $news_args = array(
     'posts_per_page' => 4,
     'post_status' => 'publish',
     'order' => 'DESC',
-    'post__not_in' => 'array(41)'
+    'post__not_in' => $exclude_ids
 );
 $list_news = new WP_Query($news_args);
 
