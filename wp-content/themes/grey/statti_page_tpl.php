@@ -31,7 +31,7 @@ while ( $top_news->have_posts() ) {
                     <?php if ( have_posts() ) : ?>
 
                     <?php
-                    while ( $top_news->have_posts() ) { ?>
+                    if ( $top_news->have_posts() ) { ?>
 
                     <div class="col-md-5">
                         <?php
