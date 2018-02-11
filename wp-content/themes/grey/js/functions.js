@@ -1,3 +1,4 @@
+var $ = jQuery;
 jQuery(document).ready(function($) {
     $('#masthead').mouseenter(function () {
         $(this).addClass('fixed').removeClass('not-fixed');
