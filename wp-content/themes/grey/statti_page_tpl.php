@@ -20,8 +20,8 @@ $top_news = new WP_Query($top_args);
 ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-            <div class="container-fluid">
-                <div class="container">
+
+                <div class="container-fluid container">
                     <h1 class="page-title"><?php echo esc_html( get_the_title() ); ?></h1>
                     <?php if ( have_posts() ) : ?>
                         <?php
@@ -44,7 +44,7 @@ $top_news = new WP_Query($top_args);
                     <?php
                     endif;
                     ?>
-            </div>
+
             <div class="container-fluid container">
                 <h1 class="page-title"><?php echo esc_html( get_the_title() ); ?></h1>
             </div>
