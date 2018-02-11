@@ -505,4 +505,5 @@ footer.site-footer{
 .post-top_more-link>a:hover{
 	padding: 14px;
 	border: 2px solid #fff;
+	text-decoration: none;
 }
