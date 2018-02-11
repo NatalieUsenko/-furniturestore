@@ -25,7 +25,7 @@ $top_news = new WP_Query($top_args);
                     <?php
                     while ( $top_news->have_posts() ) {
                         $top_news->the_post();
-                        $big_img = get_field('big_img');
+                        $big_img = get_field('big_img', get_the_ID());
                         $top_news_content = get_the_content();
                         ?>
                     <div class="col-md-5">
