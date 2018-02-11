@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     });
 });
 
-jQuery(window).load(function ($) {
+$(window).load(function () {
     if ( $('.top-news_dark').length > 0 ){
         var windowWidth = $(window).width();
         var leftStart = $('h1').position().left;
