@@ -28,7 +28,7 @@ while ( $top_news->have_posts() ) {
 }
 $paged = (get_query_var('page')) ? get_query_var('page') : 1;
 $news_args = array(
-    'posts_per_page' => 2,
+   // 'posts_per_page' => 2,
     'post_status' => 'publish',
     'order' => 'DESC',
     'paged' => $paged,
@@ -46,6 +46,7 @@ $wp_query = new WP_Query($news_args);
                     <?php if ( $top_news->have_posts() ) { ?>
 
                     <div class="top-news_dark">
+                        <div class="hidden-lg hidden-md"><img src="<?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>"></div>
                         <div class="post-top_date"><?php echo get_the_date('d.m.Y', $top_news_id);?></div>
                         <div class="post-top_title"><?php echo get_the_title($top_news_id);?></div>
                         <div class="post-top_expert"><?php echo cutString( $top_news_content, 150);?></div>
@@ -72,7 +73,7 @@ $wp_query = new WP_Query($news_args);
                                  var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
                                  var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
                              </script>
-                             <div id="true_loadmore">Загрузить ещё</div>
+                             <div align="center" id="true_loadmore">Загрузить ещё</div>
                          <?php endif; ?>
                     </div>
                 <?php endif;?>
