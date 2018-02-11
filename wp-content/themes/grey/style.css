@@ -461,3 +461,9 @@ footer.site-footer{
 	padding-bottom: 20px;
 	background: url("img/icon-pin.png") top left no-repeat;
 }
+
+/*********************************** Top Block ************************************************/
+.top-news_img{
+	padding-top: 46%;
+	background-size: 100% auto;
+}

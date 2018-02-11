@@ -20,9 +20,9 @@ $top_news = new WP_Query($top_args);
 ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
+            <div class="container-fluid container">
             <h1 class="page-title"><?php echo esc_html( get_the_title() ); ?></h1>
-            <?php if ( have_posts() ) : ?>
-                <div class="container-fluid container">
+                <?php if ( have_posts() ) : ?>
                     <?php
                     while ( $top_news->have_posts() ) {
                         $top_news->the_post();
@@ -39,15 +39,14 @@ $top_news = new WP_Query($top_args);
                     ?>
                     </div>
                     <div class="col-md-7 top-news_img" style="background-image: url("<?php echo $big_img;?>");"> </div>
-
+                <?php
+                endif;
+                ?>
                 </div>
-            <?php
-            endif;
-            ?>
+
 
         </main><!-- .site-main -->
     </div><!-- .content-area -->
 
 <?php
-include "parts/map.php";
 get_footer();
