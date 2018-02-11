@@ -27,20 +27,18 @@ $top_news = new WP_Query($top_args);
                     while ( $top_news->have_posts() ) {
                         $top_news->the_post();
                         $big_img = get_field('big_img', get_the_ID());
+
                         $top_news_content = get_the_content();
                         ?>
                     <div class="col-md-5">
                         <?php
-
+                        the_date();
                         the_title(); // выведем заголовок поста
-                        echo '<pre>';
-                        var_dump($big_img);
-                        echo '</pre>';
-                        echo $top_news_content; //cutString($top_news_content, 250);
+                        echo cutString( $top_news_content, 250);
                     }
                     ?>
                     </div>
-                    <div class="col-md-7"></div>
+                    <div class="col-md-7 top-news_img" style="<?php echo $big_img;?>"> </div>
 
                 </div>
             <?php
