@@ -69,7 +69,7 @@ function cutString($string, $maxlen) {
 }
 
 function true_load_posts(){
-
+die('TEST');
     $args = unserialize( stripslashes( $_POST['query'] ) );
     $args['paged'] = $_POST['page'] + 1; // следующая страница
     $args['post_status'] = 'publish';
