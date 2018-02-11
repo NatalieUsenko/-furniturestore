@@ -468,7 +468,7 @@ footer.site-footer{
 	background-repeat: no-repeat;
 	background-position: top right;
 }
-@media (min-width: 768px){
+@media (max-width: 768px){
 	.top-news_img{
 		background-image: none;!important;
 	}
@@ -491,6 +491,11 @@ footer.site-footer{
 .top-news_dark a:focus{
 	color: #fff;
 }
+@media (max-width: 768px){
+	.top-news_dark{
+		width: 100%;
+	}
+}
 .post-top_title{
 	font-size: 1.5em;
 	margin-bottom: 15px;
@@ -512,6 +517,13 @@ footer.site-footer{
 	padding: 15px;
 	border: 1px solid #fff;
 	font-size: 1.125em;
+}
+@media (max-width: 768px){
+	.post-top_more-link{
+		position: relative;
+		bottom: auto;
+		top: auto;
+	}
 }
 .post-top_more-link>a:hover{
 	padding: 14px;
