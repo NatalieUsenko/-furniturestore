@@ -464,7 +464,23 @@ footer.site-footer{
 
 /*********************************** Top Block ************************************************/
 .top-news_img{
-	background-size: auto 57.77%;
+	background-size: 55% auto;
 	background-repeat: no-repeat;
 	background-position: top right;
+}
+.top-news_dark{
+	background: rgba(33,33,33,0.83);
+	color: #fff;
+	padding: 35px 30px 30px 0;
+}
+.top-news_dark a,
+.top-news_dark a:hover,
+.top-news_dark a:focus{
+	color: #fff;
+}
+.post-top_title{
+	font-size: 1.5em;
+}
+.post-top_expert{
+	font-size: 0.875em;
 }
