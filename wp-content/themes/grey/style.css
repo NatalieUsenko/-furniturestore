@@ -528,6 +528,7 @@ footer.site-footer{
 	}
 	.post-top_more-link>a{
 		width: auto;
+		display: inline-block;
 	}
 }
 .post-top_more-link>a:hover{
