@@ -471,9 +471,10 @@ footer.site-footer{
 .top-news_dark{
 	background: rgba(33,33,33,0.83);
 	color: #fff;
-	padding: 35px 20% 30px 0;
+	padding: 25px 20% 30px 0;
 	width: 65%;
 	position: relative;
+	margin-bottom: 45px;
 }
 .top-news_dark a,
 .top-news_dark a:hover,
