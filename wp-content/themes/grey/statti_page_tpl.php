@@ -34,7 +34,7 @@ $top_news = new WP_Query($top_args);
                         <?php
                         the_date();
                         the_title(); // выведем заголовок поста
-                        echo cutString( $top_news_content, 250);
+                        echo cutString( the_title(), 250);
                     }
                     ?>
                     </div>
