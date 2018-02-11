@@ -16,7 +16,7 @@ $(window).load(function () {
         var darkHeight = $('.top-news_dark').outerHeight();
         var imgHeight = Math.ceil(515*windowWidth/(1125));
         var diffHeight = 0;
-        diffHeight = Math.ceil(imgHeight - imgHeight - $('h1').position().top - $('h1').height());
+        diffHeight = Math.ceil(imgHeight - darkHeight - $('h1').position().top - $('h1').height());
         if ( diffHeight > 0 ){
             $('.top-news_dark').css('margin-top', diffHeight+'px');
         }
