@@ -494,6 +494,7 @@ footer.site-footer{
 @media (max-width: 768px){
 	.top-news_dark{
 		width: 100%;
+		padding-left: 25px;
 	}
 }
 .post-top_title{
@@ -523,6 +524,7 @@ footer.site-footer{
 		position: relative;
 		bottom: auto;
 		top: auto;
+		text-align: center;
 	}
 }
 .post-top_more-link>a:hover{
@@ -530,6 +532,7 @@ footer.site-footer{
 	border: 2px solid #fff;
 	text-decoration: none;
 }
+
 /************************************** List of posts *********************************************/
 .post-list{
 	margin: 15px 0;
