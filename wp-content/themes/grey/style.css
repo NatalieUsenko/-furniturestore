@@ -516,13 +516,13 @@ footer.site-footer{
 /************************************** List of posts *********************************************/
 .post-list{
 	margin: 15px 0;
-	padding-left: 165px;
+	padding-left: 115px;
 	padding-bottom: 35px;
 	position: relative;
 }
 .post-list_img{
 	float: left;
-	margin-left: -165px;
+	margin-left: -115px;
 }
 .post-list_link-more{
 	font-size: 0.75em;
@@ -532,13 +532,14 @@ footer.site-footer{
 }
 .post-list_link-more a{
 	text-decoration: underline;
+	color: #000;
 }
 .post-list_link-more a:hover{
 	text-decoration: none;
+	color: #000;
 }
 .post-list_expert{
 	font-size: 0.875em;
-	margin-top: 15px;
 }
 .post-list_title{
 	font-size: 1.125em;
