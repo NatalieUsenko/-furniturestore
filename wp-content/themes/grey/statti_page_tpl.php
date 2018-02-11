@@ -29,7 +29,7 @@ $news_args = array(
     'posts_per_page' => 4,
     'post_status' => 'publish',
     'order' => 'DESC',
-    //'post__not_in' => $top_news_id
+    'post__not_in' => '"'.$top_news_id.'"'
 );
 $list_news = new WP_Query($news_args);
 
@@ -55,7 +55,7 @@ $list_news = new WP_Query($news_args);
                         $list_news->the_post();?>
                         <div class="col-md-6">
                             <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
-                            <div class="post-list_date"><?php echo get_the_date(d.m.Y);?></div>
+                            <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
                             <div class="post-list_title"><?php get_the_title();?></div>
                             <div class="post-list_expert">><?php echo cutString( get_the_content(), 120);?></div>
                             <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
