@@ -51,7 +51,7 @@ $list_news = new WP_Query($news_args);
                     </div>
 
                     <?php }?>
-                     <div class="container-fluid container">
+                     <div class="container-fluid container mt-50">
                     <?php while ( $list_news->have_posts() ) {
                         $list_news->the_post();?>
                         <div class="col-md-6 post-list">
