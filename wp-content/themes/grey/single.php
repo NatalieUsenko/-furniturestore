@@ -1,7 +1,14 @@
 <?php
 get_header();
+$image_url = get_field('big_img');
+if (!empty($image_url)){
+    $image_id = get_image_id($image_url);
+    $image_thumb = wp_get_attachment_image_src($image_id, 'medium');
+    echo $image_thumb[0];
+}
+
 ?>
-<div id="primary" class="content-area <?php echo $big_img?'top-news_img':'';?>" <?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>>
+<div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <div class="container-fluid container" >
             <?php if ( have_posts() ) { while ( have_posts() ){ the_post();?>

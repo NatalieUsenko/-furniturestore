@@ -92,7 +92,12 @@ function true_load_posts(){
     endif;
     die();
 }
-
-
 add_action('wp_ajax_loadmore', 'true_load_posts');
 add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
+
+// retrieves the attachment ID from the file URL
+function get_image_id($image_url) {
+    global $wpdb;
+    $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url ));
+    return $attachment[0];
+}
