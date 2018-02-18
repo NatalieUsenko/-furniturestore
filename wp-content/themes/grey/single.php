@@ -3,7 +3,7 @@ get_header();
 $image_url = get_field('big_img');
 if (!empty($image_url)){
     $image_id = get_image_id($image_url);
-    $image_thumb = wp_get_attachment_image_src($image_id, 'post-thumbnails');
+    $image_thumb = wp_get_attachment_image_src($image_id, 'middle');
     echo $image_thumb[0];
 }
 
