@@ -17,7 +17,7 @@ var_dump($recomended);
             <?php if ( have_posts() ) { while ( have_posts() ){ the_post();?>
 
                 <div>
-                    <div class="post_img"><?php echo $image_thumb[0]?'<img src="'.$image_thumb[0].'">':'';?>
+                    <div class="post_img"><?php echo !empty($image_thumb[0])?'<img src="'.$image_thumb[0].'">':'';?>
                         <div class="as-table-row">
                             <div class="col-xs-6 no-padding-left as-table-cell">
                                 Рассказать друзьм <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
