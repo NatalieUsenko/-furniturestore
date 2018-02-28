@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Статьи
+Template Name: Каталог
 Template Post Type: page
 */
 get_header();
