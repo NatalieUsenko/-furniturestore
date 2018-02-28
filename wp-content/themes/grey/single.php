@@ -1,5 +1,6 @@
 <?php
 get_header();
+$image_thumb = [];
 $image_url = get_field('big_img');
 if (!empty($image_url)){
     $image_id = get_image_id($image_url);
