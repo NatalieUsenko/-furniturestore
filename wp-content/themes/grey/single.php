@@ -11,18 +11,19 @@ if (!empty($image_url)){
     <main id="main" class="site-main" role="main">
         <div class="container-fluid container" >
             <?php if ( have_posts() ) { while ( have_posts() ){ the_post();?>
-                <div class="post_img"><?php echo $image_thumb[0]?'<img src="'.$image_thumb[0].'">':'';?>
-                    <div class="as-table-row">
-                        <div class="col-xs-6 no-padding-left as-table-cell">
-                            Рассказать друзьм <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
+
+                <div>
+                    <div class="post_img"><?php echo $image_thumb[0]?'<img src="'.$image_thumb[0].'">':'';?>
+                        <div class="as-table-row">
+                            <div class="col-xs-6 no-padding-left as-table-cell">
+                                Рассказать друзьм <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
+                            </div>
+                            <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><< Все статьи</a></div>
                         </div>
-                        <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><< Все статьи</a></div>
                     </div>
-                </div>
-                <div class="pull-left">
-                    <div class="post_date"><?php echo get_the_date('d.m.Y');?></div>
-                    <h1 class="post_title"><?php echo esc_html( get_the_title() ); ?></h1>
-                    <div class="post_content"><?php echo  get_the_content();?></div>
+                    <p class="post_date"><?php echo get_the_date('d.m.Y');?></p>
+                    <p class="post_title"><?php echo esc_html( get_the_title() ); ?></p>
+                    <p class="post_content"><?php echo  get_the_content();?></p>
                 </div>
             <?php }}?>
         </div>
