@@ -28,13 +28,13 @@ $recomend = get_field('recomended');
                     <div class="post_content"><?php echo get_the_content_with_formatting();;?></div>
                 </div>
                 <?php if ($recomend){?>
-                    <div class="post_title">Рекомендуем прочитать</div>
+                    <div class="post_title mt-50">Рекомендуем прочитать</div>
                     <?php foreach ($recomend as $value){
 			            $categories = get_the_category();
 			            ?>
                         <div class="col-md-6 post-list">
                             <div class="post-list_img"><?php echo get_the_post_thumbnail($value,'thumbnail');?></div>
-                            <div class="post-list_date"><?php echo ($categories[0]->term_id==1)?$categories[0]->name : get_the_date('d.m.Y', $value);?></div>
+                            <div class="post-list_date"><?php echo ($categories[0]->term_id!=1)?$categories[0]->name : get_the_date('d.m.Y', $value);?></div>
                             <div class="post-list_title"><?php echo get_the_title($value);?></div>
                             <div class="post-list_expert"><?php echo cutString( get_the_content($value), 120);?></div>
                             <div class="post-list_link-more"><a href="<?php echo get_the_permalink($value);?>">Детальнее</a></div>
