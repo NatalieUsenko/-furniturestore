@@ -13,9 +13,9 @@ if (!empty($image_url)){
             <?php if ( have_posts() ) { while ( have_posts() ){ the_post();?>
                 <div class="post_img"><?php echo $image_thumb[0]?'<img src="'.$image_thumb[0].'">':'';?>
                     <div class="col-xs-6">
-                        Рассказать друзьм <a href="javascript:void(0);"><img src="img/fb-grey.png"></a>
+                        Рассказать друзьм <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
                     </div>
-                    <div class="col-xs-6 text-right"><a href="/stati"><< Все статьи</a></div>
+                    <div class="col-xs-6 text-right"><a href="<?php echo esc_url(home_url());?>/stati"><< Все статьи</a></div>
                 </div>
                 <div class="post_date"><?php echo get_the_date('d.m.Y');?></div>
                 <h1 class="post_title"><?php echo esc_html( get_the_title() ); ?></h1>
