@@ -12,6 +12,7 @@ $big_img = get_field('big_img');
 	<div class="container-fluid container" >
 		<h1 class="page-title"><?php echo esc_html( get_the_title($current_page_id) ); ?></h1>
 	</div>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<div class="top-news_dark">
 		<div class="hidden-lg hidden-md"><img src="<?php echo $big_img?$big_img:'';?>"></div>
@@ -23,6 +24,10 @@ $big_img = get_field('big_img');
 	<div class="container-fluid container mt-50">
 
 	</div>
+    <?php
+    endwhile;
+    endif;
+    ?>
 
 	</main><!-- .site-main -->
 	</div><!-- .content-area -->
