@@ -19,9 +19,11 @@ if (!empty($image_url)){
                         <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><< Все статьи</a></div>
                     </div>
                 </div>
-                <div class="post_date"><?php echo get_the_date('d.m.Y');?></div>
-                <h1 class="post_title"><?php echo esc_html( get_the_title() ); ?></h1>
-                <div class="post_content"><?php echo  get_the_content();?></div>
+                <div class="pull-left">
+                    <div class="post_date"><?php echo get_the_date('d.m.Y');?></div>
+                    <h1 class="post_title"><?php echo esc_html( get_the_title() ); ?></h1>
+                    <div class="post_content"><?php echo  get_the_content();?></div>
+                </div>
             <?php }}?>
         </div>
 
