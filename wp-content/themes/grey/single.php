@@ -5,6 +5,8 @@ if (!empty($image_url)){
     $image_id = get_image_id($image_url);
     $image_thumb = wp_get_attachment_image_src($image_id, 'medium');
 }
+$recomended = get_field('recomended');
+var_dump($recomended);
 
 ?>
 <div id="primary" class="content-area">
