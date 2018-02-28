@@ -17,7 +17,7 @@ $big_img = get_field('big_img');
 	<div class="top-catalogue_dark ">
 		<div class="hidden-lg hidden-md"><img src="<?php echo $big_img?$big_img:'';?>"></div>
 		<div class="post-top_content"><?php echo get_the_content_with_formatting();?></div>
-		<div class="post-top_more-link text-uppercase"><a href="javascript:void(0);">Каталог мебели</a></div>
+		<div class="post-top_more-link__catalogue text-uppercase"><a href="javascript:void(0);">Каталог мебели</a></div>
 	</div>
 
 	<div class="clearfix"></div>

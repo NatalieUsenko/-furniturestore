@@ -658,7 +658,7 @@ footer.site-footer{
     font-size: 1.5em;
     margin-bottom: 15px;
 }
-.post-top_more-link{
+.post-top_more-link__catalogue{
     position: absolute;
     top: 50%;
     left: auto;
