@@ -636,11 +636,11 @@ footer.site-footer{
     margin-bottom: 25px;
 }
 @media (min-width: 1920px){
-    .top-news_dark{
+    .top-catalogue_dark{
         margin-bottom: 45px;
     }
 }
-.top-cataloguedark a,
+.top-catalogue_dark a,
 .top-catalogue_dark a:hover,
 .top-catalogue_dark a:focus{
     color: #fff;
@@ -676,7 +676,6 @@ footer.site-footer{
     padding: 15px;
     border: 1px solid #fff;
     font-size: 1.125em;
-    color: #fff;
 }
 @media (max-width: 768px){
     .post-top_more-link__catalogue{
