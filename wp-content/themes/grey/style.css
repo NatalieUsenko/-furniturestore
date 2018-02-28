@@ -348,8 +348,6 @@ header.site-header{
 	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-header.not-fixed{
 	z-index: 99;
 }
 header.fixed{
@@ -577,4 +575,25 @@ footer.site-footer{
 	padding: 3px 15px;
 	margin-bottom: 15px;
 	display: inline-block;
+}
+/******************************************* Post inner ******************************************/
+.post_img{
+    float: right;
+    width: 50%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.post_img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.post_title{
+    font-size: 1.125em;
+    margin-bottom: 25px;
+}
+.post_content{
+    font-size: 0.875em;
+    margin-bottom: 25px;
 }
