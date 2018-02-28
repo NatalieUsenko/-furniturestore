@@ -608,3 +608,9 @@ footer.site-footer{
     display: block;
     clear: both;
 }
+@media (max-width: 768px){
+    .post_img {
+        float: none;
+        width: 100%;
+    }
+}
