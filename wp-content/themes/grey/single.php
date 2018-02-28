@@ -24,7 +24,7 @@ if (!empty($image_url)){
                     </div>
                     <div class="post_date"><?php echo get_the_date('d.m.Y');?></div>
                     <div class="post_title"><?php echo esc_html( get_the_title() ); ?></div>
-                    <div class="post_content"><?php echo  get_the_content();?></div>
+                    <div class="post_content"><?php echo get_the_content_with_formatting();;?></div>
                 </div>
             <?php }}?>
         </div>
