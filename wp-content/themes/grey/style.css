@@ -661,13 +661,13 @@ footer.site-footer{
 .post-top_more-link__catalogue{
     position: absolute;
     top: 50%;
-    left: -20%;
+    left: 0;
     min-width: 225px;
     text-align: center;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-125%);
+    -moz-transform: translateY(-50%) translateX(-125%);
+    -o-transform: translateY(-50%) translateX(-125%);
+    -webkit-transform: translateY(-50%) translateX(-125%);
 }
 .post-top_more-link__catalogue>a{
     display: block;
