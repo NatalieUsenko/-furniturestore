@@ -594,12 +594,21 @@ footer.site-footer{
     height: auto;
     margin-bottom: 15px;
 }
-
+.post_date{
+    float: left;
+}
 .post_title{
     font-size: 1.125em;
     margin-bottom: 25px;
+    float: left;
 }
 .post_content{
     font-size: 0.875em;
     margin-bottom: 25px;
+    float: left;
+}
+.post_content::after{
+    content: '';
+    display: block;
+    clear: both;
 }
