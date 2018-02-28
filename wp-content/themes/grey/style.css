@@ -683,6 +683,10 @@ footer.site-footer{
         bottom: auto;
         top: auto;
         text-align: center;
+        transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
     }
     .post-top_more-link__catalogue>a{
         width: auto;
