@@ -6,7 +6,7 @@ if (!empty($image_url)){
     $image_id = get_image_id($image_url);
     $image_thumb = wp_get_attachment_image_src($image_id, 'medium');
 }
-$recomended = get_field('recomended');
+$recomend = get_field('recomended');
 
 ?>
 <div id="primary" class="content-area">
@@ -27,12 +27,14 @@ $recomended = get_field('recomended');
                     <div class="post_title"><?php echo esc_html( get_the_title() ); ?></div>
                     <div class="post_content"><?php echo get_the_content_with_formatting();;?></div>
                 </div>
-                <?php if ($recomended){?>
+                <?php if ($recomend){?>
                     <div class="post_title">Рекомендуем прочитать</div>
-                    <?php foreach ($recomended as $value){?>
+                    <?php foreach ($recomend as $value){
+			            $categories = get_the_category();
+			            ?>
                         <div class="col-md-6 post-list">
                             <div class="post-list_img"><?php echo get_the_post_thumbnail($value,'thumbnail');?></div>
-                            <div class="post-list_date"><?php echo get_the_date($value,'d.m.Y');?></div>
+                            <div class="post-list_date"><?php echo ($categories[0]->term_id==1)?$categories[0]->name : get_the_date('d.m.Y', $value);?></div>
                             <div class="post-list_title"><?php echo get_the_title($value);?></div>
                             <div class="post-list_expert"><?php echo cutString( get_the_content($value), 120);?></div>
                             <div class="post-list_link-more"><a href="<?php echo get_the_permalink($value);?>">Детальнее</a></div>
