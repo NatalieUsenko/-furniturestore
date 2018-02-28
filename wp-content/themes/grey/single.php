@@ -30,8 +30,7 @@ $recomend = get_field('recomended');
                 <?php if ($recomend){?>
                     <div class="post_title mt-50">Рекомендуем прочитать</div>
                     <?php foreach ($recomend as $value){
-			            $categories = get_the_category();
-			            var_dump($categories);
+			            $categories = get_the_category($value);
 			            ?>
                         <div class="col-md-6 post-list">
                             <div class="post-list_img"><?php echo get_the_post_thumbnail($value,'thumbnail');?></div>
