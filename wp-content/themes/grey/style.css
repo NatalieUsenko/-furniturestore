@@ -661,7 +661,7 @@ footer.site-footer{
 .post-top_more-link__catalogue{
     position: absolute;
     top: 50%;
-    left: auto;
+    left: -20%;
     min-width: 225px;
     text-align: center;
     transform: translateY(-50%);
@@ -669,7 +669,7 @@ footer.site-footer{
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-.post-top_more-link>a{
+.post-top_more-link__catalogue>a{
     display: block;
     width: 100%;
     height: 100%;
@@ -678,18 +678,18 @@ footer.site-footer{
     font-size: 1.125em;
 }
 @media (max-width: 768px){
-    .post-top_more-link{
+    .post-top_more-link__catalogue{
         position: relative;
         bottom: auto;
         top: auto;
         text-align: center;
     }
-    .post-top_more-link>a{
+    .post-top_more-link__catalogue>a{
         width: auto;
         display: inline-block;
     }
 }
-.post-top_more-link>a:hover{
+.post-top_more-link__catalogue>a:hover{
     padding: 14px;
     border: 2px solid #fff;
     text-decoration: none;
