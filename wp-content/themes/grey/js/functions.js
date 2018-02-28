@@ -47,6 +47,19 @@ jQuery(function($){
                 $('.top-news_dark').css('margin-top', diffHeight+'px');
             }
         }
+        if ( $('.top-catalogue_dark').length > 0 ){
+            var windowWidth = $(window).width();
+            var leftStart = $('h1').position().left;
+            $('.post-top_more-link__catalogue').css('left', leftStart+'px');
+
+            var darkHeight = $('.top-catalogue_dark').outerHeight();
+            var imgHeight = Math.ceil(515*windowWidth*0.55/1125);
+            var diffHeight = 0;
+            diffHeight = Math.ceil(imgHeight - darkHeight - $('h1').position().top - $('h1').height());
+            if ( diffHeight > 0 ){
+                $('.top-catalogue_dark').css('margin-top', diffHeight+'px');
+            }
+        }
     });
 });
 

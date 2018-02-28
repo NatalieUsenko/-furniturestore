@@ -664,10 +664,10 @@ footer.site-footer{
     left: 0;
     min-width: 225px;
     text-align: center;
-    transform: translateY(-50%) translateX(-100%);
-    -moz-transform: translateY(-50%) translateX(-100%);
-    -o-transform: translateY(-50%) translateX(-100%);
-    -webkit-transform: translateY(-50%) translateX(-100%);
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 .post-top_more-link__catalogue>a{
     display: block;
