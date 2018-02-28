@@ -340,6 +340,12 @@ input[type='submit']:active{
 .left-block{
 	float: left;
 }
+.no-padding-left{
+    padding-left: 0!important;
+}
+.no-padding-right{
+    padding-right: 0!important;
+}
 
 header.site-header{
 	position: absolute;
@@ -380,12 +386,12 @@ header.not-fixed .as-table-cell{
 	display: none;
 }
 
-a.emaillink{
+a{
 	color: #000;
 	text-decoration: none;
 }
-a.emaillink:hover,
-a.emaillink:focus{
+a:hover,
+a:focus{
 	color:#000;
 	text-decoration: underline;
 }
@@ -583,7 +589,7 @@ footer.site-footer{
     margin-left: 15px;
     margin-bottom: 15px;
 }
-.post_img img{
+.post_img>img{
     width: 100%;
     height: auto;
     margin-bottom: 15px;
