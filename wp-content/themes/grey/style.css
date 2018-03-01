@@ -150,7 +150,7 @@ h5{
 }
 
 p {
-	margin-bottom: 1.4em;
+	margin-bottom: 1.2em;
 }
 
 b,
@@ -750,10 +750,11 @@ footer.site-footer{
     background: url("img/start-top-img.png") top left no-repeat;
     background-size: 26% auto;
 }
-#firstscreen>div:first-child{
+#firstscreen .info{
     padding-top: 18.85%;
-    padding-left: 17.4%;
+    padding-left: 15.4%;
     width: 41%;
+    float: left;
 }
 #firstscreen .slider{
     width: 59%;

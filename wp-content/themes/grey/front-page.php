@@ -29,7 +29,7 @@ $page_query = new WP_Query($page_args);
 
 ?>
     <div id="firstscreen">
-        <div>
+        <div class="info">
             <img src="<?php echo get_template_directory_uri();?>/img/tmp-logo.png" style="margin-bottom: 90px;">
             <?php
             $phone = get_field('contacts_phone', 7);
