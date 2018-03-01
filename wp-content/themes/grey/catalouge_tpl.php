@@ -80,8 +80,7 @@ var_dump($linked_category);
             ?>
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
-                echo 'Left = '.$left_el_id.'<br />';
-                echo 'Right = '.$right_el_id;
+                echo 'Left = '.$left_el_id.' Right = '.$right_el_id;
                 ?>
                 <div class="col-md-6 post-list">
                     <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
