@@ -58,6 +58,7 @@ jQuery(function($){
                 console.error(error);
             }
         });
+    });
 
     $(window).load(function () {
         if ( $('.top-news_dark').length > 0 ){
