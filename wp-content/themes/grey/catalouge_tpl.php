@@ -6,6 +6,8 @@ Template Post Type: page
 get_header();
 $current_page_id = get_the_ID();
 $big_img = get_field('big_img');
+$linked_category = get_field('linked_category');
+var_dump($linked_category);
 ?>
 <div id="primary" class="content-area <?php echo $big_img?'top-catalogue_img':'';?>" <?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>>
 	<main id="main" class="site-main" role="main">
@@ -22,6 +24,9 @@ $big_img = get_field('big_img');
 
 	<div class="clearfix"></div>
 	<div class="container-fluid container mt-50">
+        <?php if ($linked_category){ ?>
+
+        <?php }?>
 
 	</div>
     <?php

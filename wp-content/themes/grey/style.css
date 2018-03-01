@@ -640,6 +640,11 @@ footer.site-footer{
         margin-bottom: 45px;
     }
 }
+@media (min-width: 1200px){
+	.top-catalogue_dark{
+		padding: 25px 0 30px 30%;
+	}
+}
 .top-catalogue_dark a,
 .top-catalogue_dark a:hover,
 .top-catalogue_dark a:focus{
