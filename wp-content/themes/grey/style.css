@@ -747,15 +747,16 @@ footer.site-footer{
 
 /******************************* Frontpage ******************************************/
 #firstscreen{
-    padding-top: 18.85%;
     padding-left: 17.4%;
     background: url("img/start-top-img.png") top left no-repeat;
     background-size: 26% auto;
 }
+#firstscreen>div:first-child{
+    padding-top: 18.85%;
+}
 #firstscreen .slider{
     width: 59%;
     padding-top: 56.25%;
-    margin-top: -18.85%;
     float: right;
     background: url("img/start-img.jpg") 50% 50% no-repeat;
     background-size: cover;
