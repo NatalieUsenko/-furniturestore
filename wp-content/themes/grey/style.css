@@ -766,6 +766,9 @@ footer.site-footer{
     /*background: url("img/start-img.jpg") 50% 50% no-repeat;*/
     /*background-size: cover;*/
 }
+#firstscreen .slider .owl-carousel-item-imgoverlay{
+    display: none!important;
+}
 #firstscreen .grey-line{
     width: 100%;
     height: 250px;

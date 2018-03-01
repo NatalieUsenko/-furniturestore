@@ -51,7 +51,7 @@ $page_query = new WP_Query($page_args);
             ?>
         </div>
         <div class="slider">
-            <?php echo do_shortcode('[owl-carousel category="main-slider" singleItem="true" items="1" autoPlay="true" navigation="false" pagination="false" slideSpeed="900" paginationSpeed="400"]');?>
+            <?php echo do_shortcode('[owl-carousel category="main-slider" singleItem="true" items="1" navigation="false" pagination="true" lazyLoad="true" slideSpeed="900" paginationSpeed="400"]');?>
         </div>
         <div class="grey-line">
             <a href="javascript:void(0);" data-to="catalogue" class="go-to">Каталог мебели</a>
