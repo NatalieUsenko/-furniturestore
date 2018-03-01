@@ -771,6 +771,7 @@ footer.site-footer{
 #steps .grey-bgr ul>li img{
     margin: 35px auto;
     max-width: 300px;
+    display: block;
 }
 #steps .grey-bgr ul>li h3,
 #steps .grey-bgr ul>li h5{
