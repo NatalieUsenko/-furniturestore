@@ -83,10 +83,12 @@ $linked_category = get_field('linked_category');
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
                 ?>
-                <div class="col-md-4 post-list">
-                    <div class="post-list_img"><?php the_post_thumbnail('catalouge-thumbnails');?></div>
-                    <div class="post-list_title"><?php echo get_the_title();?></div>
-                    <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
+                <div class="col-md-4 post-list_catalogue">
+                    <?php the_post_thumbnail('catalouge-thumbnails');?>
+                    <div class="post-list_title">
+                        <?php echo get_the_title();?>
+                        <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото >></a></div>
+                    </div>
                 </div>
             <?php }?>
             <?php if (  $wp_query->max_num_pages > 1 ) : ?>
