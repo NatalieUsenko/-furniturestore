@@ -746,6 +746,17 @@ footer.site-footer{
 }
 
 /******************************* Frontpage ******************************************/
+#firstscreen{
+
+}
+#firstscreen .slider{
+    width: 56.25%;
+    padding-top: 95%;
+    float: right;
+    background: url("img/start-img.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
 #steps,
 #catalogue{
     padding: 15px 0 25px;

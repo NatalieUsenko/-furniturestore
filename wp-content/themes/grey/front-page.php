@@ -30,6 +30,8 @@ $page_query = new WP_Query($page_args);
 ?>
     <div id="firstscreen">
 
+        <div class="slider"></div>
+        <div class="clearfix"></div>
     </div>
     <div id="catalogue">
         <div class="container-fluid container">
