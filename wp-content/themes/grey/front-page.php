@@ -6,7 +6,12 @@ $news_args = array(
     'order' => 'DESC'
 );
 $news_query = new WP_Query($news_args);
-$steps = get_posts( array( 'name' => 'steps' ) );
+$steps = get_posts(
+    array(
+        'name'      => 'steps',
+        'post_type' => 'page'
+    )
+);
 var_dump($steps);
 ?>
     <div id="firstscreen">
