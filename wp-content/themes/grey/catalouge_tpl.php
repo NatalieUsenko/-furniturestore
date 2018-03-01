@@ -13,14 +13,15 @@ $linked_category = get_field('linked_category');
 	<div class="container-fluid container" >
 		<h1 class="page-title"><?php echo esc_html( get_the_title($current_page_id) ); ?></h1>
 	</div>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-	<div class="top-catalogue_dark">
-		<div class="hidden-lg hidden-md"><img src="<?php echo $big_img?$big_img:'';?>"></div>
-		<div class="post-top_content"><?php echo get_the_content_with_formatting();?></div>
-		<div class="post-top_more-link__catalogue text-uppercase"><a href="javascript:void(0);">Каталог мебели</a></div>
-	</div>
-
+    <?php if ( have_posts() ) :
+        while ( have_posts() ) :
+            the_post(); ?>
+            <div class="top-catalogue_dark">
+                <div class="hidden-lg hidden-md"><img src="<?php echo $big_img?$big_img:'';?>"></div>
+                <div class="post-top_content"><?php echo get_the_content_with_formatting();?></div>
+                <div class="post-top_more-link__catalogue text-uppercase"><a href="javascript:void(0);">Каталог мебели</a></div>
+            </div>
+        <?php endwhile;?>
 	<div class="clearfix"></div>
 	<div class="container-fluid container mt-50">
         <?php if ($linked_category){
@@ -91,14 +92,20 @@ $linked_category = get_field('linked_category');
                     <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
                 </div>
             <?php }?>
+            <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+            <script>
+                var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
+                var true_posts = '<?php echo serialize($wp_query->query_vars); ?>';
+                var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
+                var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
+            </script>
+            <div align="center" id="true_loadmore_catalugue">Загрузить ещё</div>
+        <?php endif; ?>
 
         <?php }?>
 
 	</div>
-    <?php
-    endwhile;
-    endif;
-    ?>
+    <?php endif;?>
 
 	</main><!-- .site-main -->
 	</div><!-- .content-area -->
