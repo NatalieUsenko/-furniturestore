@@ -707,18 +707,18 @@ footer.site-footer{
 .post-list_catalogue .post-list_title{
     background: rgba(33,33,33,0.83);
     color: #fff;
-    padding: 25px 25px 35px;
+    padding: 15px 15px 35px;
     width: 65%;
     min-height: 85px;
     position: absolute;
-    left: 0;
+    left: 15px;
     bottom: 25px;
     font-size: 1rem;
 }
 .post-list_catalogue .post-list_title .post-list_link-more{
     position: absolute;
-    right: 25px;
-    bottom: 25px;
+    right: 15px;
+    bottom: 15px;
     font-size: 0.875em;
 }
 .post-list_catalogue .post-list_title .post-list_link-more a{
