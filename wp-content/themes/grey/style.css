@@ -748,7 +748,7 @@ footer.site-footer{
 /******************************* Frontpage ******************************************/
 #steps,
 #catalogue{
-    padding: 50px 0 25px;
+    padding: 15px 0 25px;
 }
 #steps .grey-bgr{
     background: url("img/stairs-bgr.jpg") 50% 50%;
@@ -818,4 +818,5 @@ footer.site-footer{
     font-size: 1.125em;
     padding: 15px;
     background: #464646;
+    text-align: center;
 }
