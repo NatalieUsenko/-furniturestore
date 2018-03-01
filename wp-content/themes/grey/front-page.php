@@ -24,7 +24,7 @@ $news_query = new WP_Query($news_args);
                     <?php while ( $news_query->have_posts() ) {
                         $news_query->the_post();?>
                         <h3>Статьи</h3>
-                        <div class="col-md-6 post-list">
+                        <div class="post-list">
                             <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
                             <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
                             <div class="post-list_title"><?php echo get_the_title();?></div>
