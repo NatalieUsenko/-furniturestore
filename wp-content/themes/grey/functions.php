@@ -17,6 +17,9 @@ function grey_setup(){
     add_theme_support('post-thumbnails');
     set_post_thumbnail_size(825, 510, true);
 
+    add_theme_support('catalouge-thumbnails');
+    set_post_thumbnail_size(550, 350, true);
+
     register_nav_menus(array(
         'primary' => __('Primary Menu', 'grey'),
         'social' => __('Social Links Menu', 'grey'),

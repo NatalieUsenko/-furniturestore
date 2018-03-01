@@ -82,13 +82,10 @@ $linked_category = get_field('linked_category');
             ?>
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
-                echo 'Left = '.$left_el_id.' Right = '.$right_el_id;
                 ?>
-                <div class="col-md-6 post-list">
-                    <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
-                    <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
+                <div class="col-md-4 post-list">
+                    <div class="post-list_img"><?php the_post_thumbnail('catalouge-thumbnails');?></div>
                     <div class="post-list_title"><?php echo get_the_title();?></div>
-                    <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
                     <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
                 </div>
             <?php }?>
