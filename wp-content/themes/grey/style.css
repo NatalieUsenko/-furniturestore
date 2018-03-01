@@ -781,6 +781,12 @@ footer.site-footer{
     #steps .grey-bgr ul>li{
         width: 50%;
     }
+    #steps .grey-bgr ul>li:nth-child(2)::after{
+        content: '';
+        height: 1px;
+        width: 200%;
+    }
+
 }
 @media (max-width: 480px){
     #steps .grey-bgr ul{
