@@ -750,8 +750,8 @@ footer.site-footer{
 
 }
 #firstscreen .slider{
-    width: 56.25%;
-    padding-top: 59%;
+    width: 59%;
+    padding-top: 56.25%;
     float: right;
     background: url("img/start-img.jpg") 50% 50% no-repeat;
     background-size: cover;
