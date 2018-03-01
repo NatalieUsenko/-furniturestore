@@ -750,6 +750,7 @@ footer.site-footer{
     background: url("img/start-top-img.png") top left no-repeat;
     background-size: 26% auto;
     margin-bottom: 35px;
+    position: relative;
 }
 #firstscreen .info{
     padding-top: 18.85%;
@@ -769,7 +770,7 @@ footer.site-footer{
     height: 250px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 75%;
     background: rgba(33,33,33,0.83);
     color: #fff;
 }
@@ -788,6 +789,7 @@ footer.site-footer{
     font-size: 1.125em;
     color: #fff;
     text-transform: uppercase;
+
 }
 #firstscreen .grey-line .go-to:hover{
     padding: 14px;
