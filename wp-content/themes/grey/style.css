@@ -134,9 +134,19 @@ h6 {
 	font-weight: 400;
 }
 
+h2{
+    font-size: 1.875em;
+    text-transform: uppercase;
+}
+
 h3{
-	font-size: 1.250rem;
-	text-transform: uppercase;
+     font-size: 1.250rem;
+     text-transform: uppercase;
+ }
+
+h5{
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
 p {
@@ -740,6 +750,7 @@ footer.site-footer{
     background: url("img/stairs-bgr.jpg") 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 80px auto 110px;
 }
 #steps .grey-bgr ul{
     list-style: none;
@@ -748,4 +759,14 @@ footer.site-footer{
     list-style: none;
     display: inline-block;
     width: 25%;
+    text-align: center;
+    color: #fff;
+}
+#steps .grey-bgr ul>li img{
+    margin: 35px auto;
+    max-width: 300px;
+}
+#steps .grey-bgr ul>li h3,
+#steps .grey-bgr ul>li h5{
+    max-width: 300px;
 }

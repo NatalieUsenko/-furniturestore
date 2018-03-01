@@ -22,7 +22,7 @@ $steps = get_posts(
     </div>
     <div id="steps">
         <?php if (!empty($steps)){?>
-            <h2><?php echo get_the_title($steps[0]->ID);?></h2>
+            <h2 class="text-center"><?php echo get_the_title($steps[0]->ID);?></h2>
         <?php }?>
         <div class="grey-bgr">
             <div class="container-fluid container">
