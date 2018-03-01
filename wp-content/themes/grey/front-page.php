@@ -6,11 +6,17 @@ $news_args = array(
     'order' => 'DESC'
 );
 $news_query = new WP_Query($news_args);
+$steps = get_posts( array( 'name' => 'steps' ) );
+var_dump($steps);
 ?>
     <div id="firstscreen">
 
     </div>
     <div id="catalogue">
+
+    </div>
+    <div id="steps">
+
 
     </div>
     <div id="lastscreen">
@@ -25,9 +31,9 @@ $news_query = new WP_Query($news_args);
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <h3>Статьи</h3>
                     <?php while ( $news_query->have_posts() ) {
                         $news_query->the_post();?>
-                        <h3>Статьи</h3>
                         <div class="post-list">
                             <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
                             <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
