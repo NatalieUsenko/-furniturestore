@@ -29,7 +29,27 @@ $page_query = new WP_Query($page_args);
 
 ?>
     <div id="firstscreen">
-
+        <div>
+            <img src="<?php echo get_template_directory_uri();?>/img/tmp-logo.png" style="margin-bottom: 90px;">
+            <?php
+            $phone = get_field('contacts_phone', 7);
+            if ($phone) {
+                echo '<div><img src="'.get_template_directory_uri().'/img/icon-phone.png" /> '.$phone.'</div>';
+            }
+            ?>
+            <?php
+            $email = get_field('contacts_email', 7);
+            if ($email) {
+                echo '<div><a href="mailto:'.$email.'" class="emaillink"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a></div>';
+            }
+            ?>
+            <?php
+            $adress = get_field('contacts_adress', 7);
+            if ($adress) {
+                echo '<div><img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$adress.'</div>';
+            }
+            ?>
+        </div>
         <div class="slider"></div>
         <div class="clearfix"></div>
     </div>

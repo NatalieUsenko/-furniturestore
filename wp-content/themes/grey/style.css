@@ -747,7 +747,8 @@ footer.site-footer{
 
 /******************************* Frontpage ******************************************/
 #firstscreen{
-    //padding-top: 41%;
+    padding-top: 18.85%;
+    padding-left: 17.4%;
     background: url("img/start-top-img.png") top left no-repeat;
     background-size: 26% auto;
 }
