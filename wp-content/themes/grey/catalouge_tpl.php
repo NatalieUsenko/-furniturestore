@@ -7,7 +7,6 @@ get_header();
 $current_page_id = get_the_ID();
 $big_img = get_field('big_img');
 $linked_category = get_field('linked_category');
-var_dump($linked_category);
 ?>
 <div id="primary" class="content-area <?php echo $big_img?'top-catalogue_img':'';?>" <?php echo $big_img?'style="background-image: url('.$big_img.');"':'';?>>
 	<main id="main" class="site-main" role="main">
@@ -29,9 +28,10 @@ var_dump($linked_category);
             $left_args = array(
                 'posts_per_page' => 1,
                 'post_status' => 'publish',
+                'cat' => $linked_category,
                 'order' => 'DESC',
                 'meta_query' => array(
-                    'position' => array(
+                     array(
                         'key'     => 'position',
                         'value' => '1',
                         'compare' => 'left',
@@ -49,9 +49,10 @@ var_dump($linked_category);
             $right_args = array(
                 'posts_per_page' => 1,
                 'post_status' => 'publish',
+                'cat' => $linked_category,
                 'order' => 'DESC',
                 'meta_query' => array(
-                    'position' => array(
+                    array(
                         'key'     => 'position',
                         'value' => '1',
                         'compare' => 'right',
@@ -67,7 +68,7 @@ var_dump($linked_category);
                 $right_el_content = get_the_content();
             }
             $paged = (get_query_var('page')) ? get_query_var('page') : 1;
-            $news_args = array(
+            $cat_args = array(
                 // 'posts_per_page' => 2,
                 'post_status' => 'publish',
                 'cat' => $linked_category,
@@ -75,7 +76,7 @@ var_dump($linked_category);
                 'paged' => $paged,
                 'post__not_in' => $exclude_ids
             );
-            $wp_query = new WP_Query($news_args);
+            $wp_query = new WP_Query($cat_args);
 
             ?>
             <?php while ( $wp_query->have_posts() ) {
