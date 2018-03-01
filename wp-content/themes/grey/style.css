@@ -746,7 +746,8 @@ footer.site-footer{
 }
 
 /******************************* Frontpage ******************************************/
-#steps{
+#steps,
+#catalogue{
     padding: 50px 0 25px;
 }
 #steps .grey-bgr{

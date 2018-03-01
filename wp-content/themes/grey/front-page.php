@@ -13,12 +13,45 @@ $steps = get_posts(
     )
 );
 
+$page_args = array(
+    'posts_per_page' => 8,
+    'post_status' => 'publish',
+    'post_type' => 'page',
+    'meta_query' => array(
+        array(
+            'key'     => 'show_in_front',
+            'value' => '1',
+            'compare' => 'LIKE',
+        ),
+    ),
+);
+$page_query = new WP_Query($page_args);
+
 ?>
     <div id="firstscreen">
 
     </div>
     <div id="catalogue">
+        <div class="container-fluid container">
+        <?php if ($page_query->have_posts()) {?>
+            <h2 class="text-center">Каталог мебели</h2>
+            <div class="row mt-50">
 
+        <?php while ( $page_query->have_posts() ) {
+            $page_query->the_post();
+            $page_id = get_the_ID();
+        ?>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="<?php echo get_the_permalink($page_id);?>" class="catalogue__item">
+                    <?php echo get_the_post_thumbnail($page_id);?>
+                    <span><?php echo get_the_title($page_id);?></span>
+                </a>
+            </div>
+
+            <?php }?>
+            </div>
+        <?php }?>
+        </div>
     </div>
     <div id="steps">
         <?php if (!empty($steps)){?>
