@@ -753,12 +753,11 @@ footer.site-footer{
     background: url("img/stairs-bgr.jpg") 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px 0 110px;
+    padding: 50px 0 75px;
     margin: 50px auto;
 }
 #steps .grey-bgr ul{
     list-style: none;
-    display: table;
 }
 #steps .grey-bgr ul>li{
     list-style: none;
@@ -767,11 +766,11 @@ footer.site-footer{
     text-align: center;
     color: #fff;
     float: left;
+    margin: 25px auto;
 }
 #steps .grey-bgr ul>li img{
     margin: 35px auto;
     max-width: 300px;
-    display: table-cell;
 }
 #steps .grey-bgr ul>li h3,
 #steps .grey-bgr ul>li h5{
