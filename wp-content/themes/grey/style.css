@@ -760,10 +760,11 @@ footer.site-footer{
 }
 #firstscreen .slider{
     width: 59%;
-    padding-top: 56.25%;
     float: right;
-    background: url("img/start-img.jpg") 50% 50% no-repeat;
-    background-size: cover;
+
+    /*padding-top: 56.25%;    */
+    /*background: url("img/start-img.jpg") 50% 50% no-repeat;*/
+    /*background-size: cover;*/
 }
 #firstscreen .grey-line{
     width: 100%;
