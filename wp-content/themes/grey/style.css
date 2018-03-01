@@ -737,14 +737,14 @@ footer.site-footer{
 
 /******************************* Frontpage ******************************************/
 #steps .grey-bgr{
-    background: url("/img/stairs-bgr.jpg") 50% 50%;
+    background: url("img/stairs-bgr.jpg") 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#steps .grey-bgr>ul{
+#steps .grey-bgr ul{
     list-style: none;
 }
-#steps .grey-bgr>ul>li{
+#steps .grey-bgr ul>li{
     list-style: none;
     display: inline-block;
     width: 25%;
