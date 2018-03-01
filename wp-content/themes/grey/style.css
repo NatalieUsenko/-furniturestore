@@ -704,6 +704,9 @@ footer.site-footer{
     text-decoration: none;
 }
 
+.post-list_catalogue{
+    margin-bottom: 15px;
+}
 .post-list_catalogue .post-list_title{
     background: rgba(33,33,33,0.83);
     color: #fff;
