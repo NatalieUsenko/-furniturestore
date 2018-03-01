@@ -51,6 +51,10 @@ $page_query = new WP_Query($page_args);
             ?>
         </div>
         <div class="slider"></div>
+        <div class="grey-line">
+            <a href="javascript:void(0);" data-to="catalogue" class="go-to">Каталог мебели</a>
+            <div id="slider-content"></div>
+        </div>
         <div class="clearfix"></div>
     </div>
     <div id="catalogue">
