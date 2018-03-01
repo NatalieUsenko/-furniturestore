@@ -87,6 +87,11 @@ jQuery(function($){
                 $('.top-catalogue_dark').css('margin-top', diffHeight+'px');
             }
         }
+        if ( $('#firstscreen .grey-line').length > 0 ){
+            var windowWidth = $(window).width();
+            var leftStart = $('footer .container').position().left;
+            $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
+        }
     });
 });
 
