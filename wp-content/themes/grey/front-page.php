@@ -25,7 +25,7 @@ $steps = get_posts(
             <h2 class="text-center"><?php echo get_the_title($steps[0]->ID);?></h2>
         <?php }?>
         <div class="grey-bgr">
-            <div class="container-fluid container as-table-row">
+            <div class="container-fluid container">
                 <?php echo _e($steps[0]->post_content);?>
             </div>
         </div>
