@@ -89,7 +89,7 @@ jQuery(function($){
         }
         if ( $('#firstscreen .grey-line').length > 0 ){
             var windowWidth = $(window).width();
-            var leftStart = $('footer .container').position().left;
+            var leftStart = $('footer .container .row').position().left;
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
         }
     });
