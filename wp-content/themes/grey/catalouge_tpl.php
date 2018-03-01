@@ -33,8 +33,8 @@ $linked_category = get_field('linked_category');
                 'meta_query' => array(
                      array(
                         'key'     => 'position',
-                        'value' => '1',
-                        'compare' => 'left',
+                        'value' => 'left',
+                        'compare' => 'LIKE',
                     ),
                 ),
             );
@@ -54,8 +54,8 @@ $linked_category = get_field('linked_category');
                 'meta_query' => array(
                     array(
                         'key'     => 'position',
-                        'value' => '1',
-                        'compare' => 'right',
+                        'value' => 'right',
+                        'compare' => 'LIKE',
                     ),
                 ),
             );
