@@ -749,6 +749,7 @@ footer.site-footer{
 #firstscreen{
     background: url("img/start-top-img.png") top left no-repeat;
     background-size: 26% auto;
+    margin-bottom: 35px;
 }
 #firstscreen .info{
     padding-top: 18.85%;
@@ -768,7 +769,7 @@ footer.site-footer{
     height: 250px;
     position: absolute;
     left: 0;
-    bottom: 85px;
+    bottom: 0;
     background: rgba(33,33,33,0.83);
     color: #fff;
 }
