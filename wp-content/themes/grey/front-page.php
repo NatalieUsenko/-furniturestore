@@ -12,7 +12,7 @@ $steps = get_posts(
         'post_type' => 'page'
     )
 );
-var_dump($steps);
+
 ?>
     <div id="firstscreen">
 
@@ -21,8 +21,14 @@ var_dump($steps);
 
     </div>
     <div id="steps">
-
-
+        <?php if (!empty($steps)){?>
+            <h2><?php echo get_the_title($steps[0]->ID);?></h2>
+        <?php }?>
+        <div class="grey-bgr">
+            <div class="container-fluid container">
+                <?php echo _e($steps[0]->post_content);?>
+            </div>
+        </div>
     </div>
     <div id="lastscreen">
         <div class="container-fluid container">

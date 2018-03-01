@@ -734,3 +734,10 @@ footer.site-footer{
     color: #fff;
     text-decoration: underline;
 }
+
+/******************************* Frontpage ******************************************/
+#steps .grey-bgr{
+    background: url("/img/stairs-bgr.jpg") 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
