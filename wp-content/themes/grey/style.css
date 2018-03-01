@@ -770,6 +770,7 @@ footer.site-footer{
 #steps .grey-bgr ul>li img{
     margin: 35px auto;
     max-width: 300px;
+    display: table-cell;
     display: block;
 }
 #steps .grey-bgr ul>li h3,
@@ -784,5 +785,6 @@ footer.site-footer{
 @media (max-width: 480px){
     #steps .grey-bgr ul>li{
         width: 100%;
+        display: block;
     }
 }
