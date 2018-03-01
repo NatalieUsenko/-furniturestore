@@ -98,6 +98,32 @@ function true_load_posts(){
 add_action('wp_ajax_loadmore', 'true_load_posts');
 add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
 
+function true_load_posts_catalogue(){
+    $args = unserialize( stripslashes( $_POST['query'] ) );
+    $args['paged'] = $_POST['page'] + 1; // следующая страница
+    $args['post_status'] = 'publish';
+
+    // обычно лучше использовать WP_Query, но не здесь
+    query_posts( $args );
+    // если посты есть
+    if( have_posts() ) :
+
+        // запускаем цикл
+        while( have_posts() ): the_post();?>
+            <div class="col-md-4 post-list_catalogue">
+                <?php the_post_thumbnail('catalouge-thumbnails');?>
+                <div class="post-list_title">
+                    <?php echo get_the_title();?>
+                    <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото >></a></div>
+                </div>
+            </div>
+        <?php endwhile;
+    endif;
+    die();
+}
+add_action('wp_ajax_loadmore_catalogue', 'true_load_posts_catalogue');
+add_action('wp_ajax_nopriv_loadmore_catalogue', 'true_load_posts_catalogue');
+
 // retrieves the attachment ID from the file URL
 function get_image_id($image_url) {
     global $wpdb;
