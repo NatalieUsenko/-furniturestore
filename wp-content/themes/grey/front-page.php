@@ -41,7 +41,7 @@ $page_query = new WP_Query($page_args);
             $page_query->the_post();
             $page_id = get_the_ID();
         ?>
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <a href="<?php echo get_the_permalink($page_id);?>" class="catalogue__item">
                     <?php echo get_the_post_thumbnail($page_id);?>
                     <span><?php echo get_the_title($page_id);?></span>
