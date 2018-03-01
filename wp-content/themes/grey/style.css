@@ -777,16 +777,18 @@ footer.site-footer{
 #steps .grey-bgr ul>li h5{
     max-width: 300px;
 }
+#steps .grey-bgr .separator{
+    display: none;
+}
 @media (max-width: 1200px){
     #steps .grey-bgr ul>li{
         width: 50%;
     }
-    #steps .grey-bgr ul>li:nth-child(2)::after{
-        content: '';
+    #steps .grey-bgr .separator{
+        display: block;
         height: 1px;
-        width: 200%;
+        width: 100%;
     }
-
 }
 @media (max-width: 480px){
     #steps .grey-bgr ul{
@@ -795,5 +797,8 @@ footer.site-footer{
     #steps .grey-bgr ul>li{
         width: 100%;
         display: block;
+    }
+    #steps .grey-bgr .separator{
+        display: none;
     }
 }
