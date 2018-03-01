@@ -789,10 +789,10 @@ footer.site-footer{
     border: 1px solid #fff;
     filter: Alpha(Opacity=100);
     opacity: 1;
-    margin: 5px 0;
+    margin: 10px 0;
 }
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
+#firstscreen .slider .owl-theme .owl-controls .owl-page.active span,
+#firstscreen .slider .owl-theme .owl-controls.clickable .owl-page:hover span{
     background: #fff;
 }
 
