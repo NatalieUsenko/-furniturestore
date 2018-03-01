@@ -803,3 +803,18 @@ footer.site-footer{
         display: none;
     }
 }
+.catalogue__item{
+    margin-bottom: 35px;
+}
+.catalogue__item a,
+.catalogue__item a:hover,
+.catalogue__item a:focus{
+    text-decoration: none;
+}
+.catalogue__item span{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    padding: 15px;
+    background: #464646;
+}
