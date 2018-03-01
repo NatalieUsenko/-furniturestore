@@ -746,11 +746,15 @@ footer.site-footer{
 }
 
 /******************************* Frontpage ******************************************/
+#steps{
+    padding: 50px 0 25px;
+}
 #steps .grey-bgr{
     background: url("img/stairs-bgr.jpg") 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0 110px;
+    margin: 50px auto;
 }
 #steps .grey-bgr ul{
     list-style: none;
