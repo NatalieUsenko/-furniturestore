@@ -19,7 +19,7 @@ $news_query = new WP_Query($news_args);
                 <div class="col-md-6">
                     <h3>Связаться с нами</h3>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <?php echo do_shortcode('[contact-form-7 id="27" title="Связаться с нами"]'); ?>
                         </div>
                     </div>
