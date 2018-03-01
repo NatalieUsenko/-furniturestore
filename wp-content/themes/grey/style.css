@@ -810,9 +810,10 @@ footer.site-footer{
 .catalogue__item a:hover,
 .catalogue__item a:focus{
     text-decoration: none;
+    color: #fff;
 }
 .catalogue__item span{
-    width: 100%;
+    display: block;
     text-transform: uppercase;
     font-size: 1.125em;
     padding: 15px;
