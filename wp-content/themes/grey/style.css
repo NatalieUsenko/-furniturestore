@@ -400,7 +400,7 @@ header.not-fixed .as-table-cell.show-always {
 	padding-bottom: 15px;
 }
 
-header.not-fixed .as-table-cell{
+.home header.not-fixed .as-table-cell{
 	display: none;
 }
 
