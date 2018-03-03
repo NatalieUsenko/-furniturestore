@@ -359,11 +359,17 @@ input[type='submit']:active{
 	padding-bottom: 15px;
 	z-index: 99;
 }
-.home  header.fixed{
+.home header.fixed{
 	background: #fff;
 	-webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.17);
 	-moz-box-shadow:    0px 4px 30px 0px rgba(0, 0, 0, 0.17);
 	box-shadow:         0px 4px 30px 0px rgba(0, 0, 0, 0.17);
+}
+.home header.not-fixed{
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:   none;
+    box-shadow: none;
 }
 
 header.site-header{
@@ -376,7 +382,7 @@ header.site-header{
 }
 
 @media (min-width: 1200px){
-	header.fixed .logo{
+	header .logo{
 		max-width: 200px;
 	}
 }
@@ -388,7 +394,7 @@ header.site-header{
 .as-table-cell{
 	display: table-cell;
 }
-.home header.not-fixed .as-table-cell.show-always {
+header.not-fixed .as-table-cell.show-always {
 	display: table-cell;
 	padding-top: 15px;
 	padding-bottom: 15px;
