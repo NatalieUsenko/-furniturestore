@@ -94,13 +94,16 @@ jQuery(function($){
         }
     });
 
+    var owl = $('.owl-carousel');
+    if (owl.length>0){
+        owl.owlCarousel();
+    }
     $('#owl-prew').on(function(){
-        var owl = $('.owl-carousel');
         owl.trigger('prew.owl.carousel');
     });
     $('#owl-next').on(function(){
-        var owl = $('.owl-carousel');
         owl.trigger('next.owl.carousel');
     });
+
 });
 
