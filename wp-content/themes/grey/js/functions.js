@@ -97,7 +97,7 @@ jQuery(function($){
         // if (owl.length>0){
         //     owl.owlCarousel();
         // }
-        $('#owl-prew').on('click',function(){
+        $('#owl-prev').on('click',function(){
             //owl.trigger('prev.owl.carousel');
             $('#firstscreen .slider .tcowl-wrap .tcowl-nav .owl-controls .owl-nav .owl-prev').click();
         });
