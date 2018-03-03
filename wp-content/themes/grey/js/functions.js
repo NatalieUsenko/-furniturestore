@@ -92,18 +92,20 @@ jQuery(function($){
             var leftStart = $('footer .container .row').position().left;
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
         }
+
+        var owl = $('.owl-carousel');
+        if (owl.length>0){
+            owl.owlCarousel();
+        }
+        $('#owl-prew').on(function(){
+            owl.trigger('prew.owl.carousel');
+        });
+        $('#owl-next').on(function(){
+            owl.trigger('next.owl.carousel');
+        });
     });
 
-    var owl = $('.owl-carousel');
-    if (owl.length>0){
-        owl.owlCarousel();
-    }
-    $('#owl-prew').on(function(){
-        owl.trigger('prew.owl.carousel');
-    });
-    $('#owl-next').on(function(){
-        owl.trigger('next.owl.carousel');
-    });
+
 
 });
 
