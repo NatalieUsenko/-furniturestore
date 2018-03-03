@@ -90,7 +90,8 @@ jQuery(function($){
         if ( $('#firstscreen .grey-line').length > 0 ){
             var windowWidth = $(window).width();
             var leftStart = $('footer .container .row').position().left;
-            $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
+            $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px');
+            $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', (windowWidth*0.59-leftStart)+'px');
         }
 
         var owl = $('body').find('.owl-carousel');
