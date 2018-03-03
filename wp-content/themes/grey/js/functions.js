@@ -93,5 +93,14 @@ jQuery(function($){
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
         }
     });
+
+    $('#owl-prew').on(function(){
+        var owl = $('.owl-carousel');
+        owl.trigger('prew.owl.carousel');
+    });
+    $('#owl-next').on(function(){
+        var owl = $('.owl-carousel');
+        owl.trigger('next.owl.carousel');
+    });
 });
 
