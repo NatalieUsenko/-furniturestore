@@ -94,7 +94,7 @@ jQuery(function($){
             $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', (windowWidth*0.59-leftStart)+'px');
 
             if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
-                var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0].outerHTML;
+                var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
                 $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(link);
             }
         }
