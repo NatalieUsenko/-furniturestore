@@ -77,7 +77,7 @@ jQuery(function($){
         if ( $('.top-catalogue_dark').length > 0 ){
             var windowWidth = $(window).width();
             var leftStart = $('h1').position().left;
-            var topStart = $('h1').offset().top;
+            var topStart = $('h1').offset().top - $('#main').offset().top;
             $('.post-top_more-link__catalogue').css('left', leftStart+'px');
 
             var darkHeight = $('.top-catalogue_dark').outerHeight();
