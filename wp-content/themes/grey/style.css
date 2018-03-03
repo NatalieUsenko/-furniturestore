@@ -781,16 +781,21 @@ footer.site-footer{
     padding: 50px 75px;
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle{
+    width: 40%;
+    float: right;
     text-align: center;
     font-size: 2.250em;
     font-weight: 300;
     font-family: "Open Sans", sans-serif;
+    text-shadow: none;
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgcontent{
     width: 60%;
+    float: left;
     text-align: left;
     font-size: 0.875em;
     font-family: "Open Sans", sans-serif;
+    text-shadow: none;
 }
 #firstscreen .slider .owl-controls{
     position: absolute;
