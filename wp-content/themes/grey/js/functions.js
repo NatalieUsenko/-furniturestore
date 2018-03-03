@@ -92,6 +92,11 @@ jQuery(function($){
             var leftStart = $('footer .container .row').position().left;
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px');
             $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', (windowWidth*0.59-leftStart)+'px');
+
+            if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
+                var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0].outerHTML;
+                $('#firstscreen .owl-carousel-item-imgtitle').appendChild(link);
+            }
         }
 
         var owl = $('body').find('.owl-carousel');
