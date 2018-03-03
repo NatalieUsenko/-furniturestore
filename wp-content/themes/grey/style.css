@@ -795,7 +795,7 @@ footer.site-footer{
 #firstscreen .slider .owl-theme .owl-controls.clickable .owl-page:hover span{
     background: #fff;
 }
-#owl-prew{
+#owl-prev{
     position: absolute;
     left: 30px;
     top: 50%;
@@ -822,7 +822,7 @@ footer.site-footer{
     background-size: cover;
 }
 #owl-next .disabled,
-#owl-prew .disabled{
+#owl-prev .disabled{
     filter: Alpha(Opacity=50);
     opacity: 0.5;
 }

@@ -98,7 +98,7 @@ jQuery(function($){
             owl.owlCarousel();
         }
         $('#owl-prew').on(function(){
-            owl.trigger('prew.owl.carousel');
+            owl.trigger('prev.owl.carousel');
         });
         $('#owl-next').on(function(){
             owl.trigger('next.owl.carousel');
