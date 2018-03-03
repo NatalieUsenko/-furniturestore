@@ -791,12 +791,9 @@ footer.site-footer{
     opacity: 1;
     margin: 10px 0;
 }
-#firstscreen .slider .tcowl-wrap .owl-theme .owl-dots .owl-dot.active span,
-#firstscreen .slider .tcowl-wrap .owl-theme .owl-dots .owl-dot:hover span{
+#firstscreen .slider .owl-theme .owl-controls .owl-page.active span,
+#firstscreen .slider .owl-theme .owl-controls.clickable .owl-page:hover span{
     background: #fff;
-}
-#firstscreen .slider .tcowl-wrap .tcowl-nav .owl-controls .owl-nav{
-    display: none!important;
 }
 #owl-prev{
     position: absolute;
@@ -838,7 +835,6 @@ footer.site-footer{
     bottom: 75px;
     background: rgba(33,33,33,0.83);
     color: #fff;
-    z-index: 2;
 }
 #firstscreen .grey-line .go-to{
     position: absolute;
