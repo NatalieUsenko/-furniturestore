@@ -795,6 +795,32 @@ footer.site-footer{
 #firstscreen .slider .owl-theme .owl-controls.clickable .owl-page:hover span{
     background: #fff;
 }
+#owl-prew{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 22px;
+    height: 42px;
+    background: url("img/slider-arrow.png") no-repeat;
+    background-size: cover;
+}
+#owl-next{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%) rotateX(180grad);
+    -moz-transform: translateY(-50%) rotateX(180grad);
+    -o-transform: translateY(-50%) rotateX(180grad);
+    -webkit-transform: translateY(-50%) rotateX(180grad);
+    width: 22px;
+    height: 42px;
+    background: url("img/slider-arrow.png") no-repeat;
+    background-size: cover;
+}
 
 #firstscreen .grey-line{
     width: 100%;
