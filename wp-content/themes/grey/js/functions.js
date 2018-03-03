@@ -98,7 +98,7 @@ jQuery(function($){
             owl.owlCarousel();
         }
         $('#owl-prev').on('click',function(){
-            $('.owl-theme .owl-controls .owl-buttons .owl-prev').click();
+            $('.owl-theme .owl-controls .owl-buttons .owl-prev').mouseup();
             //owl.trigger('prev.owl.carousel');
         });
         $('#owl-next').on('click', function(){
