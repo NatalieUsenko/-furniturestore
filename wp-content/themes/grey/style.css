@@ -789,6 +789,19 @@ footer.site-footer{
     font-family: "Open Sans", sans-serif;
     text-shadow: none;
 }
+#firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
+    display: inline-block;
+    font-size: 0.5em;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #fff;
+    min-width: 225px;
+}
+#firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a:hover,
+#firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a:focus{
+    padding: 14px;
+    border: 2px solid #fff;
+}
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgcontent{
     width: 60%;
     float: left;
