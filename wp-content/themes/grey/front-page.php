@@ -52,7 +52,7 @@ $page_query = new WP_Query($page_args);
         </div>
         <div class="slider">
             <?php// echo do_shortcode('[owl-carousel category="main-slider" singleItem="true" items="1" navigation="true" pagination="true" lazyLoad="true" slideSpeed="900" paginationSpeed="400"]');?>
-            <?php echo do_shortcode('[wpoc-owl-autowidth category="4" items="1" image_size="Full" loop="true"]');?>
+            <?php echo do_shortcode('[wpoc-owl-autowidth category="4" items="1" image_size="full" loop="true"]');?>
         </div>
         <div class="grey-line">
              <a id="owl-prev" href="javascript:void(0);"></a>
