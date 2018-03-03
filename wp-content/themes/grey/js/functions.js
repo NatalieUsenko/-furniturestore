@@ -83,7 +83,7 @@ jQuery(function($){
             var darkHeight = $('.top-catalogue_dark').outerHeight();
             var imgHeight = Math.ceil(580*windowWidth*0.55/1135);
             var diffHeight = Math.ceil(imgHeight - darkHeight - topStart - $('h1').height());
-
+            console.log(diffHeight);
             if ( diffHeight > 0 ){
                 $('.top-catalogue_dark').css('margin-top', diffHeight+'px');
             }
