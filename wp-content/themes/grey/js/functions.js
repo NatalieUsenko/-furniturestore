@@ -77,13 +77,13 @@ jQuery(function($){
         if ( $('.top-catalogue_dark').length > 0 ){
             var windowWidth = $(window).width();
             var leftStart = $('h1').position().left;
-            var topStart = $('h1').position().top;
+            var topStart = $('h1').offset().top;
             $('.post-top_more-link__catalogue').css('left', leftStart+'px');
 
             var darkHeight = $('.top-catalogue_dark').outerHeight();
             var imgHeight = Math.ceil(580*windowWidth*0.55/1135);
             var diffHeight = Math.ceil(imgHeight - darkHeight - topStart - $('h1').height());
-            console.log(diffHeight);
+
             if ( diffHeight > 0 ){
                 $('.top-catalogue_dark').css('margin-top', diffHeight+'px');
             }
