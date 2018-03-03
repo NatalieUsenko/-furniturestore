@@ -780,10 +780,10 @@ footer.site-footer{
     -webkit-transform: translateY(-50%);
     margin-top: 0;
 }
-#firstscreen .slider .tcowl-wrap .owl-theme .owl-dots .owl-dot{
+#firstscreen .slider .owl-theme .owl-controls .owl-page{
     display: block;
 }
-#firstscreen .slider .tcowl-wrap .owl-theme .owl-dots .owl-dot span{
+#firstscreen .slider .owl-theme .owl-controls .owl-page span{
     border-radius: 0;
     background: transparent;
     border: 1px solid #fff;

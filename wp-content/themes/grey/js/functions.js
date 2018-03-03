@@ -98,10 +98,12 @@ jQuery(function($){
             owl.owlCarousel();
         }
         $('#owl-prev').on('click',function(){
-            owl.trigger('prev.owl.carousel');
+            $('.owl-theme .owl-controls .owl-buttons .owl-prev').click();
+            //owl.trigger('prev.owl.carousel');
         });
         $('#owl-next').on('click', function(){
-            owl.trigger('next.owl.carousel');
+            $('.owl-theme .owl-controls .owl-buttons .owl-next').click();
+            //owl.trigger('next.owl.carousel');
         });
     });
 
