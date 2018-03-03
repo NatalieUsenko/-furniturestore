@@ -792,13 +792,16 @@ footer.site-footer{
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
     display: inline-block;
     font-size: 0.5em;
-    margin: 15px auto;
+    margin: 25px auto;
     padding: 15px;
     border: 1px solid #fff;
     min-width: 225px;
+    color: #fff;
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a:hover,
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a:focus{
+    color: #fff;
+    text-decoration: none;
     padding: 14px;
     border: 2px solid #fff;
 }
