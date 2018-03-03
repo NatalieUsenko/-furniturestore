@@ -796,6 +796,7 @@ footer.site-footer{
     font-size: 0.875em;
     font-family: "Open Sans", sans-serif;
     text-shadow: none;
+    padding-right: 25px;
 }
 #firstscreen .slider .owl-controls{
     position: absolute;
