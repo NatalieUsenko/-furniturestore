@@ -769,7 +769,14 @@ footer.site-footer{
     /*background-size: cover;*/
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay{
-
+    display: block;
+    position: absolute;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+    background: rgba(33,33,33,0.83);
+    color: #fff;
 }
 #firstscreen .slider .owl-controls{
     position: absolute;
