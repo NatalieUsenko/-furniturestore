@@ -74,7 +74,7 @@ jQuery(function($){
                 $('.top-news_dark').css('margin-top', diffHeight+'px');
             }
         }
-        if ( $('.top-catalogue_dark').length > 0 ){
+        if ( $('body').find('.top-catalogue_dark').length > 0 ){
             var windowWidth = $(window).width();
             var leftStart = $('h1').position().left;
             $('.post-top_more-link__catalogue').css('left', leftStart+'px');
