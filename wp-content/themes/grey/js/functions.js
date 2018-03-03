@@ -93,13 +93,13 @@ jQuery(function($){
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
         }
 
-        var owl = $('.owl-carousel');
-        if (owl.length>0){
-            owl.owlCarousel();
-        }
+        // var owl = $('.owl-carousel');
+        // if (owl.length>0){
+        //     owl.owlCarousel();
+        // }
         $('#owl-prew').on('click',function(){
-            owl.trigger('prev.owl.carousel');
-            //$('#firstscreen .slider .tcowl-wrap .tcowl-nav .owl-controls .owl-nav .owl-prev').click();
+            //owl.trigger('prev.owl.carousel');
+            $('#firstscreen .slider .tcowl-wrap .tcowl-nav .owl-controls .owl-nav .owl-prev').click();
         });
         $('#owl-next').on('click', function(){
             //owl.trigger('next.owl.carousel');
