@@ -93,10 +93,13 @@ jQuery(function($){
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px')
         }
 
-        var owl = $('.owl-carousel');
+        var owl = $('body').find('.owl-carousel');
         if (owl.length>0){
             owl.owlCarousel();
         }
+        owl.on('changed.owl.carousel', function(event) {
+            alert('1');
+        });
         $('#owl-prev').on('click',function(){
             $('.owl-theme .owl-controls .owl-buttons .owl-prev').mouseup();
             //owl.trigger('prev.owl.carousel');
