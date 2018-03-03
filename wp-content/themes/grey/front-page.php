@@ -51,8 +51,8 @@ $page_query = new WP_Query($page_args);
             ?>
         </div>
         <div class="slider">
-            <?php //echo do_shortcode('[owl-carousel category="main-slider" singleItem="true" items="1" navigation="true" pagination="true" lazyLoad="true" slideSpeed="900" paginationSpeed="400"]');?>
-            <?php echo do_shortcode('[soc_slider_shortcode id="149" items="1" navigation="true" ]');?>
+            <?php echo do_shortcode('[owl-carousel category="main-slider" singleItem="true" items="1" navigation="true" pagination="true" lazyLoad="true" slideSpeed="900" paginationSpeed="400"]');?>
+            <?php //echo do_shortcode('[soc_slider_shortcode id="149" items="1" navigation="true" ]');?>
         </div>
         <div class="grey-line">
              <a id="owl-prev" href="javascript:void(0);"></a>
