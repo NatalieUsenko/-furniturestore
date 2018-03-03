@@ -388,7 +388,7 @@ header.site-header{
 .as-table-cell{
 	display: table-cell;
 }
-header.not-fixed .as-table-cell.show-always {
+.home header.not-fixed .as-table-cell.show-always {
 	display: table-cell;
 	padding-top: 15px;
 	padding-bottom: 15px;
