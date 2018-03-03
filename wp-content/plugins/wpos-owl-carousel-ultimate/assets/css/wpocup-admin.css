@@ -1,0 +1,8 @@
+.wpocup-img-view{max-width: 150px;}
+.wpocup-img-view img{
+	padding: 5px;
+	margin: 5px 0;
+	max-width: 150px;
+	border: 1px solid #ccc;
+}
+.wp-list-table .row-actions .wpocup_pro_id{color:#999;}
