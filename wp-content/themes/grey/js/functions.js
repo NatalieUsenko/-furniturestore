@@ -99,11 +99,9 @@ jQuery(function($){
         }
         $('#owl-prev').on('click',function(){
             owl.trigger('prev.owl.carousel');
-            //$('#firstscreen .slider .tcowl-wrap .tcowl-nav .owl-controls .owl-nav .owl-prev').click();
         });
         $('#owl-next').on('click', function(){
-            //owl.trigger('next.owl.carousel');
-            $('#firstscreen .slider .tcowl-wrap .tcowl-nav .owl-controls .owl-nav .owl-next').click();
+            owl.trigger('next.owl.carousel');
         });
     });
 
