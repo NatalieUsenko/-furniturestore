@@ -762,13 +762,14 @@ footer.site-footer{
     width: 59%;
     float: right;
     position: relative;
+    z-index: 3;
 
     /*padding-top: 56.25%;    */
     /*background: url("img/start-img.jpg") 50% 50% no-repeat;*/
     /*background-size: cover;*/
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay{
-    display: none!important;
+
 }
 #firstscreen .slider .owl-controls{
     position: absolute;
@@ -823,6 +824,7 @@ footer.site-footer{
     height: 42px;
     background: url("img/slider-arrow.png") no-repeat;
     background-size: cover;
+    z-index: 5;
 }
 #owl-next .disabled,
 #owl-prev .disabled{
