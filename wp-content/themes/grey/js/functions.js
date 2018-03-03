@@ -102,7 +102,7 @@ jQuery(function($){
             //owl.trigger('prev.owl.carousel');
         });
         $('#owl-next').on('click', function(){
-            $('.owl-theme .owl-controls .owl-buttons .owl-next').click();
+            $('.owl-theme .owl-controls .owl-buttons .owl-next').mouseup();
             //owl.trigger('next.owl.carousel');
         });
     });

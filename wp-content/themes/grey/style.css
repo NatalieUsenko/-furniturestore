@@ -795,6 +795,9 @@ footer.site-footer{
 #firstscreen .slider .owl-theme .owl-controls.clickable .owl-page:hover span{
     background: #fff;
 }
+#firstscreen .slider .owl-theme .owl-buttons{
+    display: none;
+}
 #owl-prev{
     position: absolute;
     left: 30px;
