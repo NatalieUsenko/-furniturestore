@@ -57,7 +57,7 @@ $page_query = new WP_Query($page_args);
         </div>
         <div class="grey-line">
              <a id="owl-prev" href="javascript:void(0);"></a>
-            <a href="javascript:void(0);" data-to="catalogue" class="go-to">Каталог мебели</a>
+            <a href="#catalogue" class="go-to">Каталог мебели</a>
             <div id="slider-content"></div>
             <a id="owl-next" href="javascript:void(0);"></a>
         </div>

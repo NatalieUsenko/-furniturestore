@@ -760,7 +760,7 @@ footer.site-footer{
 /******************************* Frontpage ******************************************/
 #firstscreen{
     background: url("img/start-top-img.png") top left no-repeat;
-    background-size: 26% auto;
+    background-size: 35% auto;
     margin-bottom: 35px;
     position: relative;
 }
