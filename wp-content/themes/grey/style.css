@@ -329,6 +329,7 @@ button[type='submit']:active,
 input[type='submit']:hover,
 input[type='submit']:focus,
 input[type='submit']:active{
+    border: 1px solid #888;
 	background-color: #888;
 	color: #fff;
 	outline: none;
@@ -984,7 +985,8 @@ footer.site-footer{
     text-decoration: none;
     color: #fff;
     background: #464646;
-    overflow: auto;
+    overflow: hidden;
+    display: block;
 }
 .catalogue__item span{
     display: block;
@@ -993,6 +995,8 @@ footer.site-footer{
     padding: 15px;
     background: #464646;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 .catalogue__item a:hover img,
 .catalogue__item a:focus img{

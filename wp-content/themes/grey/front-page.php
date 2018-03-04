@@ -105,7 +105,7 @@ $page_query = new WP_Query($page_args);
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3><a href="<?php echo get_category_link();?>">Статьи</a></h3>
+                    <h3><a href="<?php echo get_category_link('1');?>">Статьи</a></h3>
                     <?php while ( $news_query->have_posts() ) {
                         $news_query->the_post();?>
                         <div class="post-list">
