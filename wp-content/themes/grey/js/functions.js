@@ -64,12 +64,13 @@ jQuery(function($){
         if ( $('.top-news_dark').length > 0 ){
             var windowWidth = $(window).width();
             var leftStart = $('h1').position().left;
+            var topStart = $('h1').offset().top - $('#main').offset().top;
             $('.top-news_dark').css('padding-left', leftStart+'px');
 
             var darkHeight = $('.top-news_dark').outerHeight();
             var imgHeight = Math.ceil(515*windowWidth*0.55/1125);
             var diffHeight = 0;
-            diffHeight = Math.ceil(imgHeight - darkHeight - $('h1').position().top - $('h1').height());
+            diffHeight = Math.ceil(imgHeight - darkHeight - topStart - $('h1').height() - 25);
             if ( diffHeight > 0 ){
                 $('.top-news_dark').css('margin-top', diffHeight+'px');
             }
