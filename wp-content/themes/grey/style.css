@@ -328,7 +328,7 @@ button[type='submit']:active,
 input[type='submit']:focus,
 input[type='submit']:active{
 	background-color: transparent;
-	color: #3b3b3b;
+	color: #888;
 	outline: none;
 }
 #page {
@@ -975,6 +975,7 @@ footer.site-footer{
 }
 .catalogue__item{
     margin-bottom: 35px;
+    background: #464646;
 }
 .catalogue__item a,
 .catalogue__item a:hover,
@@ -989,4 +990,13 @@ footer.site-footer{
     padding: 15px;
     background: #464646;
     text-align: center;
+}
+.catalogue__item a:hover img,
+.catalogue__item a:focus img{
+    opacity: 0.4;
+    -webkit-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1,1.1,1);
+}
+#lastscreen{
+    padding-bottom: 75px;
 }
