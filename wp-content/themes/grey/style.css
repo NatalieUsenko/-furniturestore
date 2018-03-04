@@ -760,7 +760,7 @@ footer.site-footer{
 /******************************* Frontpage ******************************************/
 #firstscreen{
     background: url("img/start-top-img.png") top left no-repeat;
-    background-size: 35% auto;
+    background-size: 33% auto;
     margin-bottom: 35px;
     position: relative;
 }
@@ -918,13 +918,40 @@ footer.site-footer{
     font-size: 1.125em;
     color: #fff;
     text-transform: uppercase;
-
 }
 #firstscreen .grey-line .go-to:hover{
     padding: 14px;
     border: 2px solid #fff;
     text-decoration: none;
     color: #fff;
+}
+@media(max-width: 1919px){
+    #firstscreen .grey-line{
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+        background: rgba(33,33,33,0.83);
+        color: #fff;
+    }
+    #firstscreen .slider .owl-controls{
+        left: 25px;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
+        margin: 15px auto;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay{
+        height: 150px;
+        bottom: 25px;
+        padding: 25px 50px 25px 25px;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle{
+        width: 40%;
+        float: right;
+        text-align: center;
+        font-size: 2.250em;
+    }
 }
 #steps,
 #catalogue{
@@ -957,6 +984,7 @@ footer.site-footer{
 #steps .grey-bgr ul>li h3,
 #steps .grey-bgr ul>li h5{
     max-width: 300px;
+    margin: 0 auto;
 }
 #steps .grey-bgr .separator{
     display: none;
@@ -998,6 +1026,7 @@ footer.site-footer{
 .catalogue__item span{
     display: block;
     text-transform: uppercase;
+    white-space: nowrap;
     font-size: 1.125em;
     padding: 15px;
     background: #464646;
