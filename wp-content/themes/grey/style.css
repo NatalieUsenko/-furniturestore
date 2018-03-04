@@ -376,6 +376,11 @@ input[type='submit']:active{
 }
 
 header.site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
     padding-top: 15px;
     padding-bottom: 15px;
     background: #fff;
@@ -458,7 +463,9 @@ footer.site-footer{
 		width: 1776px;
 	}
 }
-
+#main{
+    margin-top: 87px;
+}
 .site-main{
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -940,7 +947,6 @@ footer.site-footer{
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
         margin: 15px auto;
-        padding: 10px;
         font-size: 0.875rem;
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay{
