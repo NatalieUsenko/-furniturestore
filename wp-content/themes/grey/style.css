@@ -323,12 +323,14 @@ input[type='submit']{
 	background-color: #3b3b3b;
 	border: 1px solid #3b3b3b;
 }
+button[type='submit']:hover,
 button[type='submit']:focus,
 button[type='submit']:active,
+input[type='submit']:hover,
 input[type='submit']:focus,
 input[type='submit']:active{
-	background-color: transparent;
-	color: #888;
+	background-color: #888;
+	color: #fff;
 	outline: none;
 }
 #page {
@@ -975,13 +977,14 @@ footer.site-footer{
 }
 .catalogue__item{
     margin-bottom: 35px;
-    background: #464646;
 }
 .catalogue__item a,
 .catalogue__item a:hover,
 .catalogue__item a:focus{
     text-decoration: none;
     color: #fff;
+    background: #464646;
+    overflow: auto;
 }
 .catalogue__item span{
     display: block;
