@@ -764,11 +764,18 @@ footer.site-footer{
     margin-bottom: 35px;
     position: relative;
 }
-#firstscreen .info{
+#firstscreen .info-wrapper{
     padding-top: 18.85%;
-    padding-left: 15.4%;
     width: 41%;
     float: left;
+}
+#firstscreen .info{
+    /*padding-left: 15.4%;*/
+    width: 456px;
+    float: right;
+}
+#firstscreen .info .info__img{
+    margin-right: 15px;
 }
 #firstscreen .slider{
     width: 59%;
