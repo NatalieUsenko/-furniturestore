@@ -68,8 +68,10 @@ jQuery(function($){
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
+        console.log('scroll: '+scroll);
         if ($('body').hasClass('body')){
             var catalogueTop = $('#catalogue').offset().top;
+            console.log('catalogueTop: '+catalogueTop);
             if (scroll<(catalogueTop-87)){
                 $('#masthead').removeClass('not-fixed').addClass('showed');
             } else {
