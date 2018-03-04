@@ -998,6 +998,10 @@ footer.site-footer{
     position: relative;
     z-index: 2;
 }
+.catalogue__item a img{
+    width: 100%;
+    height: auto;
+}
 .catalogue__item a:hover img,
 .catalogue__item a:focus img{
     opacity: 0.4;
