@@ -66,6 +66,18 @@ jQuery(function($){
         $('html, body').animate({ scrollTop: target.offset().top }, 500);
     });
 
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        if ($('body').hasClass('body')){
+            var catalogueTop = $('#catalogue').offset().top;
+            if (scroll<(catalogueTop-87)){
+                $('.site-header').removeClass('not-fixed').addClass('showed');
+            } else {
+                $('.site-header').removeClass('showed').addClass('not-fixed');
+            }
+        }
+    });
+
     $(window).load(function () {
         if ( $('.top-news_dark').length > 0 ){
             var windowWidth = $(window).width();

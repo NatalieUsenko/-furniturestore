@@ -375,7 +375,8 @@ input[type='submit']:active{
     box-shadow: none;
 }
 
-header.site-header{
+header.site-header,
+header.site-header.showed{
     position: fixed;
     top: 0;
     left: 0;
@@ -1045,6 +1046,8 @@ footer.site-footer{
 .catalogue__item a img{
     width: 100%;
     height: auto;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
 }
 .catalogue__item a:hover img,
 .catalogue__item a:focus img{
