@@ -83,9 +83,12 @@ function true_load_posts(){
     query_posts( $args );
     // если посты есть
     if( have_posts() ) :
-
+        $i= 0;
         // запускаем цикл
-        while( have_posts() ): the_post();?>
+        while( have_posts() ): the_post();
+            if($i % 2 == 0) {
+                echo '<div class="row">';
+            }?>
             <div class="col-md-6 post-list">
                 <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
                 <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
@@ -93,7 +96,11 @@ function true_load_posts(){
                 <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
                 <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
             </div>
-        <?php endwhile;
+        <?php  $i++;
+            if($i % 2 == 0) {
+                echo '</div>';
+            }
+            endwhile;
 
     endif;
     die();

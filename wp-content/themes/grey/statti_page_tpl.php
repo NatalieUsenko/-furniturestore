@@ -58,8 +58,12 @@ $wp_query = new WP_Query($news_args);
                     <?php }?>
                     <div class="clearfix"></div>
                      <div class="container-fluid container mt-50">
-                    <?php while ( $wp_query->have_posts() ) {
-                        $wp_query->the_post();?>
+                    <?php $i= 0;
+                    while ( $wp_query->have_posts() ) {
+                        $wp_query->the_post();
+                        if($i % 2 == 0) {
+                            echo '<div class="row">';
+                        }?>
                         <div class="col-md-6 post-list">
                             <div class="post-list_img"><?php the_post_thumbnail('thumbnail');?></div>
                             <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
@@ -67,7 +71,11 @@ $wp_query = new WP_Query($news_args);
                             <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
                             <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
                         </div>
-                    <?php }?>
+                    <?php $i++;
+                        if($i % 2 == 0) {
+                            echo '</div>';
+                        }
+                    }?>
                          <?php if (  $wp_query->max_num_pages > 1 ) : ?>
                              <script>
                                  var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
