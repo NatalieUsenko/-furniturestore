@@ -35,19 +35,19 @@ $page_query = new WP_Query($page_args);
                 <?php
                 $phone = get_field('contacts_phone', 7);
                 if ($phone) {
-                    echo '<p><img src="'.get_template_directory_uri().'/img/icon-phone.png" /> '.$phone.'</p>';
+                    echo '<p><img class="info__img" src="'.get_template_directory_uri().'/img/icon-phone.png" /> '.$phone.'</p>';
                 }
                 ?>
                 <?php
                 $email = get_field('contacts_email', 7);
                 if ($email) {
-                    echo '<p><a href="mailto:'.$email.'" class="emaillink"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a></p>';
+                    echo '<p><a href="mailto:'.$email.'" class="emaillink"><img class="info__img" src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a></p>';
                 }
                 ?>
                 <?php
                 $adress = get_field('contacts_adress', 7);
                 if ($adress) {
-                    echo '<p><img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$adress.'</p>';
+                    echo '<p><img class="info__img" src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$adress.'</p>';
                 }
                 ?>
             </div>
