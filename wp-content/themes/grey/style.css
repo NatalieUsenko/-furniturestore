@@ -940,17 +940,19 @@ footer.site-footer{
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
         margin: 15px auto;
+        padding: 10px;
+        font-size: 0.875rem;
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay{
         height: 150px;
         bottom: 25px;
-        padding: 25px 50px 25px 25px;
+        padding: 15px 65px 15px 25px;
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle{
-        width: 40%;
-        float: right;
-        text-align: center;
-        font-size: 2.250em;
+        font-size: 1.750em;
+    }
+    #firstscreen .info p{
+        margin-bottom: 0.5em;
     }
 }
 #steps,
