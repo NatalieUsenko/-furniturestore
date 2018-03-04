@@ -66,14 +66,14 @@ jQuery(function($){
         $('html, body').animate({ scrollTop: target.offset().top }, 500);
     });
 
-    $(window).scroll(function (event) {
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if ($('body').hasClass('body')){
             var catalogueTop = $('#catalogue').offset().top;
             if (scroll<(catalogueTop-87)){
-                $('.site-header').removeClass('not-fixed').addClass('showed');
+                $('#masthead').removeClass('not-fixed').addClass('showed');
             } else {
-                $('.site-header').removeClass('showed').addClass('not-fixed');
+                $('#masthead').removeClass('showed').addClass('not-fixed');
             }
         }
     });
