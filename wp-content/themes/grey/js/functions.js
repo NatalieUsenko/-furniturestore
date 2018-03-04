@@ -70,7 +70,7 @@ jQuery(function($){
         var scroll = $(window).scrollTop();
         if ($('body').hasClass('home')){
             var catalogueTop = $('#catalogue').offset().top;
-            if (scroll<(catalogueTop-87)){
+            if (scroll>(catalogueTop-87)){
                 $('#masthead').removeClass('not-fixed').addClass('showed');
             } else {
                 $('#masthead').removeClass('showed').addClass('not-fixed');
