@@ -1055,6 +1055,8 @@ footer.site-footer{
     #firstscreen .info{
         margin-left: 0;
         float: right;
+        max-width: 100%;
+        padding-left: 15px;
     }
 }
 #steps,
