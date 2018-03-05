@@ -1,8 +1,12 @@
 jQuery(document).ready(function($) {
     $('.home #masthead').mouseenter(function () {
-        $(this).addClass('fixed').removeClass('not-fixed');
+        if (!$(this).hasClass('showed')){
+            $(this).addClass('fixed').removeClass('not-fixed');
+        }
     }).mouseleave(function () {
-        $(this).addClass('not-fixed').removeClass('fixed');
+        if (!$(this).hasClass('showed')) {
+            $(this).addClass('not-fixed').removeClass('fixed');
+        }
     });
 });
 jQuery(function($){
