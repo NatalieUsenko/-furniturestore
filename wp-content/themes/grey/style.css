@@ -1060,7 +1060,6 @@ footer.site-footer{
     }
     #firstscreen .grey-line .go-to{
         min-width: 144px;
-        width: 144px;
         font-size: 0.813em;
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle{
@@ -1072,6 +1071,7 @@ footer.site-footer{
         font-size: 0.667em;
         min-width: 144px;
         width: 144px;
+        text-align: center;
     }
 }
 #steps,
