@@ -67,7 +67,7 @@
                            echo '<a href="'.$url.'" target="_blank" rel=""><img src="'.get_template_directory_uri().'/img/fb-logo.png" /></a>';
                         }
                         ?>
-                        <div class="menu"></div>
+                        <div class="menu-btn"></div>
                     </div>
 
                 </div>

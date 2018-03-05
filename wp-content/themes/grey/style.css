@@ -431,20 +431,23 @@ header.not-fixed .as-table-cell.show-always,
 #menu-top-menu{
     float: right;
 }
+#menu-top-menu .top-menu{
+    white-space: nowrap;
+}
 #menu-top-menu .menu-item{
     display: inline-block;
     text-transform: uppercase;
     margin-right: 50px;
 }
 
-header .menu{
+header .menu-btn{
 	display: inline-block;
 	margin-left: 25px;
     height: 27px;
     width: 27px;
     background: url("img/menu-burger.png") no-repeat;
 }
-header .menu.opened{
+header .menu-btn.opened{
     background: url("img/menu-close.png") no-repeat;
 }
 header .center-block-el{

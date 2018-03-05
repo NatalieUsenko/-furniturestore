@@ -64,7 +64,7 @@ jQuery(function($){
         });
     });
 
-    $('.menu').on('click', function() {
+    $('.menu-btn').on('click', function() {
         $(this).toggleClass('opened');
         if ($(this).hasClass('opened')){
             $("#top-contacts").hide();
