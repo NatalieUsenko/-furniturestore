@@ -350,6 +350,7 @@ a:focus{
 }
 .as-table-cell{
     display: table-cell;
+    vertical-align: middle;
 }
 
 #page {
@@ -410,7 +411,7 @@ header.site-header.showed{
 
 @media (min-width: 1200px){
 	header .logo{
-		max-width: 200px;
+		width: 200px;
 	}
 }
 
