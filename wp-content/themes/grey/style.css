@@ -425,6 +425,9 @@ header.not-fixed .as-table-cell.show-always,
 	display: none;
 }
 
+#menu-top-menu{
+    float: right;
+}
 #menu-top-menu .menu-item{
     display: inline-block;
     text-transform: uppercase;
