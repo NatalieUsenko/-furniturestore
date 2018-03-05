@@ -1011,16 +1011,16 @@ footer.site-footer{
         background-size: 35% auto;
     }
     #firstscreen .info__wrapper{
-        padding-top: 25px;
+        padding-top: 60px;
         width: 100%;
         float: none;
-        margin-bottom: 25px;
     }
     #firstscreen .info{
         margin-left: 37%;
         float: left;
     }
     #firstscreen .slider{
+        padding-top: 25px;
         width: 100%;
         float: left;
     }
