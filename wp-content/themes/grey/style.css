@@ -409,12 +409,6 @@ header.site-header.showed{
     box-shadow:         0px 4px 30px 0px rgba(0, 0, 0, 0.17);
 }
 
-@media (min-width: 1200px){
-	header .logo{
-		max-width: 200px;
-	}
-}
-
 header.not-fixed .as-table-cell.show-always,
 .home header.not-fixed .as-table-cell.show-always {
 	display: table-cell;
@@ -997,6 +991,10 @@ footer.site-footer{
     }
 }
 @media (max-width: 1200px){
+    header .logo{
+        max-width: 200px;
+        padding-right: 15px;
+    }
     #top-contacts{
         text-align: left;
     }
