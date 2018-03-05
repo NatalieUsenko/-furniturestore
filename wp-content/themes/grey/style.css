@@ -1007,12 +1007,23 @@ footer.site-footer{
         white-space: nowrap;
         width: 100px;
     }
-    #firstscreen .info__wrapper {
-        width: 100%;
+    #firstscreen{
+        background-size: 35% auto;
     }
-    #firstscreen .slider{
+    #firstscreen .info__wrapper{
+        padding-top: 150px;
         width: 100%;
         float: none;
+        margin-bottom: 25px;
+    }
+    #firstscreen .info{
+        /*padding-left: 15.4%;*/
+        width: 456px;
+        float: right;
+    }
+    #owl-prev,
+    #owl-next{
+        display: none;
     }
 }
 #steps,
