@@ -7,6 +7,11 @@ jQuery(document).ready(function($) {
         if (!$(this).hasClass('showed')) {
             $(this).addClass('not-fixed').removeClass('fixed');
         }
+        if ($('.menu-btn').hasClass('opened')){
+            $('.menu-btn').toogleClass('opened');
+            $("#top-contacts").show();
+            $("#top-menu").hide();
+        }
     });
 });
 jQuery(function($){
