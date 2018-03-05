@@ -180,6 +180,9 @@ jQuery(function($){
         if ((infoStart<75)|(windowWidth<=1200)){
             infoStart = 75;
         }
+        if (windowWidth<768){
+            infoStart = 15;
+        }
         $('#firstscreen .grey-line .go-to').css('left', infoStart+'px');
 
         if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
