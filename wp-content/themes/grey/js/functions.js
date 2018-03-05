@@ -167,12 +167,12 @@ jQuery(function($){
     function firstscreenGreyLine() {
         var windowWidth = $(window).width();
         var leftStart = $('footer .container .row').position().left;
-        if (windowWidth<1200){
-            $('#firstscreen .grey-line').css('width', '100%');
-            $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', '100%');
-        } else {
+        if (windowWidth>1200){
             $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px');
             $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', (windowWidth*0.59-leftStart)+'px');
+        } else {
+            $('#firstscreen .grey-line').css('width', '100%');
+            $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', '100%');
         }
 
 
