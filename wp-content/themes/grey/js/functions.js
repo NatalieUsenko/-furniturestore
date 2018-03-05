@@ -167,8 +167,14 @@ jQuery(function($){
     function firstscreenGreyLine() {
         var windowWidth = $(window).width();
         var leftStart = $('footer .container .row').position().left;
-        $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px');
-        $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', (windowWidth*0.59-leftStart)+'px');
+        if (windowWidth<1200){
+            $('#firstscreen .grey-line').css('width', '100%');
+            $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', '100%');
+        } else {
+            $('#firstscreen .grey-line').css('width', (windowWidth-leftStart)+'px');
+            $('#firstscreen .slider .owl-carousel-item-imgoverlay').css('width', (windowWidth*0.59-leftStart)+'px');
+        }
+
 
         var infoStart = $('#firstscreen .info').offset().left;
         if (infoStart<75){

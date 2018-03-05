@@ -1011,13 +1011,13 @@ footer.site-footer{
         background-size: 35% auto;
     }
     #firstscreen .info__wrapper{
-        padding-top: 100px;
+        padding-top: 25px;
         width: 100%;
         float: none;
         margin-bottom: 25px;
     }
     #firstscreen .info{
-        margin-left: 36%;
+        margin-left: 37%;
         float: left;
     }
     #firstscreen .slider{
