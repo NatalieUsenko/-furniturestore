@@ -1039,6 +1039,7 @@ footer.site-footer{
     }
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
         width: 225px;
+        display: block;
     }
 }
 #steps,
