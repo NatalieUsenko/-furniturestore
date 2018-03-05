@@ -1028,6 +1028,15 @@ footer.site-footer{
     #owl-next{
         display: none;
     }
+    .go-to{
+        z-index: 3;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgcontent{
+        width: 50%;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgcontent p{
+        display: none;
+    }
 }
 #steps,
 #catalogue{
