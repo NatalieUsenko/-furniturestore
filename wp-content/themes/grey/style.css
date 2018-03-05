@@ -420,7 +420,6 @@ header.not-fixed .as-table-cell.show-always,
 	display: table-cell;
 	padding-top: 15px;
 	padding-bottom: 15px;
-    width: 100px;
 }
 
 .home header.not-fixed .as-table-cell{
@@ -1006,6 +1005,7 @@ footer.site-footer{
     }
     .show-always{
         white-space: nowrap;
+        width: 100px;
     }
 }
 #steps,
