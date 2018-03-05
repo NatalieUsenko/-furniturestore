@@ -443,12 +443,18 @@ header.not-fixed .as-table-cell.show-always,
 header .menu-btn{
 	display: inline-block;
 	margin-left: 25px;
-    height: 27px;
-    width: 27px;
-    background: url("img/menu-burger.png") no-repeat;
 }
-header .menu-btn.opened{
-    background: url("img/menu-close.png") no-repeat;
+header .menu-btn img:first-child{
+    display: inline;
+}
+header .menu-btn img:last-child{
+    display: none;
+}
+header .menu-btn.opened img:first-child{
+    display: none;
+}
+header .menu-btn.opened img:last-child{
+    display: inline;
 }
 header .center-block-el{
 	margin-left: 25px;
