@@ -177,7 +177,7 @@ jQuery(function($){
 
 
         var infoStart = $('#firstscreen .info').offset().left;
-        if ((infoStart<75)|(windowWidth<1200)){
+        if ((infoStart<75)|(windowWidth<=1200)){
             infoStart = 75;
         }
         $('#firstscreen .grey-line .go-to').css('left', infoStart+'px');
