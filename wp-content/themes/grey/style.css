@@ -1058,6 +1058,19 @@ footer.site-footer{
         max-width: 100%;
         padding-left: 15px;
     }
+    #firstscreen .grey-line .go-to{
+        width: 144px;
+        font-size: 0.813em;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle{
+        font-size: 1.125em;
+        text-align: right;
+    }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
+        float: right;
+        font-size: 0.667em;
+        width: 145px;
+    }
 }
 #steps,
 #catalogue{
