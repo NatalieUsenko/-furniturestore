@@ -468,9 +468,6 @@ header .center-block-el>img{
 	margin-right: 15px;
 }
 @media (min-width: 1200px){
-    header .logo{
-        width: 200px;
-    }
 	header .center-block-el{
 		margin-right: 15px;
 		margin-left: 15px;
@@ -479,6 +476,11 @@ header .center-block-el>img{
 	header .center-block-el>img{
 		margin-right: 5px;
 	}
+}
+@media (max-width: 1200px){
+    header .logo{
+        width: 200px;
+    }
 }
 
 footer,
