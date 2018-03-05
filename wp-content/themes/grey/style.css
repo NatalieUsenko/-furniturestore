@@ -477,7 +477,6 @@ header .center-block-el>img{
 	}
 }
 
-
 footer,
 footer.site-footer{
 	background-color: #3b3b3b;
@@ -797,7 +796,7 @@ footer.site-footer{
 /******************************* Frontpage ******************************************/
 #firstscreen{
     background: url("img/start-top-img.png") top left no-repeat;
-    background-size: 33% auto;
+    background-size: 27% auto;
     margin-bottom: 35px;
     position: relative;
 }
