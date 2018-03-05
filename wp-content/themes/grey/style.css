@@ -442,10 +442,10 @@ header .menu{
 	margin-left: 25px;
     height: 27px;
     width: 27px;
-    background: url("/img/menu-burger.png") no-repeat;
+    background: url("img/menu-burger.png") no-repeat;
 }
 header .menu.opened{
-    background: url("/img/menu-close.png") no-repeat;
+    background: url("img/menu-close.png") no-repeat;
 }
 header .center-block-el{
 	margin-left: 25px;
