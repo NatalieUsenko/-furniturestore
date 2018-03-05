@@ -1043,6 +1043,20 @@ footer.site-footer{
         margin-right: 25px;
     }
 }
+@media (max-width: 768px){
+    #firstscreen{
+        background-size: 65% auto;
+    }
+    #firstscreen .info__wrapper{
+        padding-top: 25%;
+        width: 100%;
+        float: none;
+    }
+    #firstscreen .info{
+        margin-left: 0;
+        float: right;
+    }
+}
 #steps,
 #catalogue{
     padding: 15px 0 25px;
