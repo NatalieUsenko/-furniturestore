@@ -1108,6 +1108,12 @@ footer.site-footer{
         padding: 10px 0;
     }
 }
+@media (max-width: 480px){
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
+        min-width: 114px;
+        width: 114px;
+    }
+}
 #steps,
 #catalogue{
     padding: 15px 0 25px;
