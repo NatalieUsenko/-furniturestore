@@ -1037,6 +1037,12 @@ footer.site-footer{
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgcontent p{
         display: none;
     }
+    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a:before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+    }
 }
 #steps,
 #catalogue{
