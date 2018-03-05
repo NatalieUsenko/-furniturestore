@@ -1073,6 +1073,12 @@ footer.site-footer{
         width: 144px;
         text-align: center;
     }
+    #top-contacts{
+        display: none!important;
+    }
+    #menu-top-menu .menu-item{
+        display: block;
+    }
 }
 #steps,
 #catalogue{
