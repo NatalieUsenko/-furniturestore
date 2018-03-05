@@ -990,6 +990,17 @@ footer.site-footer{
         margin-bottom: 0.5em;
     }
 }
+@media (max-width: 1200px){
+    #top-contacts{
+        text-align: left;
+    }
+    .center-block-el{
+        margin-bottom: 5px;
+    }
+    .show-always{
+        white-space: nowrap;
+    }
+}
 #steps,
 #catalogue{
     padding: 15px 0 25px;
