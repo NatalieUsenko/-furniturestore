@@ -1101,6 +1101,7 @@ footer.site-footer{
         top: -10px;
         left: 0;
         z-index: 100;
+        background: #fff;
     }
     #menu-top-menu .menu-item{
         display: block;
