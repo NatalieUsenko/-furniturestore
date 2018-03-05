@@ -51,6 +51,12 @@
                             }
                             ?>
                         </div>
+                        <div id="top-menu" role="navigation">
+                            <?php wp_nav_menu( array(
+                                'container_class' => 'top-menu',
+                                'theme_location' => 'primary'
+                            ) ); ?>
+                        </div>
                     </div>
                     <div class="as-table-cell text-right show-always">
                         <?php

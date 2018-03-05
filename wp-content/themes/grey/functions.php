@@ -24,8 +24,7 @@ function grey_setup(){
     set_post_thumbnail_size(410, 305, true);
 
     register_nav_menus(array(
-        'primary' => __('Primary Menu', 'grey'),
-        'social' => __('Social Links Menu', 'grey'),
+        'primary' => __('Primary Menu', 'grey')
     ));
 }
 add_action( 'after_setup_theme', 'grey_setup' );
