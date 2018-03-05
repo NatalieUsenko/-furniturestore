@@ -428,12 +428,12 @@ header.not-fixed .as-table-cell.show-always,
 #top-menu{
     display: none;
 }
-#menu-top-menu{
-    float: right;
-}
-#menu-top-menu .top-menu{
+.top-menu{
     white-space: nowrap;
 }
+/*#menu-top-menu{*/
+    /*float: right;*/
+/*}*/
 #menu-top-menu .menu-item{
     display: inline-block;
     text-transform: uppercase;
