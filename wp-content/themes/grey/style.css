@@ -1041,8 +1041,8 @@ footer.site-footer{
         width: 225px;
         display: block;
     }
-    #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
-        margin-right: 15px;
+    #menu-top-menu .menu-item{
+        margin-right: 25px;
     }
 }
 #steps,
