@@ -26,7 +26,7 @@
                             }
                             ?>
                     </div>
-                    <div class="as-table-cell text-center">
+                    <div class="as-table-cell text-right">
                         <div id="top-contacts">
                             <div class="center-block-el">
                             <?php

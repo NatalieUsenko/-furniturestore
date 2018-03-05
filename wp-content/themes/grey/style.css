@@ -455,6 +455,7 @@ header .menu-btn.opened img:first-child{
 }
 header .menu-btn.opened img:last-child{
     display: inline;
+    margin-left: 13px;
 }
 header .center-block-el{
 	margin-left: 25px;
