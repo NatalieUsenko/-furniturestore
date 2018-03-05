@@ -66,8 +66,14 @@ jQuery(function($){
 
     $('.menu').on('click', function() {
         $(this).toggleClass('opened');
-        $("#top-contacts").toggle('display');
-        $("#top-menu").toggle('display');
+        if ($(this).hasClass('opened')){
+            $("#top-contacts").hide();
+            $("#top-menu").show();
+        } else {
+            $("#top-contacts").show();
+            $("#top-menu").hide();
+        }
+
     });
 
     $('.go-to').on('click', function(e) {
