@@ -1007,6 +1007,13 @@ footer.site-footer{
         white-space: nowrap;
         width: 100px;
     }
+    #firstscreen .info__wrapper {
+        width: 100%;
+    }
+    #firstscreen .slider{
+        width: 100%;
+        float: none;
+    }
 }
 #steps,
 #catalogue{
