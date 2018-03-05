@@ -27,29 +27,31 @@
                             ?>
                     </div>
                     <div class="as-table-cell text-center">
-                        <div class="center-block-el">
-                        <?php
-                        $phone = get_field('contacts_phone', 7);
-                        if ($phone) {
-                            echo '<img src="'.get_template_directory_uri().'/img/icon-phone.png" /> '.$phone;
-                        }
-                        ?>
-                        </div>
-                        <div class="center-block-el">
+                        <div id="top-contacts">
+                            <div class="center-block-el">
                             <?php
-                            $email = get_field('contacts_email', 7);
-                            if ($email) {
-                                echo '<a href="mailto:'.$email.'" class="emaillink"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a>';
+                            $phone = get_field('contacts_phone', 7);
+                            if ($phone) {
+                                echo '<img src="'.get_template_directory_uri().'/img/icon-phone.png" /> '.$phone;
                             }
                             ?>
-                        </div>
-                        <div class="center-block-el">
-                            <?php
-                            $adress = get_field('contacts_adress', 7);
-                            if ($adress) {
-                                echo '<img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$adress;
-                            }
-                            ?>
+                            </div>
+                            <div class="center-block-el">
+                                <?php
+                                $email = get_field('contacts_email', 7);
+                                if ($email) {
+                                    echo '<a href="mailto:'.$email.'" class="emaillink"><img src="'.get_template_directory_uri().'/img/icon-mail.png" /> '.$email.'</a>';
+                                }
+                                ?>
+                            </div>
+                            <div class="center-block-el">
+                                <?php
+                                $adress = get_field('contacts_adress', 7);
+                                if ($adress) {
+                                    echo '<img src="'.get_template_directory_uri().'/img/icon-pin.png" /> '.$adress;
+                                }
+                                ?>
+                            </div>
                         </div>
                         <div id="top-menu" role="navigation">
                             <?php wp_nav_menu( array(
@@ -65,9 +67,7 @@
                            echo '<a href="'.$url.'" target="_blank" rel=""><img src="'.get_template_directory_uri().'/img/fb-logo.png" /></a>';
                         }
                         ?>
-                        <div class="menu">
-                            <img src="<?php echo get_template_directory_uri();?>/img/menu-burger.png" />
-                        </div>
+                        <div class="menu"></div>
                     </div>
 
                 </div>

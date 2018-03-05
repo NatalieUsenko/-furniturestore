@@ -425,6 +425,9 @@ header.not-fixed .as-table-cell.show-always,
 	display: none;
 }
 
+#top-menu{
+    display: none;
+}
 #menu-top-menu{
     float: right;
 }
@@ -437,6 +440,12 @@ header.not-fixed .as-table-cell.show-always,
 header .menu{
 	display: inline-block;
 	margin-left: 25px;
+    height: 27px;
+    width: 27px;
+    background: url("/img/menu-burger.png") no-repeat;
+}
+header .menu.opened{
+    background: url("/img/menu-close.png") no-repeat;
 }
 header .center-block-el{
 	margin-left: 25px;

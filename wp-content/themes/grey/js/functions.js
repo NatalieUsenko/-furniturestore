@@ -64,6 +64,12 @@ jQuery(function($){
         });
     });
 
+    $('.menu').on('click', function() {
+        $(this).toggleClass('opened');
+        $("#top-contacts").toggle( display );
+        $("#top-menu").toggle( display );
+    });
+
     $('.go-to').on('click', function(e) {
         e.preventDefault();
         var target = $(this.getAttribute('href'));
