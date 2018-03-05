@@ -7,11 +7,6 @@ jQuery(document).ready(function($) {
         if (!$(this).hasClass('showed')) {
             $(this).addClass('not-fixed').removeClass('fixed');
         }
-        if ($('.menu-btn').hasClass('opened')){
-            $('.menu-btn').removeClass('opened');
-            $('#top-contacts').show();
-            $('#top-menu').hide();
-        }
     });
 });
 jQuery(function($){
@@ -95,6 +90,11 @@ jQuery(function($){
                 $('#masthead').removeClass('not-fixed').addClass('showed');
             } else {
                 $('#masthead').removeClass('showed').addClass('not-fixed');
+                if ($('.menu-btn').hasClass('opened')){
+                    $('.menu-btn').removeClass('opened');
+                    $('#top-contacts').show();
+                    $('#top-menu').hide();
+                }
             }
         }
     });
