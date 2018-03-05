@@ -1059,6 +1059,7 @@ footer.site-footer{
         padding-left: 15px;
     }
     #firstscreen .grey-line .go-to{
+        min-width: 144px;
         width: 144px;
         font-size: 0.813em;
     }
@@ -1069,7 +1070,8 @@ footer.site-footer{
     #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
         float: right;
         font-size: 0.667em;
-        width: 145px;
+        min-width: 144px;
+        width: 144px;
     }
 }
 #steps,
