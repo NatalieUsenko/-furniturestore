@@ -8,9 +8,9 @@ jQuery(document).ready(function($) {
             $(this).addClass('not-fixed').removeClass('fixed');
         }
         if ($('.menu-btn').hasClass('opened')){
-            $('.menu-btn').toogleClass('opened');
-            $("#top-contacts").show();
-            $("#top-menu").hide();
+            $('.menu-btn').removeClass('opened');
+            $('#top-contacts').show();
+            $('#top-menu').hide();
         }
     });
 });
