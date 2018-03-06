@@ -70,7 +70,7 @@ $linked_category = get_field('linked_category');
             }
             $paged = (get_query_var('page')) ? get_query_var('page') : 1;
             $cat_args = array(
-                //'posts_per_page' => 2,
+                'posts_per_page' => 2,
                 'post_status' => 'publish',
                 'cat' => $linked_category,
                 'order' => 'DESC',
@@ -127,7 +127,7 @@ $linked_category = get_field('linked_category');
                 var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
                 var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
             </script>
-            <div align="center" id="true_loadmore_catalugue">Загрузить ещё</div>
+            <div align="center" id="true_loadmore_catalugue"><?php echo get_template_directory_uri();?>/img/more-arrow-circle.png"></div>
         <?php endif; ?>
 
         <?php }?>

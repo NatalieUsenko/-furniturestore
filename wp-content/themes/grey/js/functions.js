@@ -43,6 +43,7 @@ jQuery(function($){
     });
 
     $('#true_loadmore_catalugue').click(function(){
+        $('#true_loadmore_catalugue img').hide();
         $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
         var data = {
             'action': 'loadmore_catalogue',
@@ -55,7 +56,8 @@ jQuery(function($){
             type:'POST', // тип запроса
             success:function(data){
                 if( data ) {
-                    $('#true_loadmore_catalugue').text('Загрузить ещё').before(data); // вставляем новые посты
+                    $('#true_loadmore_catalugue').text('').before(data); // вставляем новые посты
+                    $('#true_loadmore_catalugue img').show();
                     current_page++; // увеличиваем номер страницы на единицу
                     if (current_page == max_pages) $("#true_loadmore_catalugue").remove(); // если последняя страница, удаляем кнопку
                 } else {
@@ -63,7 +65,8 @@ jQuery(function($){
                 }
             },
             error: function (error) {
-                $('#true_loadmore_catalugue').text('Загрузить ещё');
+                $('#true_loadmore_catalugue').text('');
+                $('#true_loadmore_catalugue img').show();
                 console.error(error);
             }
         });
@@ -174,7 +177,7 @@ jQuery(function($){
         }
         if ($('body').find('#right-item_catalogue').length>0){
             var rightWidth = itemWidth+leftStart+15;
-            var blockHeight = 2*itemHeight+15;
+            var blockHeight = 2*itemHeight+30;
             $('#right-item_catalogue').css('margin-right',leftStart*(-1)+'px').css('width',rightWidth+'px').css('height',blockHeight+'px');
             $('#right-item_catalogue .post-list_title').css('width',(itemTitleWidth+30)+'px');
         }
