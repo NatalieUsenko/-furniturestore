@@ -83,7 +83,7 @@ $linked_category = get_field('linked_category');
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
                 if ($i==0){
-                    if (!empty($left_el_content)){?>
+                   // if (!empty($left_el_content)){?>
                         <div id="left-item_catalogue" class="post-list_catalogue" style="background: url('<?php echo get_field('big_img', $left_el_content);?>') center no-repeat;">
                             <div class="post-list_title">
                                 <?php echo get_the_title($left_el_content);?>
@@ -91,10 +91,10 @@ $linked_category = get_field('linked_category');
                             </div>
                         </div>
                     <?php
-                    }
+                   // }
                 }
                 if ($i==2){
-                    if (!empty($right_el_content)){?>
+                    //if (!empty($right_el_content)){?>
                         <div id="right-item_catalogue" class="post-list_catalogue" style="background: url('<?php echo get_field('big_img', $right_el_content);?>'') center no-repeat;">
                             <div class="post-list_title">
                                 <?php echo get_the_title($right_el_content);?>
@@ -102,7 +102,7 @@ $linked_category = get_field('linked_category');
                             </div>
                         </div>
                         <?php
-                    }
+                    //}
                 }
 
                 ?>
