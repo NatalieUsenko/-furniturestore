@@ -80,7 +80,7 @@ $linked_category = get_field('linked_category');
             $wp_query = new WP_Query($cat_args);
             $i = 0;
             ?>
-            <div class="rpw">
+            <div class="row">
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
                 if ($i==0){
