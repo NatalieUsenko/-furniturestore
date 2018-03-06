@@ -118,7 +118,7 @@ function true_load_posts_catalogue(){
     if( have_posts() ) :?>
     <div class="row">
         <?php while( have_posts() ): the_post();?>
-            <div class="col-md-4 post-list_catalogue">
+            <div class="col-md-4 col-sm-6 post-list_catalogue">
                 <?php the_post_thumbnail('catalouge-thumbnails');?>
                 <div class="post-list_title">
                     <?php echo get_the_title();?>

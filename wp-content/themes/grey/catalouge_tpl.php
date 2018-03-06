@@ -17,9 +17,9 @@ $linked_category = get_field('linked_category');
         while ( have_posts() ) :
             the_post(); ?>
             <div class="top-catalogue_dark">
-                <div class="hidden-lg hidden-md"><img src="<?php echo $big_img?$big_img:'';?>"></div>
+                <div class="hidden-lg hidden-md hidden-sm"><img src="<?php echo $big_img?$big_img:'';?>"></div>
                 <div class="post-top_content"><?php echo get_the_content_with_formatting();?></div>
-                <div class="post-top_more-link__catalogue text-uppercase"><a href="javascript:void(0);">Каталог мебели</a></div>
+                <div class="post-top_more-link__catalogue text-uppercase"><a href="<?php echo esc_url( home_url() );?>/#catalogue">Каталог мебели</a></div>
             </div>
         <?php endwhile;?>
 	<div class="clearfix"></div>
@@ -109,7 +109,7 @@ $linked_category = get_field('linked_category');
                 }
 
                 ?>
-                <div class="col-md-4 post-list_catalogue">
+                <div class="col-md-4 col-sm-6 post-list_catalogue">
                     <?php the_post_thumbnail('catalouge-thumbnails');?>
                     <div class="post-list_title">
                         <?php echo get_the_title();?>

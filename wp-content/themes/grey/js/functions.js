@@ -172,13 +172,24 @@ jQuery(function($){
         if ($('body').find('#left-item_catalogue').length>0){
             var leftWidth = itemWidth*2+leftStart+45;
             var blockHeight = 2*itemHeight+30;
-            $('#left-item_catalogue').css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
-            $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+leftStart+30)+'px').css('padding-left',(leftStart+15)+'px');
+            if (windowWidth<1200){
+                $('#left-item_catalogue').css('margin-left','0px').css('width','100%').css('height',windowWidth*0.6+'px');
+                $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+leftStart+30)+'px').css('padding-left',(leftStart+15)+'px');
+
+            } else {
+                $('#left-item_catalogue').css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
+                $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+30)+'px').css('padding-left','0px');
+            }
+
         }
         if ($('body').find('#right-item_catalogue').length>0){
             var rightWidth = itemWidth+leftStart+15;
             var blockHeight = 2*itemHeight+30;
-            $('#right-item_catalogue').css('margin-right',leftStart*(-1)+'px').css('width',rightWidth+'px').css('height',blockHeight+'px');
+            if (windowWidth<1200){
+                $('#right-item_catalogue').css('margin-right','0').css('width','100%').css('height',windowWidth*0.6+'px');
+            } else {
+                $('#right-item_catalogue').css('margin-right',leftStart*(-1)+'px').css('width',rightWidth+'px').css('height',blockHeight+'px');
+            }
             $('#right-item_catalogue .post-list_title').css('width',(itemTitleWidth+30)+'px');
         }
     }
