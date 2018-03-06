@@ -19,7 +19,7 @@ $linked_category = get_field('linked_category');
             <div class="top-catalogue_dark">
                 <div class="hidden-lg hidden-md hidden-sm"><img src="<?php echo $big_img?$big_img:'';?>"></div>
                 <div class="post-top_content"><?php echo get_the_content_with_formatting();?></div>
-                <div class="post-top_more-link__catalogue text-uppercase"><a href="<?php echo esc_url( home_url() );?>/#catalogue">Каталог мебели</a></div>
+                <div class="post-top_more-link__catalogue text-uppercase hidden-sm hidden-xs"><a href="<?php echo esc_url( home_url() );?>/#catalogue">Каталог мебели</a></div>
             </div>
         <?php endwhile;?>
 	<div class="clearfix"></div>

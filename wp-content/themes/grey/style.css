@@ -709,6 +709,11 @@ footer.site-footer{
         padding-left: 35%;
     }
 }
+@media (max-width: 992px){
+    .top-catalogue_dark{
+        padding-left: 25px;
+    }
+}
 .top-catalogue_dark a,
 .top-catalogue_dark a:hover,
 .top-catalogue_dark a:focus{
