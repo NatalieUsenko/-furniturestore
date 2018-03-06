@@ -724,6 +724,10 @@ footer.site-footer{
         width: 100%;
         padding-left: 15px;
     }
+    .top-catalogue_dark img{
+        margin-right: -15px;
+        margin-top: -15px;
+    }
 }
 .post-top_content{
     font-size: 0.875em;
@@ -825,6 +829,12 @@ footer.site-footer{
 
 #true_loadmore_catalugue img:hover{
     cursor: pointer;
+}
+@media (max-width: 767px){
+
+    .post-list_catalogue{
+        text-align: center;
+    }
 }
 
 
