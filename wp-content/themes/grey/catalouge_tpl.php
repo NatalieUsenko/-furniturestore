@@ -127,7 +127,7 @@ $linked_category = get_field('linked_category');
                 var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
                 var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
             </script>
-            <div align="center" id="true_loadmore_catalugue"><?php echo get_template_directory_uri();?>/img/more-arrow-circle.png"></div>
+            <div align="center" id="true_loadmore_catalugue"><img src="<?php echo get_template_directory_uri();?>/img/more-arrow-circle.png"></div>
         <?php endif; ?>
 
         <?php }?>
