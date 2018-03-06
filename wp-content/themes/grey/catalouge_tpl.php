@@ -83,15 +83,16 @@ $linked_category = get_field('linked_category');
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
                 if ($i==0){
-                   // if (!empty($left_el_content)){?>
-                        <div id="left-item_catalogue" class="post-list_catalogue" style="background: url('<?php echo get_field('big_img', $left_el_content);?>') center no-repeat;">
+                    if ($left_el_content){
+                        $left_img = get_field('big_img', $left_el_content);?>
+                        <div id="left-item_catalogue" class="post-list_catalogue" style="background: url('<?php echo $left_img;?>') center no-repeat;">
                             <div class="post-list_title">
                                 <?php echo get_the_title($left_el_content);?>
                                 <div class="post-list_link-more"><a href="<?php echo get_the_permalink($left_el_content);?>">Все фото >></a></div>
                             </div>
                         </div>
                     <?php
-                   // }
+                    }
                 }
                 if ($i==2){
                     //if (!empty($right_el_content)){?>
