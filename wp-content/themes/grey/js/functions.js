@@ -166,7 +166,7 @@ jQuery(function($){
         var itemHeight = $('.col-md-4.post-list_catalogue').eq(0).height();
         var itemWidth = $('.col-md-4.post-list_catalogue').eq(0).width();
         if ($('body').find('#left-item_catalogue').length>0){
-            var leftWidth = itemWidth*2+leftStart+30;
+            var leftWidth = itemWidth*2+leftStart+45;
             var blockHeight = 2*itemHeight + 15;
             $('#left-item_catalogue').css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
         }

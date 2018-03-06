@@ -794,16 +794,18 @@ footer.site-footer{
 }
 
 #left-item_catalogue{
-    width: 100%;
+    width: 350px;
     height: 350px;
     background-size: cover;
     float: left;
+    margin-right: 15px;
 }
 #right-item_catalogue{
-    width: 100%;
+    width: 350px;
     height: 350px;
     background-size: cover;
     float: right;
+    margin-left: 15px;
 }
 
 
