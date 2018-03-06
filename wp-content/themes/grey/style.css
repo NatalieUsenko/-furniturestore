@@ -763,7 +763,7 @@ footer.site-footer{
 }
 
 .post-list_catalogue{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .post-list_catalogue .post-list_title{
     background: rgba(33,33,33,0.83);
@@ -799,6 +799,7 @@ footer.site-footer{
     background-size: cover;
     float: left;
     margin-right: 15px;
+    position: relative;
 }
 #right-item_catalogue{
     width: 350px;
@@ -806,6 +807,7 @@ footer.site-footer{
     background-size: cover;
     float: right;
     margin-left: 15px;
+    position: relative;
 }
 
 
