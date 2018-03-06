@@ -80,6 +80,7 @@ $linked_category = get_field('linked_category');
             $wp_query = new WP_Query($cat_args);
             $i = 0;
             ?>
+            <div class="rpw">
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
                 if ($i==0){
@@ -118,6 +119,7 @@ $linked_category = get_field('linked_category');
             <?php
             $i++;
             }?>
+            </div>
             <?php if (  $wp_query->max_num_pages > 1 ) : ?>
             <script>
                 var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';

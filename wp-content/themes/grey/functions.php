@@ -115,10 +115,10 @@ function true_load_posts_catalogue(){
     // обычно лучше использовать WP_Query, но не здесь
     query_posts( $args );
     // если посты есть
-    if( have_posts() ) :
-
+    if( have_posts() ) :?>
+    <div class="row">
         // запускаем цикл
-        while( have_posts() ): the_post();?>
+        <?php while( have_posts() ): the_post();?>
             <div class="col-md-4 post-list_catalogue">
                 <?php the_post_thumbnail('catalouge-thumbnails');?>
                 <div class="post-list_title">
@@ -127,8 +127,9 @@ function true_load_posts_catalogue(){
                 </div>
             </div>
         <?php endwhile;
-    endif;
-    die();
+    endif;?>
+    </div>
+    <?php die();
 }
 add_action('wp_ajax_loadmore_catalogue', 'true_load_posts_catalogue');
 add_action('wp_ajax_nopriv_loadmore_catalogue', 'true_load_posts_catalogue');
