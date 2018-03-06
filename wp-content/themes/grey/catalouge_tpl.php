@@ -114,7 +114,7 @@ $linked_category = get_field('linked_category');
                     </div>
                 </div>
             <?php
-            i++;
+            $i++;
             }?>
             <?php if (  $wp_query->max_num_pages > 1 ) : ?>
             <script>
