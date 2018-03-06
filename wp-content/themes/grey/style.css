@@ -725,10 +725,7 @@ footer.site-footer{
         padding-left: 15px;
     }
     .top-catalogue_dark img{
-        margin-left: -15px;
-        margin-right: -15px;
-        margin-top: -25px;
-        margin-bottom: 15px;
+        margin: -25px -15px 15px;
     }
 }
 .post-top_content{
