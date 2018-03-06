@@ -78,10 +78,33 @@ $linked_category = get_field('linked_category');
                 'post__not_in' => $exclude_ids
             );
             $wp_query = new WP_Query($cat_args);
-
+            $i = 0;
             ?>
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
+                if ($i==0){
+                    if (!empty($left_el_content)){?>
+                        <div id="left-item_catalogue" class="post-list_catalogue" style="background: url('<?php echo get_field('big_img', $left_el_content);?>') center no-repeat;">
+                            <div class="post-list_title">
+                                <?php echo get_the_title($left_el_content);?>
+                                <div class="post-list_link-more"><a href="<?php echo get_the_permalink($left_el_content);?>">Все фото >></a></div>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                }
+                if ($i==2){
+                    if (!empty($right_el_content)){?>
+                        <div id="right-item_catalogue" class="post-list_catalogue" style="background: url('<?php echo get_field('big_img', $right_el_content);?>'') center no-repeat;">
+                            <div class="post-list_title">
+                                <?php echo get_the_title($right_el_content);?>
+                                <div class="post-list_link-more"><a href="<?php echo get_the_permalink($right_el_content);?>">Все фото >></a></div>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                }
+
                 ?>
                 <div class="col-md-4 post-list_catalogue">
                     <?php the_post_thumbnail('catalouge-thumbnails');?>
@@ -90,7 +113,9 @@ $linked_category = get_field('linked_category');
                         <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото >></a></div>
                     </div>
                 </div>
-            <?php }?>
+            <?php
+            i++;
+            }?>
             <?php if (  $wp_query->max_num_pages > 1 ) : ?>
             <script>
                 var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
