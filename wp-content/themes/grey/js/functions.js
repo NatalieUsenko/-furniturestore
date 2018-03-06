@@ -170,13 +170,13 @@ jQuery(function($){
             var leftWidth = itemWidth*2+leftStart+45;
             var blockHeight = 2*itemHeight+30;
             $('#left-item_catalogue').css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
-            $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+leftStart)+'px');
+            $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+leftStart+15)+'px');
         }
         if ($('body').find('#right-item_catalogue').length>0){
             var rightWidth = itemWidth+leftStart+30;
             var blockHeight = 2*itemHeight+30;
             $('#right-item_catalogue').css('margin-right',leftStart*(-1)+'px').css('width',rightWidth+'px').css('height',blockHeight+'px');
-            $('#right-item_catalogue .post-list_title').css('width',itemTitleWidth+'px');
+            $('#right-item_catalogue .post-list_title').css('width',(itemTitleWidth+15)+'px');
         }
     }
 
