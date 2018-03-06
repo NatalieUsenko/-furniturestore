@@ -705,7 +705,8 @@ footer.site-footer{
 }
 @media (max-width: 1200px){
     .top-catalogue_dark{
-        width: 85%;
+        width: 90%;
+        padding-left: 35%;
     }
 }
 .top-catalogue_dark a,
