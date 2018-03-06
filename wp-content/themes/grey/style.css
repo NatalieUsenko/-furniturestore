@@ -680,7 +680,7 @@ footer.site-footer{
     background-repeat: no-repeat;
     background-position: top right;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     .top-catalogue_img{
         background-image: none!important;
     }
