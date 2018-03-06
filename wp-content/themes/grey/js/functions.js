@@ -167,12 +167,12 @@ jQuery(function($){
         if ($('body').find('#left-item_catalogue').length>1){
             var leftWidth = windowWidth*0.667+leftStart+30;
             var blockHeight = 2*itemHeight + 15;
-            $(this).css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
+            $('#left-item_catalogue').css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
         }
         if ($('body').find('#right-item_catalogue').length>1){
             var rightWidth = windowWidth*0.333+leftStart;
             var blockHeight = 2*itemHeight + 15;
-            $(this).css('margin-right',leftStart*(-1)+'px').css('width',rightWidth+'px').css('height',blockHeight+'px');
+            $('#right-item_catalogue').css('margin-right',leftStart*(-1)+'px').css('width',rightWidth+'px').css('height',blockHeight+'px');
         }
     }
 
