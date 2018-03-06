@@ -793,6 +793,20 @@ footer.site-footer{
     text-decoration: underline;
 }
 
+#left-item_catalogue{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    float: left;
+}
+#left-item_catalogue{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    float: right;
+}
+
+
 /******************************* Frontpage ******************************************/
 #firstscreen{
     background: url("img/start-top-img.png") top left no-repeat;

@@ -83,7 +83,7 @@ $linked_category = get_field('linked_category');
             <?php while ( $wp_query->have_posts() ) {
                 $wp_query->the_post();
                 if ($i==0){
-                    if ($left_el_content){
+                    if (!empty($left_el_content)){
                         $left_img = get_field('big_img', $left_el_id);?>
                         <div id="left-item_catalogue" class="post-list_catalogue" style="background: url(<?php echo $left_img;?>) center no-repeat;">
                             <div class="post-list_title">
