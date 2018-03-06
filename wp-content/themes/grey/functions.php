@@ -123,7 +123,7 @@ function true_load_posts_catalogue(){
                 <?php the_post_thumbnail('catalouge-thumbnails');?>
                 <div class="post-list_title">
                     <?php echo get_the_title();?>
-                    <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото >></a></div>
+                    <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
                 </div>
             </div>
         <?php endwhile;
