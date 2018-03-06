@@ -725,8 +725,9 @@ footer.site-footer{
         padding-left: 15px;
     }
     .top-catalogue_dark img{
-        margin-right: -15px;
-        margin-top: -15px;
+        margin-left: -15px;
+        margin-top: -25px;
+        margin-bottom: 15px;
     }
 }
 .post-top_content{
