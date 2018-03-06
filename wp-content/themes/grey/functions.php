@@ -117,7 +117,6 @@ function true_load_posts_catalogue(){
     // если посты есть
     if( have_posts() ) :?>
     <div class="row">
-        // запускаем цикл
         <?php while( have_posts() ): the_post();?>
             <div class="col-md-4 post-list_catalogue">
                 <?php the_post_thumbnail('catalouge-thumbnails');?>
