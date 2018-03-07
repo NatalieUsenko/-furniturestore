@@ -14,7 +14,7 @@ $recomend = get_field('recomended');
             <div class="post_img"><?php echo !empty($image_thumb[0])?'<img src="'.$image_thumb[0].'">':'';?>
                 <div class="as-table-row">
                     <div class="col-xs-6 no-padding-left as-table-cell">
-                        Рассказать друзьм <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
+                        Рассказать друзьм <a href="javascript:fbshareCurrentPage()"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
                     </div>
                     <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><img src="<?php echo get_template_directory_uri();?>/img/back-arrows-bl.png"> Все статьи</a></div>
                 </div>
@@ -42,3 +42,9 @@ $recomend = get_field('recomended');
     <?php }
     }?>
 </div>
+<script language="javascript">
+    function fbshareCurrentPage()
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '',
+        'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+        return false; }
+</script>
