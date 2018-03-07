@@ -533,7 +533,7 @@ footer.site-footer{
 	background-repeat: no-repeat;
 	background-position: top right;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
 	.top-news_img{
 		background-image: none!important;
 	}
@@ -602,7 +602,8 @@ footer.site-footer{
 		position: relative;
 		bottom: auto;
 		top: auto;
-		text-align: center;
+		text-align: right;
+        margin-top: 15px;
 	}
 	.post-top_more-link>a{
 		width: auto;
