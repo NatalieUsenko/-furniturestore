@@ -252,7 +252,7 @@ jQuery(function($){
         if ($('body').find('#left-img').length>0){
             leftImgHeight = $('#left-img').outerHeight();
             var leftImgTop = leftImgHeight-rightTextHeight;
-            $('#left-img').css('margin-top', leftImgTop+'px');
+            $('#left-img').css('margin-top', leftImgTop*(-1)+'px');
         }
 
 
