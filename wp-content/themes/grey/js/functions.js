@@ -256,9 +256,9 @@ jQuery(function($){
 
             var calcBlockHeight = $('.catalogue__inner_row').eq(0).height()+$('.catalogue__inner_row').eq(1).height();
             var realBlockHeight = leftTextHeight+50+leftImgHeight+30;
+            console.log('calcBlockHeight:'+calcBlockHeight+' realBlockHeight:'+realBlockHeight+' leftImgHeight:'+leftImgHeight);
             if (realBlockHeight>calcBlockHeight){
                 $('#right-text').css('padding-bottom',(realBlockHeight-calcBlockHeight)+'px');
-                //$('#left-img').css('margin-top', (leftImgTop-realBlockHeight-calcBlockHeight)*(-1)+'px');
             }
         }
 
