@@ -705,8 +705,8 @@ footer.site-footer{
     font-weight: 300;
 }
 #right-img{
-    margin: -50px 0 30px 30px;
-    width: 50%;
+    margin: 0 0 30px 30px;
+    width: 57%;
     min-height: 500px;
     float: right;
 }
@@ -715,6 +715,10 @@ footer.site-footer{
 }
 #left-text{
     width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 #right-text{
     width: 57%;
