@@ -17,7 +17,7 @@ $image_url_right = get_field('big_img_right');
             <div id="right-img"<?php if (!empty($image_url_right)){
                 echo ' style="background-image:url('.$image_url_right.');"';
             }
-            ?>
+            ?>></div>
             </div>
             <div id="left-text" class="catalogue__inner_dark">
                 <?php if (!empty($parts)){
