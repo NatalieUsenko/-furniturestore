@@ -667,6 +667,7 @@ footer.site-footer{
     margin-left: 15px;
     margin-bottom: 15px;
     font-size: 0.875em;
+    margin-top: -50px;
 }
 .post_img>img{
     width: 100%;
