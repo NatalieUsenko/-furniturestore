@@ -815,6 +815,8 @@ footer.site-footer{
     width: 350px;
     height: 350px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     float: left;
     margin-right: 15px;
     position: relative;
@@ -823,6 +825,8 @@ footer.site-footer{
     width: 350px;
     height: 350px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     float: right;
     position: relative;
 }
