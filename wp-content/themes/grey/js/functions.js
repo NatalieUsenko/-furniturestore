@@ -234,10 +234,10 @@ jQuery(function($){
         var leftStart = $('footer .container .row').position().left;
 
         $('.page-title').css('margin-left', leftStart+'px');
-        var topImg = $('.page-title').offset().top+$('.page-title').height();
+        var topImg = $('.page-title').offset().top+$('.page-title').height()-87;
 
         if ($('body').find('#left-text').length>0){
-            $('#left-text').css('paddind-left', leftStart+'px');
+            $('#left-text').css('padding-left', leftStart+'px');
         }
 
         if ($('body').find('#right-img').length>0){
