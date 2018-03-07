@@ -234,9 +234,14 @@ jQuery(function($){
         var leftStart = $('footer .container .row').position().left;
 
         $('.page-title').css('margin-left', leftStart+'px');
+        var topImg = $('.page-title').offset().top+$('.page-title').height();
 
         if ($('body').find('#left-text').length>0){
-            $('.page-title').css('margin-left', leftStart+'px');
+            $('.page-title').css('paddind-left', leftStart+'px');
+        }
+
+        if ($('body').find('#right-text').length>0){
+            $('#right-text').css('margin-top', topImg*(-1)+'px');
         }
     }
 
