@@ -748,7 +748,31 @@ dl.gallery-item{
         margin-top: 0!important;
     }
 }
-
+@media (max-width: 767px){
+    #right-img{
+        width: 100%;
+        margin-left: 0;
+    }
+    #left-text{
+        top: auto;
+        bottom: 50px;
+        margin-right: 0;
+    }
+    #right-text{
+        width: 100%;
+        margin-left: 0;
+    }
+    #left-img{
+        width: 100%;
+        margin-right: 0;
+    }
+    dl.gallery-item{
+        margin: 15px;
+        width: calc(100% - 30px)!important;
+        width: -moz-calc(100% - 30px)!important;;
+        width: -webkit-calc(100% - 30px)!important;;
+    }
+}
 /******************************************* Catalogue *****************************************/
 .top-catalogue_img{
     background-size: 55% auto;
