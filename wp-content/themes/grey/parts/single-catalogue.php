@@ -27,7 +27,7 @@ $image_url_right = get_field('big_img_right');
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="row">
+        <div class="row catalogue__inner_row">
             <div id="left-img">
                 <?php if (!empty($image_url_left)){
                     echo '<img src="'.$image_url_left.'" />';
@@ -47,8 +47,9 @@ $image_url_right = get_field('big_img_right');
                 }
                 ?>
             </div>
-            <div class="clearfix"></div>
-
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
             <?php if (!empty($parts)){
                 echo $last;
             }
