@@ -29,6 +29,12 @@ $image_url_left = get_field('big_img_left');
             <div class="top-news_dark">
                 <?php if (!empty($parts)){
                     $last = array_pop($parts);
+                    $findme   = '';
+                    $pos = strpos($last, $findme);
+                    if ($pos === false) {
+                        array_push($parts, $last);
+                        $last = '';
+                    }
                     echo join("</p>",$parts);
                 }
                 ?>
