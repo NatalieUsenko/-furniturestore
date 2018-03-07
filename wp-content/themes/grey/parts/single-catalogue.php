@@ -49,11 +49,13 @@ $image_url_right = get_field('big_img_right');
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="row">
-            <?php if (!empty($parts)){
-                echo $last;
-            }
-            ?>
+        <div class="container">
+            <div class="row">
+                <?php if (!empty($parts)){
+                    echo $last;
+                }
+                ?>
+            </div>
         </div>
     <?php }
 }?>
