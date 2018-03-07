@@ -174,7 +174,7 @@ jQuery(function($){
             var blockHeight = 2*itemHeight+30;
             if (windowWidth<1200){
                 $('#left-item_catalogue').css('margin-left','0px').css('width','100%').css('height',windowWidth*0.6+'px');
-                $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+30)+'px').css('padding-left','0px');
+                $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+30)+'px').css('padding-left','15px');
             } else {
                 $('#left-item_catalogue').css('margin-left',leftStart*(-1)+'px').css('width',leftWidth+'px').css('height',blockHeight+'px');
                 $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+leftStart+30)+'px').css('padding-left',(leftStart+15)+'px');
