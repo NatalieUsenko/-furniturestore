@@ -237,11 +237,11 @@ jQuery(function($){
         var topImg = $('.page-title').offset().top+$('.page-title').height();
 
         if ($('body').find('#left-text').length>0){
-            $('.page-title').css('paddind-left', leftStart+'px');
+            $('#left-text').css('paddind-left', leftStart+'px');
         }
 
         if ($('body').find('#right-img').length>0){
-            $('#right-text').css('margin-top', topImg*(-1)+'px');
+            $('#right-img').css('margin-top', topImg*(-1)+'px');
         }
     }
 
