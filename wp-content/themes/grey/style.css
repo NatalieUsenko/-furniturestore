@@ -735,8 +735,7 @@ footer.site-footer{
 }
 
 dl.gallery-item{
-    height: 64%;
-    overflow: hidden;
+    margin: 15px;
 }
 
 
