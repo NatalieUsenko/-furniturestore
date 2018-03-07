@@ -232,18 +232,30 @@ jQuery(function($){
     function catalogueInner() {
         var windowWidth = $(window).width();
         var leftStart = $('footer .container .row').position().left;
+        var rightTextHeight = 0;
+        var leftImgHeight = 0;
+        var leftTextHeight = 0;
 
-        $('.page-title').css('margin-left', leftStart+'px');
+            $('.page-title').css('margin-left', leftStart+'px');
         var topImg = $('.page-title').offset().top+$('.page-title').height()-87;
 
         if ($('body').find('#left-text').length>0){
-            var textHeight = $('#left-text').outerHeight();
+            leftTextHeight = $('#left-text').outerHeight();
             $('#left-text').css('padding-left', leftStart+'px');
         }
-
         if ($('body').find('#right-img').length>0){
             $('#right-img').css('margin-top', topImg*(-1)+'px');
         }
+        if ($('body').find('#right-text').length>0){
+            rightTextHeight = $('#right-text').outerHeight();
+        }
+        if ($('body').find('#left-img').length>0){
+            leftImgHeight = $('#left-img').outerHeight();
+            var leftImgTop = leftImgHeight-rightTextHeight;
+            $('#left-img').css('margin-top', leftImgTop+'px');
+        }
+
+
     }
 
 });

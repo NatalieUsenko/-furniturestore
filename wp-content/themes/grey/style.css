@@ -719,6 +719,7 @@ footer.site-footer{
     width: calc(43% - 30px);
     width: -moz-calc(43% - 30px);
     width: -webkit-calc(43% - 30px);
+    float: left;
 }
 #left-text{
     width: 50%;
