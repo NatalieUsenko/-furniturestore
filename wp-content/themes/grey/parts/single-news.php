@@ -13,7 +13,7 @@ $recomend = get_field('recomended');
         <div>
             <div class="post_img"><?php echo !empty($image_thumb[0])?'<img src="'.$image_thumb[0].'">':'';?>
                 <div class="as-table-row">
-                    <div class="col-xs-6 no-padding-left as-table-cell">
+                    <div class="col-xs-6 no-padding-left as-table-cell text-nowrap">
                         Рассказать друзьм <a href="javascript:fbshareCurrentPage()"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
                     </div>
                     <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><img src="<?php echo get_template_directory_uri();?>/img/back-arrows-bl.png"> Все статьи</a></div>
