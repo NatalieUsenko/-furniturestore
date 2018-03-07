@@ -696,6 +696,26 @@ footer.site-footer{
     }
 }
 
+.catalogue__inner_dark{
+    background: rgba(33,33,33,0.83);
+    color: #fff;
+    padding: 25px 0 25px 25px;
+    position: relative;
+    margin-bottom: 50px;
+}
+#right-img{
+    margin: -50px 0 30px 30px;
+    width: 57%;
+    float: right;
+}
+#left-img{
+    margin: 0 30px 0 0;
+}
+#right-text{
+    width: 57%;
+}
+
+
 /******************************************* Catalogue *****************************************/
 .top-catalogue_img{
     background-size: 55% auto;
