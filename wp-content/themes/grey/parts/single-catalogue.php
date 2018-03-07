@@ -14,11 +14,10 @@ $image_url_right = get_field('big_img_right');
 
         ?>
         <div class="row">
-            <div id="right-img">
-                <?php if (!empty($image_url_right)){
-                    echo '<img src="'.$image_url_right.'" />';
-                }
-                ?>
+            <div id="right-img"<?php if (!empty($image_url_right)){
+                echo ' style="background-image:url('.$image_url_right.');"';
+            }
+            ?>
             </div>
             <div id="left-text" class="catalogue__inner_dark">
                 <?php if (!empty($parts)){
@@ -29,12 +28,11 @@ $image_url_right = get_field('big_img_right');
         </div>
         <div class="clearfix"></div>
         <div class="row">
-            <div id="left-img"
+            <div id="left-img">
                 <?php if (!empty($image_url_left)){
-                    echo 'style="background-image:url('.$image_url_left.');"';
+                    echo '<img src="'.$image_url_left.'" />';
                 }
                 ?>
-            >
             </div>
             <div id="#right-text"  class="catalogue__inner_dark">
                 <?php if (!empty($parts)){
