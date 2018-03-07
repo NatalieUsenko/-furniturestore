@@ -5,7 +5,7 @@ $image_url_left = get_field('big_img_left');
 ?>
     <h1 style="display: none;"><?php echo esc_html( get_the_title() ); ?></h1>
     <div class="container-fluid container" >
-        <div class="page-title"><?php echo esc_html( get_the_title($current_page_id) ); ?></div>
+        <div class="page-title"><?php echo esc_html( get_the_title() ); ?></div>
 <?php if ( have_posts() ) {
     while (have_posts()) {
         the_post();
