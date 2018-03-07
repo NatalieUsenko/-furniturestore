@@ -16,7 +16,7 @@ $recomend = get_field('recomended');
                     <div class="col-xs-6 no-padding-left as-table-cell">
                         Рассказать друзьм <a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri();?>/img/fb-grey.png"></a>
                     </div>
-                    <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><< Все статьи</a></div>
+                    <div class="col-xs-6 text-right no-padding-right as-table-cell"><a href="<?php echo esc_url(home_url());?>/stati"><img class="mirrorY" src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"> Все статьи</a></div>
                 </div>
             </div>
             <div class="post_date"><?php echo get_the_date('d.m.Y');?></div>
