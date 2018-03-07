@@ -740,7 +740,11 @@ dl.gallery-item{
     width: -moz-calc(33% - 30px)!important;;
     width: -webkit-calc(33% - 30px)!important;;
 }
-
+@media (max-width: 1200px) {
+    #left-text{
+        width: 90%;
+    }
+}
 
 /******************************************* Catalogue *****************************************/
 .top-catalogue_img{
