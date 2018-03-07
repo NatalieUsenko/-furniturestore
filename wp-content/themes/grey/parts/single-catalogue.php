@@ -13,7 +13,7 @@ $image_url_right = get_field('big_img_right');
         $parts = explode('</p>', $orig_content);
 
         ?>
-        <div class="row">
+        <div class="row catalogue__inner_row">
             <div id="right-img"<?php if (!empty($image_url_right)){
                 echo ' style="background-image:url('.$image_url_right.');"';
             }
@@ -34,7 +34,7 @@ $image_url_right = get_field('big_img_right');
                 }
                 ?>
             </div>
-            <div id="#right-text"  class="catalogue__inner_dark">
+            <div id="right-text"  class="catalogue__inner_dark">
                 <?php if (!empty($parts)){
                     $last = array_pop($parts);
                     $find   = 'gallery-item';

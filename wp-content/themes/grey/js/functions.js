@@ -237,6 +237,7 @@ jQuery(function($){
         var topImg = $('.page-title').offset().top+$('.page-title').height()-87;
 
         if ($('body').find('#left-text').length>0){
+            var textHeight = $('#left-text').outerHeight();
             $('#left-text').css('padding-left', leftStart+'px');
         }
 

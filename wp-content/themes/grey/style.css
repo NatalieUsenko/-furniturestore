@@ -696,6 +696,9 @@ footer.site-footer{
     }
 }
 
+.catalogue__inner_row{
+    position: relative;
+}
 .catalogue__inner_dark{
     background: rgba(33,33,33,0.83);
     color: #fff;
@@ -721,7 +724,7 @@ footer.site-footer{
     width: 50%;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 45px;
     z-index: 1;
 }
 #right-text{
