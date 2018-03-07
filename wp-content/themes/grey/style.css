@@ -835,6 +835,7 @@ footer.site-footer{
     left: 0;
 }
 
+#true_loadmore img:hover,
 #true_loadmore_catalugue img:hover{
     cursor: pointer;
 }
