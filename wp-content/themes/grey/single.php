@@ -8,7 +8,7 @@ $categories = get_the_category();
         if ($categories[0]->term_id==1){
             include_once('parts/single-news.php');
         } else {
-
+            include_once('parts/single-catalogue.php');
         }
     }
     ?>
