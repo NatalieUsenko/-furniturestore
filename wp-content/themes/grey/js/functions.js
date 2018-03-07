@@ -253,12 +253,6 @@ jQuery(function($){
             leftImgHeight = $('#left-img').outerHeight();
             var leftImgTop = leftImgHeight-rightTextHeight;
             $('#left-img').css('margin-top', leftImgTop*(-1)+'px');
-
-            var calcBlockHeight = $('.catalogue__inner_row').eq(0).height()+$('.catalogue__inner_row').eq(1).height();
-            var realBlockHeight = leftTextHeight+45+leftImgHeight+50;
-            if (realBlockHeight>calcBlockHeight){
-                $('#right-text').css('padding-bottom',(realBlockHeight-calcBlockHeight)+'px');
-            }
         }
 
 
