@@ -723,12 +723,13 @@ footer.site-footer{
     .top-catalogue_dark{
         width: 100%;
         padding-left: 15px;
+        margin-top: 35px;
     }
     .top-catalogue_dark img{
         margin: -25px -15px 15px;
-        width: calc(100% + 30px);
-        width: -moz-calc(100% + 30px);
-        width: -webkit-calc(100% + 30px);
+        max-width: calc(100% + 30px);
+        max-width: -moz-calc(100% + 30px);
+        max-width: -webkit-calc(100% + 30px);
     }
 }
 .post-top_content{
