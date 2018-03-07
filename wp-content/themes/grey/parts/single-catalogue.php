@@ -14,9 +14,34 @@ $image_url_left = get_field('big_img_left');
 
         ?>
         <div>
-            <pre>
-               <?php var_dump($parts);?>
-            </pre>
+            <div class="top-news_dark">
+                <?php if (!empty($parts[0])){
+                    echo $parts[0];
+                }
+                ?>
+            </div>
+            <div id="#left-img_catalogue">
+                <?php if (!empty($image_url_left)){
+                    echo '<img src="'.$image_url_left.'" />';
+                }
+                ?>
+            </div>
+            <div class="top-news_dark">
+                <?php if (!empty($parts)){
+                    $total = count($parts);
+                    foreach ($parts as $key => $part){
+                        if (($key!=0)&&($key==$total)){
+                            echo $part;
+                        }
+                    }
+                }
+                ?>
+            </div>
+
+            <?php if (!empty($parts)){
+                echo $part[$total];
+            }
+            ?>
         </div>
     <?php }
 }?>
