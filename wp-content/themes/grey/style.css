@@ -714,9 +714,12 @@ footer.site-footer{
 }
 #left-text{
     width: 50%;
+    font-weight: 300;
 }
 #right-text{
     width: 57%;
+    font-weight: 300;
+    float: right;
 }
 
 
