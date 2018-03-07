@@ -15,8 +15,8 @@ $image_url_left = get_field('big_img_left');
         ?>
         <div>
             <div class="top-news_dark">
-                <?php if (!empty($parts[0])){
-                    echo $parts[0];
+                <?php if (!empty($parts)){
+                    echo array_shift($parts)."</p>";
                 }
                 ?>
             </div>
@@ -28,18 +28,14 @@ $image_url_left = get_field('big_img_left');
             </div>
             <div class="top-news_dark">
                 <?php if (!empty($parts)){
-                    $total = count($parts);
-                    foreach ($parts as $key => $part){
-                        if (($key!=0)&&($key==$total)){
-                            echo $part;
-                        }
-                    }
+                    $last = array_pop($parts);
+                    echo join("</p>",$parts);
                 }
                 ?>
             </div>
 
             <?php if (!empty($parts)){
-                echo $part[$total];
+                echo $last;
             }
             ?>
         </div>
