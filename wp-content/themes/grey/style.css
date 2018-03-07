@@ -744,6 +744,9 @@ dl.gallery-item{
     #left-text{
         width: 90%;
     }
+    #left-img{
+        margin-top: 0!important;
+    }
 }
 
 /******************************************* Catalogue *****************************************/
