@@ -48,7 +48,7 @@ $wp_query = new WP_Query($news_args);
                     <?php if ( $top_news->have_posts() ) { ?>
 
                     <div class="top-news_dark">
-                        <div class="hidden-lg hidden-md"><img src="<?php echo $big_img?$big_img:'';?>"></div>
+                        <div class="hidden-lg hidden-md hidden-sm"><img src="<?php echo $big_img?$big_img:'';?>"></div>
                         <div class="post-top_date"><?php echo get_the_date('d.m.Y', $top_news_id);?></div>
                         <div class="post-top_title"><?php echo get_the_title($top_news_id);?></div>
                         <div class="post-top_expert"><?php echo cutString( $top_news_content, 150);?></div>
