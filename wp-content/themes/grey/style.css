@@ -559,6 +559,7 @@ footer.site-footer{
 @media (max-width: 1200px){
     .top-news_dark{
         width: 90%;
+        padding-right: 30%;
     }
 }
 @media (max-width: 768px){
