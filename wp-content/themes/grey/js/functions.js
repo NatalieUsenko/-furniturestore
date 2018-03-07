@@ -16,6 +16,7 @@ jQuery(document).ready(function($) {
 });
 jQuery(function($){
     $('#true_loadmore').click(function(){
+        $('#true_loadmore_catalugue img').hide();
         $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
         var data = {
             'action': 'loadmore',
@@ -28,7 +29,8 @@ jQuery(function($){
             type:'POST', // тип запроса
             success:function(data){
                 if( data ) {
-                    $('#true_loadmore').text('Загрузить ещё').before(data); // вставляем новые посты
+                    $('#true_loadmore').text('').before(data); // вставляем новые посты
+                    $('#true_loadmore_catalugue img').show();
                     current_page++; // увеличиваем номер страницы на единицу
                     if (current_page == max_pages) $("#true_loadmore").remove(); // если последняя страница, удаляем кнопку
                 } else {
@@ -36,7 +38,8 @@ jQuery(function($){
                 }
             },
             error: function (error) {
-                $('#true_loadmore').text('Загрузить ещё');
+                $('#true_loadmore').text('');
+                $('#true_loadmore_catalugue img').show();
                 console.error(error);
             }
         });
@@ -81,7 +84,6 @@ jQuery(function($){
             $("#top-contacts").show();
             $("#top-menu").hide();
         }
-
     });
 
     $('.go-to').on('click', function(e) {

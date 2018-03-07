@@ -100,7 +100,6 @@ function true_load_posts(){
                 echo '</div>';
             }
             endwhile;
-
     endif;
     die();
 }
@@ -112,9 +111,7 @@ function true_load_posts_catalogue(){
     $args['paged'] = $_POST['page'] + 1; // следующая страница
     $args['post_status'] = 'publish';
 
-    // обычно лучше использовать WP_Query, но не здесь
     query_posts( $args );
-    // если посты есть
     if( have_posts() ) :?>
     <div class="row">
         <?php while( have_posts() ): the_post();?>

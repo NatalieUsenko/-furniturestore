@@ -29,7 +29,7 @@ while ( $top_news->have_posts() ) {
 }
 $paged = (get_query_var('page')) ? get_query_var('page') : 1;
 $news_args = array(
-   // 'posts_per_page' => 2,
+    'posts_per_page' => 2,
     'post_status' => 'publish',
     'cat' => '1',
     'order' => 'DESC',
@@ -83,7 +83,7 @@ $wp_query = new WP_Query($news_args);
                                  var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
                                  var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
                              </script>
-                             <div align="center" id="true_loadmore">Загрузить ещё</div>
+                             <div align="center" id="true_loadmore"><img src="<?php echo get_template_directory_uri();?>/img/more-arrow-circle.png" /></div>
                          <?php endif; ?>
                     </div>
                 <?php endif;?>
