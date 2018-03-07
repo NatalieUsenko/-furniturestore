@@ -706,6 +706,7 @@ footer.site-footer{
 #right-img{
     margin: -50px 0 30px 30px;
     width: 57%;
+    min-height: 500px;
     float: right;
 }
 #left-img{
