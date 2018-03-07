@@ -766,6 +766,10 @@ dl.gallery-item{
         width: 100%;
         margin-right: 0;
     }
+    #left-img img{
+        width: 100%;
+        height: auto;
+    }
     dl.gallery-item{
         margin: 15px;
         width: calc(100% - 30px)!important;
