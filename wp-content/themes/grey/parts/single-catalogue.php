@@ -10,7 +10,7 @@ $image_url_left = get_field('big_img_left');
     while (have_posts()) {
         the_post();
         $orig_content = get_the_content_with_formatting();
-        $parts = explode('</p>',$str);
+        $parts = explode('</p>', $orig_content);
         var_dump($parts);
         ?>
         <div>
