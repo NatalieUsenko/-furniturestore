@@ -258,7 +258,7 @@ jQuery(function($){
             var realBlockHeight = leftTextHeight+50+leftImgHeight+30;
             if (realBlockHeight>calcBlockHeight){
                 $('#right-text').css('padding-bottom',(realBlockHeight-calcBlockHeight)+'px');
-                $('#left-img').css('margin-top', (leftImgTop-realBlockHeight-calcBlockHeight)*(-1)+'px');
+                //$('#left-img').css('margin-top', (leftImgTop-realBlockHeight-calcBlockHeight)*(-1)+'px');
             }
         }
 
