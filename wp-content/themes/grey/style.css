@@ -736,6 +736,9 @@ footer.site-footer{
 
 dl.gallery-item{
     margin: 15px;
+    width: calc(33% - 15px);
+    width: -moz-calc(33% - 15px);
+    width: -webkit-calc(33% - 15px);
 }
 
 
