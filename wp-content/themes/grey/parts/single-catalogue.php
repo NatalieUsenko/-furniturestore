@@ -38,7 +38,7 @@ $image_url_right = get_field('big_img_right');
             <div id="#right-text"  class="catalogue__inner_dark">
                 <?php if (!empty($parts)){
                     $last = array_pop($parts);
-                    $find   = '';
+                    $find   = 'gallery-item';
                     $pos = strpos($last, $find);
                     if ($pos === false) {
                         array_push($parts, $last);
