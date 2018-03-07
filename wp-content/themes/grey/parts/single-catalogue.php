@@ -48,6 +48,7 @@ $image_url_right = get_field('big_img_right');
                 }
                 ?>
             </div>
+            <div class="clearfix"></div>
 
             <?php if (!empty($parts)){
                 echo $last;

@@ -240,7 +240,7 @@ jQuery(function($){
             $('.page-title').css('paddind-left', leftStart+'px');
         }
 
-        if ($('body').find('#right-text').length>0){
+        if ($('body').find('#right-img').length>0){
             $('#right-text').css('margin-top', topImg*(-1)+'px');
         }
     }
