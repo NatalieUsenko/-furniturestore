@@ -4,7 +4,7 @@ $image_url_left = get_field('big_img_left');
 $image_url_right = get_field('big_img_right');
 ?>
     <h1 style="display: none;"><?php echo esc_html( get_the_title() ); ?></h1>
-    <div class="container-fluid" >
+    <div class="container-fluid catalogue__inner" >
         <div class="page-title"><?php echo esc_html( get_the_title() ); ?></div>
 <?php if ( have_posts() ) {
     while (have_posts()) {
@@ -20,7 +20,7 @@ $image_url_right = get_field('big_img_right');
                 }
                 ?>
             </div>
-            <div id="#left-text" class="catalogue__inner_dark">
+            <div id="left-text" class="catalogue__inner_dark">
                 <?php if (!empty($parts)){
                     echo array_shift($parts)."</p>";
                 }

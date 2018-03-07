@@ -121,6 +121,9 @@ jQuery(function($){
         if ( $('#firstscreen .grey-line').length > 0 ){
             firstscreenGreyLine();
         }
+        if ( $('.catalogue__inner').length > 0 ){
+            catalogueInner();
+        }
 
         $('#owl-prev').on('click',function(){
             $('.owl-theme .owl-controls .owl-buttons .owl-prev').mouseup();
@@ -140,6 +143,10 @@ jQuery(function($){
         if ($('#firstscreen .grey-line').length > 0) {
             firstscreenGreyLine();
         }
+        if ( $('.catalogue__inner').length > 0 ){
+            catalogueInner();
+        }
+
     });
 
     function topNewsDark() {
@@ -222,7 +229,16 @@ jQuery(function($){
         }
     }
 
+    function catalogueInner() {
+        var windowWidth = $(window).width();
+        var leftStart = $('footer .container .row').position().left;
 
+        $('.page-title').css('margin-left', leftStart+'px');
+
+        if ($('body').find('#left-text').length>0){
+            $('.page-title').css('margin-left', leftStart+'px');
+        }
+    }
 
 });
 
