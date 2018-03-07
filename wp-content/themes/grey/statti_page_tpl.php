@@ -29,7 +29,7 @@ while ( $top_news->have_posts() ) {
 }
 $paged = (get_query_var('page')) ? get_query_var('page') : 1;
 $news_args = array(
-    'posts_per_page' => 2,
+    'posts_per_page' => 1,
     'post_status' => 'publish',
     'cat' => '1',
     'order' => 'DESC',
