@@ -11,10 +11,12 @@ $image_url_left = get_field('big_img_left');
         the_post();
         $orig_content = get_the_content_with_formatting();
         $parts = explode('</p>', $orig_content);
-        var_dump($parts);
+
         ?>
         <div>
-
+            <pre>
+               <?php var_dump($parts);?>
+            </pre>
         </div>
     <?php }
 }?>
