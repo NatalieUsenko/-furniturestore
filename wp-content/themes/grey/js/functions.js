@@ -16,8 +16,9 @@ jQuery(document).ready(function($) {
 });
 jQuery(function($){
     $('#true_loadmore').click(function(){
-        $('#true_loadmore_catalugue img').hide();
-        $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
+        $('#true_loadmore img').hide();
+        $('<span>Загружаю...</span>').appendTo($(this));
+        //$(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
         var data = {
             'action': 'loadmore',
             'query': true_posts,
@@ -29,8 +30,9 @@ jQuery(function($){
             type:'POST', // тип запроса
             success:function(data){
                 if( data ) {
-                    $('#true_loadmore').text('').before(data); // вставляем новые посты
-                    $('#true_loadmore_catalugue img').show();
+                    $('#true_loadmore').before(data); // вставляем новые посты
+                    $('#true_loadmore span').remove();
+                    $('#true_loadmore img').show();
                     current_page++; // увеличиваем номер страницы на единицу
                     if (current_page == max_pages) $("#true_loadmore").remove(); // если последняя страница, удаляем кнопку
                 } else {
@@ -38,8 +40,8 @@ jQuery(function($){
                 }
             },
             error: function (error) {
-                $('#true_loadmore').text('');
-                $('#true_loadmore_catalugue img').show();
+                $('#true_loadmore span').remove();
+                $('#true_loadmore img').show();
                 console.error(error);
             }
         });
