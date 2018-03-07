@@ -18,7 +18,6 @@ jQuery(function($){
     $('#true_loadmore').click(function(){
         $('#true_loadmore img').hide();
         $('<span>Загружаю...</span>').appendTo($(this));
-        //$(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
         var data = {
             'action': 'loadmore',
             'query': true_posts,
@@ -49,7 +48,7 @@ jQuery(function($){
 
     $('#true_loadmore_catalugue').click(function(){
         $('#true_loadmore_catalugue img').hide();
-        $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
+        $('<span>Загружаю...</span>').appendTo($(this));
         var data = {
             'action': 'loadmore_catalogue',
             'query': true_posts,
@@ -61,7 +60,8 @@ jQuery(function($){
             type:'POST', // тип запроса
             success:function(data){
                 if( data ) {
-                    $('#true_loadmore_catalugue').text('').before(data); // вставляем новые посты
+                    $('#true_loadmore_catalugue').before(data); // вставляем новые посты
+                    $('#true_loadmore_catalugue span').hide();
                     $('#true_loadmore_catalugue img').show();
                     current_page++; // увеличиваем номер страницы на единицу
                     if (current_page == max_pages) $("#true_loadmore_catalugue").remove(); // если последняя страница, удаляем кнопку
@@ -70,7 +70,7 @@ jQuery(function($){
                 }
             },
             error: function (error) {
-                $('#true_loadmore_catalugue').text('');
+                $('#true_loadmore_catalugue span').hide();
                 $('#true_loadmore_catalugue img').show();
                 console.error(error);
             }
@@ -80,11 +80,11 @@ jQuery(function($){
     $('.menu-btn').on('click', function() {
         $(this).toggleClass('opened');
         if ($(this).hasClass('opened')){
-            $("#top-contacts").hide();
-            $("#top-menu").show();
+            $('#top-contacts').hide();
+            $('#top-menu').show();
         } else {
-            $("#top-contacts").show();
-            $("#top-menu").hide();
+            $('#top-contacts').show();
+            $('#top-menu').hide();
         }
     });
 
@@ -150,8 +150,7 @@ jQuery(function($){
 
         var darkHeight = $('.top-news_dark').outerHeight();
         var imgHeight = Math.ceil(515*windowWidth*0.55/1125);
-        var diffHeight = 0;
-        diffHeight = Math.ceil(imgHeight - darkHeight - topStart - $('h1').height() - 25);
+        var diffHeight = Math.ceil(imgHeight - darkHeight - topStart - $('h1').height() - 25);
         if ( diffHeight > 0 ){
             $('.top-news_dark').css('margin-top', diffHeight+'px');
         }

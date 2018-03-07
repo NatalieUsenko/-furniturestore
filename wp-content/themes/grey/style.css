@@ -556,6 +556,11 @@ footer.site-footer{
 .top-news_dark a:focus{
 	color: #fff;
 }
+@media (max-width: 1200px){
+    .top-news_dark{
+        width: 90%;
+    }
+}
 @media (max-width: 768px){
 	.top-news_dark{
 		width: 100%;
