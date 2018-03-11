@@ -88,6 +88,10 @@ jQuery(function($){
         }
     });
 
+    $('#menu-top-menu .item-menu').on('click', function() {
+        $('.menu-btn').trigger('click');
+    });
+
     $('.go-to').on('click', function(e) {
         e.preventDefault();
         var target = $(this.getAttribute('href'));

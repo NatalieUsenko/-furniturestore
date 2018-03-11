@@ -445,6 +445,10 @@ header .menu-btn{
 	display: inline-block;
 	margin-left: 25px;
 }
+header .menu-btn:hover,
+header .menu-btn:focus{
+    cursor: pointer;
+}
 header .menu-btn img:first-child{
     display: inline;
 }
@@ -1002,7 +1006,7 @@ dl.gallery-item{
     text-shadow: none;
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
-    display: inline-block;
+    display: block;
     font-size: 0.5em;
     margin: 25px auto;
     padding: 15px;
@@ -1216,6 +1220,7 @@ dl.gallery-item{
         padding-left: 15px;
     }
     #firstscreen .grey-line .go-to{
+        display: none;
         min-width: 144px;
         font-size: 0.813em;
     }

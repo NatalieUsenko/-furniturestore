@@ -89,7 +89,7 @@ $linked_category = get_field('linked_category');
                         <div id="left-item_catalogue" class="post-list_catalogue" style="background-image: url(<?php echo $left_img;?>);">
                             <div class="post-list_title">
                                 <?php echo get_the_title($left_el_id);?>
-                                <div class="post-list_link-more"><a href="<?php echo get_the_permalink($left_el_id);?>">Все фото <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
+                                <div class="post-list_link-more"><a href="<?php echo get_the_permalink($left_el_id);?>">Подробнее <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
                             </div>
                         </div>
                     <?php
@@ -101,7 +101,7 @@ $linked_category = get_field('linked_category');
                         <div id="right-item_catalogue" class="post-list_catalogue" style="background-image: url(<?php echo $right_img;?>);">
                             <div class="post-list_title">
                                 <?php echo get_the_title($right_el_id);?>
-                                <div class="post-list_link-more"><a href="<?php echo get_the_permalink($right_el_id);?>">Все фото <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
+                                <div class="post-list_link-more"><a href="<?php echo get_the_permalink($right_el_id);?>">Подробнее <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
                             </div>
                         </div>
                         <?php
@@ -113,7 +113,7 @@ $linked_category = get_field('linked_category');
                     <?php the_post_thumbnail('catalouge-thumbnails');?>
                     <div class="post-list_title">
                         <?php echo get_the_title();?>
-                        <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
+                        <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Подробнее <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
                     </div>
                 </div>
             <?php

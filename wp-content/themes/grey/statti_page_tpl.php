@@ -52,7 +52,7 @@ $wp_query = new WP_Query($news_args);
                         <div class="post-top_date"><?php echo get_the_date('d.m.Y', $top_news_id);?></div>
                         <div class="post-top_title"><?php echo get_the_title($top_news_id);?></div>
                         <div class="post-top_expert"><?php echo cutString( $top_news_content, 150);?></div>
-                        <div class="post-top_more-link"><a href="<?php echo get_the_permalink($top_news_id);?>">Детальнее</a></div>
+                        <div class="post-top_more-link"><a href="<?php echo get_the_permalink($top_news_id);?>">Подробнее</a></div>
                     </div>
 
                     <?php }?>
@@ -69,7 +69,7 @@ $wp_query = new WP_Query($news_args);
                             <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
                             <div class="post-list_title"><?php echo get_the_title();?></div>
                             <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
-                            <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
+                            <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Подробнее</a></div>
                         </div>
                     <?php $i++;
                         if($i % 2 == 0) {

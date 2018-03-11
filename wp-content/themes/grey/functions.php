@@ -93,7 +93,7 @@ function true_load_posts(){
                 <div class="post-list_date"><?php echo get_the_date('d.m.Y');?></div>
                 <div class="post-list_title"><?php echo get_the_title();?></div>
                 <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
-                <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Детальнее</a></div>
+                <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Подробнее</a></div>
             </div>
         <?php  $i++;
             if($i % 2 == 0) {
@@ -119,7 +119,7 @@ function true_load_posts_catalogue(){
                 <?php the_post_thumbnail('catalouge-thumbnails');?>
                 <div class="post-list_title">
                     <?php echo get_the_title();?>
-                    <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Все фото <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
+                    <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Подробнее <img src="<?php echo get_template_directory_uri();?>/img/more-arrows.png"></a></div>
                 </div>
             </div>
         <?php endwhile;
