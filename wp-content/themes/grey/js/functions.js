@@ -88,7 +88,7 @@ jQuery(function($){
         }
     });
 
-    $('#menu-top-menu .item-menu').on('click', function() {
+    $('#menu-top-menu .menu-item').on('click', function() {
         $('.menu-btn').trigger('click');
     });
 
