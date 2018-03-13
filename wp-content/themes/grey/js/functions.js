@@ -239,12 +239,17 @@ jQuery(function($){
         var rightTextHeight = 0;
         var leftImgHeight = 0;
         var leftTextHeight = 0;
+        var titleWidth = 0;
+        if (windowWidth<768){
+            titleWidth = windowWidth-leftStart*2;
+        } else {
+            titleWidth = windowWidth*0.43-leftStart-15;
+        }
 
-            $('.page-title').css('margin-left', leftStart+'px');
+            $('.page-title').css('margin-left', leftStart+'px').css('max-width',titleWidth+'px');
         var topImg = $('.page-title').offset().top+$('.page-title').height()-87;
 
         if ($('body').find('#left-text').length>0){
-            leftTextHeight = $('#left-text').outerHeight();
             $('#left-text').css('padding-left', leftStart+'px');
         }
         if ($('body').find('#right-img').length>0){
