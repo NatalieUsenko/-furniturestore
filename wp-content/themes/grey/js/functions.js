@@ -252,7 +252,7 @@ jQuery(function($){
         if ($('body').find('#left-text').length>0){
             $('#left-text').css('padding-left', leftStart+'px');
         }
-        if ($('body').find('#right-img').length>0){
+        if (($('body').find('#right-img').length>0)&&(windowWidth<768)){
             $('#right-img').css('margin-top', topImg*(-1)+'px');
         }
         if ($('body').find('#right-text').length>0){
