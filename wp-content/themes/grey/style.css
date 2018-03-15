@@ -334,6 +334,9 @@ input[type='submit']:active{
 	color: #fff;
 	outline: none;
 }
+div.wpcf7 .ajax-loader{
+	margin-right: -16px;
+}
 
 a{
     color: #000;
