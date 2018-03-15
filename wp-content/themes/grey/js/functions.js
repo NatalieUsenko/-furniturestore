@@ -231,7 +231,7 @@ jQuery(function($){
             $('#firstscreen .owl-carousel-item-imgcontent').each(function() {
                 $(this).find('a').wrap('<span></span>');
                 var link = $(this).find('span');
-                $(this).siblings('.owl-carousel-item-imgtitle').appendChild(link);
+                $(this).siblings().find('.owl-carousel-item-imgtitle').appendChild(link);
                 // var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
                 // $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(link);
             });
