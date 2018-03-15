@@ -58,7 +58,7 @@ $wp_query = new WP_Query($news_args);
                     <?php }?>
                     <div class="clearfix"></div>
                      <div class="container-fluid container mt-50">
-                    <?php $i= 0;
+                    <?php $i= 1;
                     while ( $wp_query->have_posts() ) {
                         $wp_query->the_post();
                         if($i % 2 == 0) {
