@@ -229,7 +229,8 @@ jQuery(function($){
 
         if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
             var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
-            $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(link).wrap('span');
+            $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild('span');
+            $('#firstscreen .owl-carousel-item-imgtitle span')[0].appendChild(link);
         }
     }
 
