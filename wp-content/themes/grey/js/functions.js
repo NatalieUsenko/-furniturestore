@@ -228,8 +228,14 @@ jQuery(function($){
         $('#firstscreen .grey-line .go-to').css('left', infoStart+'px');
 
         if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
-            var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
-            $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(link).wrap('<span></span>>');
+            $('#firstscreen .owl-carousel-item-imgcontent').each(function() {
+                $(this).find('a').wrap('<span></span>');
+                var link = $(this).find('span');
+                $(this).siblings('.owl-carousel-item-imgtitle').appendChild(link);
+                // var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
+                // $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(link);
+            });
+
         }
     }
 
