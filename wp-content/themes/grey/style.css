@@ -335,7 +335,7 @@ input[type='submit']:active{
 	outline: none;
 }
 div.wpcf7 .ajax-loader{
-	margin-right: -16px;
+	margin-right: -20px;
 }
 @media(max-width: 1200px) {
     button[type='submit'],
