@@ -380,6 +380,9 @@ a:focus{
 .no-padding-right{
     padding-right: 0!important;
 }
+.otstup40l{
+    padding-left: 40px;
+}
 
 .home header.site-header{
 	position: absolute;
