@@ -743,6 +743,7 @@ footer.site-footer{
     left: 0;
     top: 45px;
     z-index: 1;
+    padding-right: 3.5%;
 }
 #right-text{
     width: 57%;
