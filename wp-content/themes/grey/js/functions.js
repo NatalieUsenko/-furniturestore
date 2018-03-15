@@ -228,7 +228,7 @@ jQuery(function($){
         $('#firstscreen .grey-line .go-to').css('left', infoStart+'px');
 
         if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
-            var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
+            var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0].wrap('<span></span>>');
             $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(link);
         }
     }
