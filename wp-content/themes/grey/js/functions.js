@@ -179,10 +179,12 @@ jQuery(function($){
         if ( diffHeight > 0 ){
             $('.top-catalogue_dark').css('margin-top', diffHeight+'px');
             $('.top-catalogue_img').css('background-size','55% auto');
+            $('.top-catalogue_img').css('background-position-x','right');
         } else {
             var newImgHeight = darkHeight + topStart + $('h1').height() + 75;
             $('.top-catalogue_dark').css('margin-top', '50px');
             $('.top-catalogue_img').css('background-size','auto '+newImgHeight+'px');
+            $('.top-catalogue_img').css('background-position-x',windowWidth*0.55+'px');
         }
 
         var itemHeight = $('.col-md-4.post-list_catalogue').eq(0).height();
