@@ -1006,7 +1006,7 @@ dl.gallery-item{
     text-shadow: none;
 }
 #firstscreen .slider .owl-carousel-item-imgoverlay .owl-carousel-item-imgtitle a{
-    display: block;
+    display: inline-block;
     font-size: 0.5em;
     margin: 25px auto;
     padding: 15px;
