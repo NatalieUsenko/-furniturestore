@@ -228,9 +228,10 @@ jQuery(function($){
         $('#firstscreen .grey-line .go-to').css('left', infoStart+'px');
 
         if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
+            var div = document.createElement('div');
             var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
-            $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild('span');
-            $('#firstscreen .owl-carousel-item-imgtitle span')[0].appendChild(link);
+            div.appendChild(link);
+            $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(div);
         }
     }
 
