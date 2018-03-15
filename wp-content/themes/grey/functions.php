@@ -82,7 +82,7 @@ function true_load_posts(){
     query_posts( $args );
     // если посты есть
     if( have_posts() ) :
-        $i= 0;
+        $i= 1;
         // запускаем цикл
         while( have_posts() ): the_post();
             if($i % 2 == 0) {
@@ -95,10 +95,11 @@ function true_load_posts(){
                 <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
                 <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Подробнее</a></div>
             </div>
-        <?php  $i++;
+        <?php
             if($i % 2 == 0) {
                 echo '</div>';
             }
+            $i++;
             endwhile;
     endif;
     die();
