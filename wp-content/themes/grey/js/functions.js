@@ -268,8 +268,8 @@ jQuery(function($){
             $('#right-img').css('margin-top', topImg*(-1)+'px');
         }
         if ($('body').find('#right-text').length>0){
-            rightTextHeight = $('#right-text').outerHeight();
             $('#right-text').css('padding-right', leftStart+'px');
+            rightTextHeight = $('#right-text').outerHeight();
         }
         if ($('body').find('#left-img').length>0){
             leftImgHeight = $('#left-img').outerHeight();
