@@ -182,7 +182,7 @@ jQuery(function($){
         } else {
             var newImgHeight = darkHeight + topStart + $('h1').height() + 75;
             $('.top-catalogue_dark').css('margin-top', '50px');
-            $('.top-catalogue_img').css('background-size','55% '+newImgHeight+'px');
+            $('.top-catalogue_img').css('background-size','auto '+newImgHeight+'px');
         }
 
         var itemHeight = $('.col-md-4.post-list_catalogue').eq(0).height();

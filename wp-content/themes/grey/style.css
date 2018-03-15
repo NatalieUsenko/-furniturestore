@@ -786,7 +786,6 @@ dl.gallery-item{
     background-size: 55% auto;
     background-repeat: no-repeat;
     background-position: top right;
-	background-origin: content-box;
 }
 @media (max-width: 767px){
     .top-catalogue_img{
