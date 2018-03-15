@@ -71,10 +71,11 @@ $wp_query = new WP_Query($news_args);
                             <div class="post-list_expert"><?php echo cutString( get_the_content(), 120);?></div>
                             <div class="post-list_link-more"><a href="<?php echo get_the_permalink();?>">Подробнее</a></div>
                         </div>
-                    <?php $i++;
+                    <?php
                         if($i % 2 == 0) {
                             echo '</div>';
                         }
+                        $i++;
                     }?>
                          <?php if (  $wp_query->max_num_pages > 1 ) : ?>
                              <script>
