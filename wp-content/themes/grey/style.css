@@ -947,9 +947,16 @@ dl.gallery-item{
     cursor: pointer;
 }
 @media (max-width: 767px){
+	#right-item_catalogue,
+	#left-item_catalogue{
+		max-width: 100%;
+	}
 
     .post-list_catalogue{
         text-align: center;
+		max-width: 553px;
+		margin-right: auto;
+		margin-left: auto;
     }
 }
 
