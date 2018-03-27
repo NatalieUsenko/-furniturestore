@@ -17,7 +17,7 @@ $page_args = array(
     'posts_per_page' => 8,
     'post_status' => 'publish',
     'post_type' => 'page',
-    'order'     => 'DESC',
+    'order'     => 'ASC',
     'orderby'   => 'menu_order',
     'meta_query' => array(
         array(
