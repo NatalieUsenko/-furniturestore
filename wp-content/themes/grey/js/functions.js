@@ -192,7 +192,7 @@ jQuery(function($){
         var itemTitleWidth = $('.col-md-4.post-list_catalogue .post-list_title').eq(0).width();
         if ($('body').find('#left-item_catalogue').length>0){
             var leftWidth = itemWidth*2+leftStart+45;
-            var blockHeight = 2*itemHeight+30;
+            var blockHeight = 2*itemHeight+29;
             if (windowWidth<1200){
                 $('#left-item_catalogue').css('margin-left','0px').css('width','100%').css('height',windowWidth*0.6+'px');
                 $('#left-item_catalogue .post-list_title').css('width',(itemTitleWidth+30)+'px').css('padding-left','15px');
