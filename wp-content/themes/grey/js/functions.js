@@ -234,12 +234,16 @@ jQuery(function($){
         }
         $('#firstscreen .grey-line .go-to').css('left', infoStart+'px');
 
-        if ($('#firstscreen .owl-carousel-item-imgcontent a').length>0){
-            var div = document.createElement('div');
-            var link = $('#firstscreen .owl-carousel-item-imgcontent a')[0];
-            div.appendChild(link);
-            $('#firstscreen .owl-carousel-item-imgtitle')[0].appendChild(div);
-        }
+        $('#firstscreen .owl-item').each(function() {
+            if ($(this).find('.owl-carousel-item-imgcontent a').length>0){
+                var div = document.createElement('div');
+                var link = $(this).find('.owl-carousel-item-imgcontent a')[0];
+                div.appendChild(link);
+                $(this).find('.owl-carousel-item-imgtitle')[0].appendChild(div);
+            }
+        });
+
+
     }
 
     function catalogueInner() {
