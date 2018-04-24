@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'furniturestore');
+define('DB_NAME', 'meblil03_db');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'meblil03_db');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'furniturestore');
+define('DB_PASSWORD', 'LlLKYR7t');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'meblil03.mysql.tools');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -83,7 +83,7 @@ define('WP_DEBUG', true);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-    define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
