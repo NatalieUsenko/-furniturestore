@@ -6,11 +6,11 @@ get_header();
             <table width="100%" border="0">
                 <tr>
                     <td width="50%" valign="middle" align="center">
-                        <div style="font-size: 450%; padding: 25px;">404</div>
+                        <span style="font-size: 450%; padding: 25px;">404</span>
                     </td>
                     <td valign="middle">
-                        <div style="font-size: 150%;">Страница не найдена... </div>
-                        <div style="font-size: 115%;">или была перемещена по другому адресу </div>
+                        <span style="font-size: 150%;">Страница не найдена... <br />
+                        <span style="font-size: 115%;">или была перемещена по другому адресу </span>
                     </td>
                 </tr>
             </table>
